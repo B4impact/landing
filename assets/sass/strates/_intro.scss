@@ -1,0 +1,25 @@
+#intro {
+    position: relative;
+    min-height: 65vh;
+
+    h1, h1 span {
+        font-size: 1.7em;
+        font-weight: 600;
+    }
+
+    .content {
+        @include clearfix;
+        clear: both;
+        margin-top: 10px;
+    }
+
+    // go down
+
+    .go-bottom {
+        position: absolute;
+        width: 100%;
+        bottom: 0;
+        left: 0;
+        text-align: center;
+    }
+}

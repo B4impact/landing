@@ -1,0 +1,433 @@
+@charset "UTF-8";
+/* line 1, ../sass/basics/_reset.scss */
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", Arial, sans-serif;
+  font-size: 15px;
+  font-weight: 300;
+}
+
+/* line 9, ../sass/basics/_reset.scss */
+ul {
+  list-style-type: none;
+}
+
+/* line 13, ../sass/basics/_reset.scss */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* line 18, ../sass/basics/_reset.scss */
+body {
+  overflow-x: hidden;
+  background-image: url("../img/img-layout/background-img.jpg");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+/* line 25, ../sass/basics/_reset.scss */
+h1, h2, h3 {
+  font-family: "Poppins", Arial, sans-serif;
+}
+/* line 27, ../sass/basics/_reset.scss */
+h1 span, h2 span, h3 span {
+  font-family: inherit;
+  font-size: inherit;
+}
+
+/* line 33, ../sass/basics/_reset.scss */
+p {
+  line-height: 1.5;
+}
+
+/* line 37, ../sass/basics/_reset.scss */
+img {
+  max-width: 100%;
+}
+
+/* line 41, ../sass/basics/_reset.scss */
+section {
+  margin: 4em 0;
+}
+
+/* line 1, ../sass/basics/_classes.scss */
+.return {
+  display: block;
+}
+
+/* line 5, ../sass/basics/_classes.scss */
+.bolder {
+  font-weight: bolder;
+}
+
+/* line 9, ../sass/basics/_classes.scss */
+.text-centered {
+  text-align: center;
+}
+
+/* line 13, ../sass/basics/_classes.scss */
+.pos-right {
+  float: right;
+}
+
+/* line 17, ../sass/basics/_classes.scss */
+.centered {
+  float: none;
+  margin: 0 auto;
+}
+
+/* line 22, ../sass/basics/_classes.scss */
+.color-white {
+  color: #fff;
+}
+
+/* line 26, ../sass/basics/_classes.scss */
+.color-lblue {
+  color: #667AF4;
+}
+
+/* line 30, ../sass/basics/_classes.scss */
+.head-strate.spacer {
+  margin: 2em 0 4em 0;
+}
+
+/* line 1, ../sass/styleguide/_buttons.scss */
+.btn {
+  display: block;
+  padding: 7px 20px;
+  border: none;
+  background: transparent;
+  text-transform: uppercase;
+  font-family: "Poppins", Arial, sans-serif;
+  font-weight: 500;
+  letter-spacing: .72px;
+  border-radius: 100px;
+  cursor: pointer;
+}
+/* line 13, ../sass/styleguide/_buttons.scss */
+.btn.btn-red {
+  color: #fff;
+  background: linear-gradient(#F34837, #FF6363);
+}
+/* line 18, ../sass/styleguide/_buttons.scss */
+.btn.light {
+  font-weight: 300;
+}
+
+/* line 23, ../sass/styleguide/_buttons.scss */
+.small-cta {
+  display: block;
+  margin: 5px 0;
+}
+/* line 26, ../sass/styleguide/_buttons.scss */
+.small-cta a {
+  font-weight: 600;
+}
+/* line 30, ../sass/styleguide/_buttons.scss */
+.small-cta.light-blue {
+  color: #667AF4;
+}
+
+/* line 5, ../sass/styleguide/_titles.scss */
+.head-title {
+  margin: 10px 0;
+  font-size: 30px;
+  font-weight: 600;
+}
+
+/* line 11, ../sass/styleguide/_titles.scss */
+.sb-title {
+  margin-bottom: 10px;
+  font-size: 21px;
+  font-weight: 700;
+}
+
+/* line 1, ../sass/elements/_header.scss */
+header {
+  padding: 3em 0;
+}
+/* line 3, ../sass/elements/_header.scss */
+header nav {
+  line-height: 3;
+  text-align: right;
+}
+/* line 6, ../sass/elements/_header.scss */
+header nav ul {
+  font-size: 0;
+}
+/* line 9, ../sass/elements/_header.scss */
+header nav li {
+  font-size: initial;
+  display: inline-block;
+  padding: 0 2em;
+}
+/* line 13, ../sass/elements/_header.scss */
+header nav li:last-child {
+  padding-right: 0;
+}
+
+/* line 1, ../sass/elements/_catchline.scss */
+.catchline {
+  clear: both;
+  padding: 1.5em 0 5em 0;
+}
+/* line 5, ../sass/elements/_catchline.scss */
+.catchline p {
+  font-family: "Poppins", Arial, sans-serif;
+}
+/* line 7, ../sass/elements/_catchline.scss */
+.catchline p span {
+  font-family: inherit;
+  font-size: inherit;
+}
+
+/* line 1, ../sass/elements/_footer.scss */
+footer  {
+  padding: 3em 0;
+}
+
+/* line 1, ../sass/strates/_intro.scss */
+#intro {
+  position: relative;
+  min-height: 65vh;
+}
+/* line 5, ../sass/strates/_intro.scss */
+#intro h1, #intro h1 span {
+  font-size: 1.7em;
+  font-weight: 600;
+}
+/* line 10, ../sass/strates/_intro.scss */
+#intro .content {
+  clear: both;
+  margin-top: 10px;
+}
+/* line 2, ../sass/basics/_clearfix.scss */
+#intro .content:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+/* line 18, ../sass/strates/_intro.scss */
+#intro .go-bottom {
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  text-align: center;
+}
+
+/* line 2, ../sass/strates/_about-app.scss */
+#about-app .wrapper-content {
+  padding: 6em 0;
+  border: 2px solid #F6F6F6;
+  border-radius: 8px;
+}
+/* line 8, ../sass/strates/_about-app.scss */
+#about-app .visuals {
+  margin-left: -5%;
+}
+/* line 13, ../sass/strates/_about-app.scss */
+#about-app .block-content {
+  margin-bottom: 1.5em;
+}
+/* line 16, ../sass/strates/_about-app.scss */
+#about-app .block-content .small-cta {
+  font-family: "Poppins", Arial, sans-serif;
+  margin-top: 20px;
+  padding-left: 0;
+  transition: .3s ease-out;
+}
+/* line 21, ../sass/strates/_about-app.scss */
+#about-app .block-content .small-cta .icon {
+  visibility: hidden;
+  opacity: 0;
+  margin-left: -20px;
+  transition: .3s ease-out;
+}
+/* line 31, ../sass/strates/_about-app.scss */
+#about-app .block-content .content:hover .small-cta {
+  padding-left: 5px;
+  transition: .2s ease-out;
+}
+/* line 35, ../sass/strates/_about-app.scss */
+#about-app .block-content .content:hover .small-cta .icon {
+  opacity: 1;
+  transform: translateX(-20px);
+  visibility: visible;
+  margin-left: 0;
+  transition: .2s ease-out;
+}
+
+/* line 1, ../sass/strates/_about-us.scss */
+#about-us {
+  position: relative;
+  background: #FF6363;
+  padding-bottom: 7em;
+}
+/* line 6, ../sass/strates/_about-us.scss */
+#about-us:before {
+  position: absolute;
+  content: '';
+  display: block;
+  background: #FF6363;
+  width: calc(100% + 30px);
+  height: 130%;
+  bottom: 0;
+  left: -15px;
+  z-index: -1;
+}
+/* line 17, ../sass/strates/_about-us.scss */
+#about-us figure {
+  display: block;
+  width: 200px;
+  height: 200px;
+  border-radius: 100px;
+  background: #fff;
+  margin-bottom: 40px;
+}
+
+/* line 1, ../sass/strates/_pricing.scss */
+#pricing {
+  position: relative;
+  min-height: 80vh;
+}
+/* line 5, ../sass/strates/_pricing.scss */
+#pricing:before {
+  position: absolute;
+  content: '';
+  display: block;
+  width: calc(100% + 30px);
+  height: 80vh;
+  top: 60%;
+  left: -15px;
+  background: #FF6363;
+}
+/* line 17, ../sass/strates/_pricing.scss */
+#pricing .pricing-els {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+/* line 23, ../sass/strates/_pricing.scss */
+#pricing .pricing-el {
+  width: 30%;
+  background: #fff;
+  border-radius: 8px;
+  padding: 0;
+  box-shadow: 0 0 15px 7px rgba(0, 0, 0, 0.05);
+  transform: none;
+  transition: .4s ease-out;
+}
+/* line 33, ../sass/strates/_pricing.scss */
+#pricing .pricing-el:nth-child(2) .head-el {
+  padding: 3em 0 2em 0;
+}
+/* line 38, ../sass/strates/_pricing.scss */
+#pricing .pricing-el:hover {
+  transform: translateY(-5%);
+  transition: .3s ease-out;
+}
+/* line 42, ../sass/strates/_pricing.scss */
+#pricing .pricing-el:hover .cta-el {
+  color: #fff;
+  transition: .2s ease-out;
+}
+/* line 45, ../sass/strates/_pricing.scss */
+#pricing .pricing-el:hover .cta-el:before {
+  right: 0;
+  transition: .3s ease-out;
+}
+/* line 53, ../sass/strates/_pricing.scss */
+#pricing .pricing-el .head-el {
+  padding: 2em 0 1em 0;
+  border-bottom: 2px solid #F6F6F6;
+}
+/* line 56, ../sass/strates/_pricing.scss */
+#pricing .pricing-el .head-el h3 {
+  font-size: 23px;
+  font-weight: 600;
+}
+/* line 60, ../sass/strates/_pricing.scss */
+#pricing .pricing-el .head-el h3 span {
+  font-size: inherit;
+}
+/* line 63, ../sass/strates/_pricing.scss */
+#pricing .pricing-el .head-el h3 span.price {
+  font-size: 1.4em;
+  font-weight: 600;
+  margin: 0 3px;
+}
+/* line 72, ../sass/strates/_pricing.scss */
+#pricing .pricing-el .content-el {
+  padding: 1.5em 2em;
+  text-align: center;
+  line-height: 2;
+}
+/* line 78, ../sass/strates/_pricing.scss */
+#pricing .pricing-el .cta-el {
+  position: relative;
+  background: #F6F6F6;
+  text-align: center;
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+  cursor: pointer;
+}
+/* line 86, ../sass/strates/_pricing.scss */
+#pricing .pricing-el .cta-el a {
+  position: relative;
+  display: block;
+  z-index: 2;
+  padding: 1em 0;
+  font-size: 1.2em;
+  text-transform: uppercase;
+  font-weight: 500;
+  letter-spacing: .5px;
+  transition: .3s ease-out;
+}
+/* line 98, ../sass/strates/_pricing.scss */
+#pricing .pricing-el .cta-el:before {
+  position: absolute;
+  display: block;
+  content: '';
+  background: #667AF4;
+  left: 0;
+  right: 100%;
+  top: 0;
+  height: 100%;
+  z-index: 0;
+  transition: .3s ease-out;
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+}
+
+/* line 1, ../sass/strates/_intro.scss */
+#intro {
+  position: relative;
+  min-height: 65vh;
+}
+/* line 5, ../sass/strates/_intro.scss */
+#intro h1, #intro h1 span {
+  font-size: 1.7em;
+  font-weight: 600;
+}
+/* line 10, ../sass/strates/_intro.scss */
+#intro .content {
+  clear: both;
+  margin-top: 10px;
+}
+/* line 2, ../sass/basics/_clearfix.scss */
+#intro .content:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+/* line 18, ../sass/strates/_intro.scss */
+#intro .go-bottom {
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  text-align: center;
+}

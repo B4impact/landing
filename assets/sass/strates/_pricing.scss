@@ -1,0 +1,114 @@
+#pricing {
+    position: relative;
+    min-height: 80vh;
+
+    &:before {
+        position: absolute;
+        content: '';
+        display: block;
+        width: calc(100% + 30px);
+
+        height: 80vh;
+        top: 60%;
+        left: -15px;
+        background: $lred;
+    }
+
+    .pricing-els {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+    }
+
+    .pricing-el {
+        width: 30%;
+        background: #fff;
+        border-radius: $radius;
+        padding: 0;
+        box-shadow: 0 0 15px 7px rgba(0,0,0,.05);
+        transform: none;
+        transition: .4s ease-out;
+
+        &:nth-child(2) {
+            .head-el {
+                padding: 3em 0 2em 0;
+            }
+        }
+
+        &:hover {
+            transform: translateY(-5%);
+            transition: .3s ease-out;
+
+            .cta-el {
+                color: #fff;
+                transition: .2s ease-out;
+                &:before {
+                    right: 0;
+                    transition: .3s ease-out;
+                }
+            }
+
+        }
+
+        .head-el {
+            padding: 2em 0 1em 0;
+            border-bottom: 2px solid $llgrey;
+            h3 {
+                font-size: 23px;
+                font-weight: 600;
+
+                span {
+                    font-size: inherit;
+
+                    &.price {
+                        font-size: 1.4em;
+                        font-weight: 600;
+                        margin: 0 3px;
+                    }
+                }
+            }
+        } // end of head el
+
+        .content-el {
+            padding: 1.5em 2em;
+            text-align: center;
+            line-height: 2;
+        }
+
+        .cta-el {
+            position: relative;
+            background: $llgrey;
+            text-align: center;
+            border-bottom-left-radius: $radius;
+            border-bottom-right-radius: $radius;
+            cursor: pointer;
+
+            a {
+                position: relative;
+                display: block;
+                z-index: 2;
+                padding: 1em 0;
+                font-size: 1.2em;
+                text-transform: uppercase;
+                font-weight: 500;
+                letter-spacing: .5px;
+                transition: .3s ease-out;
+            }
+
+            &:before {
+                position: absolute;
+                display: block;
+                content: '';
+                background: $lblue;
+                left: 0;
+                right: 100%;
+                top: 0;
+                height: 100%;
+                z-index: 0;
+                transition: .3s ease-out;
+                border-bottom-left-radius: $radius;
+                border-bottom-right-radius: $radius;
+            }
+        }
+    }
+}

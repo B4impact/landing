@@ -1,0 +1,44 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: $Roboto;
+    font-size: 15px;
+    font-weight: 300;
+}
+
+ul {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+body {
+    overflow-x: hidden;
+    background-image: url('../img/img-layout/background-img.jpg');
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+h1, h2, h3 {
+    font-family: $Poppins;
+    span {
+        font-family: inherit;
+        font-size: inherit;
+    }
+}
+
+p {
+    line-height: 1.5;
+}
+
+img {
+    max-width: 100%;
+}
+
+section {
+    // min-height: 100vh;
+    margin: 4em 0;
+}

@@ -1,0 +1,32 @@
+.return {
+    display: block;
+}
+
+.bolder {
+    font-weight: bolder;
+}
+
+.text-centered {
+    text-align: center;
+}
+
+.pos-right {
+    float: right;
+}
+
+.centered {
+    float: none;
+    margin: 0 auto;
+}
+
+.color-white {
+    color: #fff;
+}
+
+.color-lblue {
+    color: $lblue;
+}
+
+.head-strate.spacer {
+    margin: 2em 0 4em 0;
+}

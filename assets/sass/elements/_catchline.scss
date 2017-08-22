@@ -1,0 +1,12 @@
+.catchline {
+    clear: both;
+    padding: 1.5em 0 5em 0;
+
+    p {
+        font-family: $Poppins;
+        span {
+            font-family: inherit;
+            font-size: inherit;
+        }
+    }
+}
