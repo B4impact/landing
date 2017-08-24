@@ -2,6 +2,10 @@
     position: relative;
     min-height: 80vh;
 
+    @media screen and (max-width: $mobile-lg) {
+        min-height: auto;
+    }
+
     &:before {
         position: absolute;
         content: '';
@@ -11,13 +15,33 @@
         height: 80vh;
         top: 60%;
         left: -15px;
-        background: $lred;
+        background: $llgrey;
     }
 
     .pricing-els {
         display: flex;
         justify-content: space-between;
         align-items: flex-end;
+
+        @media screen and (max-width: $mobile-lg) {
+            flex-direction: column;
+
+            .pricing-el {
+                display: none;
+                width: 100%;
+                margin-bottom: 2em;
+
+                &.active {
+                    display: block;
+                }
+            }
+
+            &:nth-child(2) {
+                .head-el {
+                    padding: 2em 0 1em 0;
+                }
+            }
+        }
     }
 
     .pricing-el {
@@ -77,7 +101,8 @@
 
         .cta-el {
             position: relative;
-            background: $llgrey;
+            background: $lblue;
+            color: #fff;
             text-align: center;
             border-bottom-left-radius: $radius;
             border-bottom-right-radius: $radius;

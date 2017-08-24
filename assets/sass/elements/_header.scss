@@ -1,5 +1,17 @@
 header {
     padding: 3em 0;
+
+    @media screen and (max-width: $mobile-lg) {
+        .logo {
+            text-align: center;
+            margin-bottom: 1em;
+            img {
+                max-width: 80px;
+            }
+        }
+    }
+
+    // nav bar
     nav {
         line-height: 3;
         text-align: right;
@@ -13,6 +25,10 @@ header {
             &:last-child {
                 padding-right: 0;
             }
+        }
+
+        @media screen and (max-width: $mobile-lg) {
+            display: none;
         }
     }
 }

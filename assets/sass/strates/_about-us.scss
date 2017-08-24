@@ -1,13 +1,13 @@
 #about-us {
     position: relative;
-    background: $lred;
+    background: $llgrey;
     padding-bottom: 7em;
 
     &:before {
         position: absolute;
         content: '';
         display: block;
-        background: $lred;
+        background: $llgrey;
         width: calc(100% + 30px);
         height: 130%;
         bottom: 0;
@@ -21,5 +21,13 @@
         border-radius: 100px;
         background: #fff;
         margin-bottom: 40px;
+    }
+
+    @media screen and (max-width: $mobile-lg) {
+        padding-bottom: 4em;
+
+        .ppl {
+            margin-bottom: 4em;
+        }
     }
 }

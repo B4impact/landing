@@ -148,24 +148,41 @@ section {
 header {
   padding: 3em 0;
 }
-/* line 3, ../sass/elements/_header.scss */
+@media screen and (max-width: 600px) {
+  /* line 5, ../sass/elements/_header.scss */
+  header .logo {
+    text-align: center;
+    margin-bottom: 1em;
+  }
+  /* line 8, ../sass/elements/_header.scss */
+  header .logo img {
+    max-width: 80px;
+  }
+}
+/* line 15, ../sass/elements/_header.scss */
 header nav {
   line-height: 3;
   text-align: right;
 }
-/* line 6, ../sass/elements/_header.scss */
+/* line 18, ../sass/elements/_header.scss */
 header nav ul {
   font-size: 0;
 }
-/* line 9, ../sass/elements/_header.scss */
+/* line 21, ../sass/elements/_header.scss */
 header nav li {
   font-size: initial;
   display: inline-block;
   padding: 0 2em;
 }
-/* line 13, ../sass/elements/_header.scss */
+/* line 25, ../sass/elements/_header.scss */
 header nav li:last-child {
   padding-right: 0;
+}
+@media screen and (max-width: 600px) {
+  /* line 15, ../sass/elements/_header.scss */
+  header nav {
+    display: none;
+  }
 }
 
 /* line 1, ../sass/elements/_catchline.scss */
@@ -185,7 +202,11 @@ header nav li:last-child {
 
 /* line 1, ../sass/elements/_footer.scss */
 footer  {
-  padding: 3em 0;
+  background: red;
+}
+/* line 3, ../sass/elements/_footer.scss */
+footer  p {
+  background: red;
 }
 
 /* line 1, ../sass/strates/_intro.scss */
@@ -217,41 +238,56 @@ footer  {
   left: 0;
   text-align: center;
 }
+@media screen and (max-width: 600px) {
+  /* line 1, ../sass/strates/_intro.scss */
+  #intro {
+    min-height: auto;
+  }
+  /* line 28, ../sass/strates/_intro.scss */
+  #intro .go-bottom {
+    position: initial;
+    margin-top: 4em;
+  }
+}
 
-/* line 2, ../sass/strates/_about-app.scss */
+/* line 1, ../sass/strates/_about-app.scss */
+#about-app {
+  min-height: 100vh;
+}
+/* line 3, ../sass/strates/_about-app.scss */
 #about-app .wrapper-content {
   padding: 6em 0;
   border: 2px solid #F6F6F6;
   border-radius: 8px;
 }
-/* line 8, ../sass/strates/_about-app.scss */
+/* line 9, ../sass/strates/_about-app.scss */
 #about-app .visuals {
   margin-left: -5%;
 }
-/* line 13, ../sass/strates/_about-app.scss */
+/* line 14, ../sass/strates/_about-app.scss */
 #about-app .block-content {
   margin-bottom: 1.5em;
 }
-/* line 16, ../sass/strates/_about-app.scss */
+/* line 17, ../sass/strates/_about-app.scss */
 #about-app .block-content .small-cta {
   font-family: "Poppins", Arial, sans-serif;
   margin-top: 20px;
   padding-left: 0;
   transition: .3s ease-out;
 }
-/* line 21, ../sass/strates/_about-app.scss */
+/* line 22, ../sass/strates/_about-app.scss */
 #about-app .block-content .small-cta .icon {
   visibility: hidden;
   opacity: 0;
   margin-left: -20px;
   transition: .3s ease-out;
 }
-/* line 31, ../sass/strates/_about-app.scss */
+/* line 32, ../sass/strates/_about-app.scss */
 #about-app .block-content .content:hover .small-cta {
   padding-left: 5px;
   transition: .2s ease-out;
 }
-/* line 35, ../sass/strates/_about-app.scss */
+/* line 36, ../sass/strates/_about-app.scss */
 #about-app .block-content .content:hover .small-cta .icon {
   opacity: 1;
   transform: translateX(-20px);
@@ -259,11 +295,39 @@ footer  {
   margin-left: 0;
   transition: .2s ease-out;
 }
+@media screen and (max-width: 600px) {
+  /* line 48, ../sass/strates/_about-app.scss */
+  #about-app .wrapper-content {
+    padding: 1em 0;
+    border: none;
+  }
+  /* line 53, ../sass/strates/_about-app.scss */
+  #about-app .visuals {
+    padding: 0;
+    margin-left: initial;
+    margin-bottom: 1.5em;
+  }
+  /* line 59, ../sass/strates/_about-app.scss */
+  #about-app .block-content {
+    margin-bottom: 0;
+  }
+  /* line 63, ../sass/strates/_about-app.scss */
+  #about-app .content {
+    display: none;
+    visibility: hidden;
+    margin-bottom: 1.5em;
+  }
+  /* line 68, ../sass/strates/_about-app.scss */
+  #about-app .content.active {
+    display: block;
+    visibility: visible;
+  }
+}
 
 /* line 1, ../sass/strates/_about-us.scss */
 #about-us {
   position: relative;
-  background: #FF6363;
+  background: #F6F6F6;
   padding-bottom: 7em;
 }
 /* line 6, ../sass/strates/_about-us.scss */
@@ -271,7 +335,7 @@ footer  {
   position: absolute;
   content: '';
   display: block;
-  background: #FF6363;
+  background: #F6F6F6;
   width: calc(100% + 30px);
   height: 130%;
   bottom: 0;
@@ -287,13 +351,29 @@ footer  {
   background: #fff;
   margin-bottom: 40px;
 }
+@media screen and (max-width: 600px) {
+  /* line 1, ../sass/strates/_about-us.scss */
+  #about-us {
+    padding-bottom: 4em;
+  }
+  /* line 29, ../sass/strates/_about-us.scss */
+  #about-us .ppl {
+    margin-bottom: 4em;
+  }
+}
 
 /* line 1, ../sass/strates/_pricing.scss */
 #pricing {
   position: relative;
   min-height: 80vh;
 }
-/* line 5, ../sass/strates/_pricing.scss */
+@media screen and (max-width: 600px) {
+  /* line 1, ../sass/strates/_pricing.scss */
+  #pricing {
+    min-height: auto;
+  }
+}
+/* line 9, ../sass/strates/_pricing.scss */
 #pricing:before {
   position: absolute;
   content: '';
@@ -302,15 +382,35 @@ footer  {
   height: 80vh;
   top: 60%;
   left: -15px;
-  background: #FF6363;
+  background: #F6F6F6;
 }
-/* line 17, ../sass/strates/_pricing.scss */
+/* line 21, ../sass/strates/_pricing.scss */
 #pricing .pricing-els {
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
 }
-/* line 23, ../sass/strates/_pricing.scss */
+@media screen and (max-width: 600px) {
+  /* line 21, ../sass/strates/_pricing.scss */
+  #pricing .pricing-els {
+    flex-direction: column;
+  }
+  /* line 29, ../sass/strates/_pricing.scss */
+  #pricing .pricing-els .pricing-el {
+    display: none;
+    width: 100%;
+    margin-bottom: 2em;
+  }
+  /* line 34, ../sass/strates/_pricing.scss */
+  #pricing .pricing-els .pricing-el.active {
+    display: block;
+  }
+  /* line 40, ../sass/strates/_pricing.scss */
+  #pricing .pricing-els:nth-child(2) .head-el {
+    padding: 2em 0 1em 0;
+  }
+}
+/* line 47, ../sass/strates/_pricing.scss */
 #pricing .pricing-el {
   width: 30%;
   background: #fff;
@@ -320,61 +420,62 @@ footer  {
   transform: none;
   transition: .4s ease-out;
 }
-/* line 33, ../sass/strates/_pricing.scss */
+/* line 57, ../sass/strates/_pricing.scss */
 #pricing .pricing-el:nth-child(2) .head-el {
   padding: 3em 0 2em 0;
 }
-/* line 38, ../sass/strates/_pricing.scss */
+/* line 62, ../sass/strates/_pricing.scss */
 #pricing .pricing-el:hover {
   transform: translateY(-5%);
   transition: .3s ease-out;
 }
-/* line 42, ../sass/strates/_pricing.scss */
+/* line 66, ../sass/strates/_pricing.scss */
 #pricing .pricing-el:hover .cta-el {
   color: #fff;
   transition: .2s ease-out;
 }
-/* line 45, ../sass/strates/_pricing.scss */
+/* line 69, ../sass/strates/_pricing.scss */
 #pricing .pricing-el:hover .cta-el:before {
   right: 0;
   transition: .3s ease-out;
 }
-/* line 53, ../sass/strates/_pricing.scss */
+/* line 77, ../sass/strates/_pricing.scss */
 #pricing .pricing-el .head-el {
   padding: 2em 0 1em 0;
   border-bottom: 2px solid #F6F6F6;
 }
-/* line 56, ../sass/strates/_pricing.scss */
+/* line 80, ../sass/strates/_pricing.scss */
 #pricing .pricing-el .head-el h3 {
   font-size: 23px;
   font-weight: 600;
 }
-/* line 60, ../sass/strates/_pricing.scss */
+/* line 84, ../sass/strates/_pricing.scss */
 #pricing .pricing-el .head-el h3 span {
   font-size: inherit;
 }
-/* line 63, ../sass/strates/_pricing.scss */
+/* line 87, ../sass/strates/_pricing.scss */
 #pricing .pricing-el .head-el h3 span.price {
   font-size: 1.4em;
   font-weight: 600;
   margin: 0 3px;
 }
-/* line 72, ../sass/strates/_pricing.scss */
+/* line 96, ../sass/strates/_pricing.scss */
 #pricing .pricing-el .content-el {
   padding: 1.5em 2em;
   text-align: center;
   line-height: 2;
 }
-/* line 78, ../sass/strates/_pricing.scss */
+/* line 102, ../sass/strates/_pricing.scss */
 #pricing .pricing-el .cta-el {
   position: relative;
-  background: #F6F6F6;
+  background: #667AF4;
+  color: #fff;
   text-align: center;
   border-bottom-left-radius: 8px;
   border-bottom-right-radius: 8px;
   cursor: pointer;
 }
-/* line 86, ../sass/strates/_pricing.scss */
+/* line 111, ../sass/strates/_pricing.scss */
 #pricing .pricing-el .cta-el a {
   position: relative;
   display: block;
@@ -386,7 +487,7 @@ footer  {
   letter-spacing: .5px;
   transition: .3s ease-out;
 }
-/* line 98, ../sass/strates/_pricing.scss */
+/* line 123, ../sass/strates/_pricing.scss */
 #pricing .pricing-el .cta-el:before {
   position: absolute;
   display: block;
@@ -430,4 +531,15 @@ footer  {
   bottom: 0;
   left: 0;
   text-align: center;
+}
+@media screen and (max-width: 600px) {
+  /* line 1, ../sass/strates/_intro.scss */
+  #intro {
+    min-height: auto;
+  }
+  /* line 28, ../sass/strates/_intro.scss */
+  #intro .go-bottom {
+    position: initial;
+    margin-top: 4em;
+  }
 }
