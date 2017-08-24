@@ -7,7 +7,7 @@
     <title>Your Iceberg</title>
     <meta name="title" content="Welcome on ...." />
     <meta name="description" content="Your Iceberg: The app that brings you Facts and Figures about your business in a single tap" />
-    <!-- <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700|Roboto:300,300i,400,400i,500,500i,700,700i" rel="stylesheet"> -->
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700|Roboto:300,300i,400,400i,500,500i,700,700i" rel="stylesheet">
     <link rel="icon" href="assets/img/logos/logo-iceberg.png">
     <link rel="stylesheet" href="assets/css/bootstrap.css">
     <link rel="stylesheet" href="assets/css/screen.css">
@@ -22,9 +22,9 @@
             </div>
             <nav class="col-md-5 col-md-offset-6">
                 <ul>
-                    <li><a href="">about the app</a></li>
-                    <li><a href="">the offer</a></li>
-                    <li><a href="">about us</a></li>
+                    <li><a href="#about-app">about the app</a></li>
+                    <li><a href="#pricing" data-scroll>the offer</a></li>
+                    <li><a href="#about-us">about us</a></li>
                 </ul>
             </nav>
 
@@ -32,17 +32,26 @@
     </header>
     <section id="intro" class="container">
         <div class="row">
-            <div class="caption col-md-5">
-                <h1><span class="bolder">Facts and Figures,</span> <span class="return">brought to you,</span> <span class="return bolder">in a single tap</span></h1>
+            <div class="wrapper-text col-md-5">
+                <div class="row">
+                    <div class="caption col-md-12">
+                        <h1><span class="bolder">Facts and Figures,</span> <span class="return">brought to you,</span> <span class="return bolder">in a single tap</span></h1>
+                    </div>
+                    <div class="content col-md-11">
+                        <p><strong>Iceberg</strong> is a disruptive company that aims to Empower employees, managers, leaders and corporations by providing them in a single tap, instantaneous clear Facts and Figures from their business - in order to support de decision making processing the Operations Management area.</p>
+                        <!-- <button class="btn btn-red">Keep me updated</button> -->
+                    </div>
+                </div>
             </div>
-            <div class="content col-md-4">
-                <p><strong>Iceberg</strong> is a disruptive company that aims to Empower employees, managers, leaders and corporations by providing them in a single tap, instantaneous clear Facts and Figures from their business - in order to support de decision making processing the Operations Management area.</p>
-                <!-- <button class="btn btn-red">Keep me updated</button> -->
+            <div class="visuals col-md-6 col-md-offset-1">
+                <figure id="preview" style="transform: rotate(30deg);">
+                    <img src="assets/img/img-content/mockup-1.png" alt="">
+                </figure>
             </div>
         </div>
         <div class="row go-bottom">
             <div class="col-md-12">
-                <span class="btn light">the app</span>
+                <a href="#about-app"><span class="btn light">the app</span></a>
             </div>
         </div>
     </section>
@@ -55,23 +64,23 @@
             </div>
             <div class="caption col-md-7 col-md-offset-1 col-xs-12">
                 <div class="block-content row">
-                    <div class="content col-md-6 active">
+                    <div class="content col-md-6 off" style="opacity: 0;">
                         <h2 class="head-title">Fast and easy</h2>
                         <p>Cras mattis consectetur purus sit amet fermentum. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p>
                         <span class="small-cta color-lblue"><a href="">Discover more <i class="icon icon-arrow">icon</i></a></span>
                     </div>
-                    <div class="content col-md-6">
+                    <div class="content col-md-6 off" style="opacity: 0;">
                         <h2 class="head-title">Fast and easy</h2>
                         <p>Cras mattis consectetur purus sit amet fermentum. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p>
                     </div>
                 </div>
                 <div class="block-content row">
-                    <div class="content col-md-6">
+                    <div class="content col-md-6 off" style="opacity: 0;">
                         <h2 class="head-title">Fast and easy</h2>
                         <p>Cras mattis consectetur purus sit amet fermentum. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p>
                         <span class="small-cta color-lblue"><a href="">Discover more <i class="icon icon-arrow">icon</i></a></span>
                     </div>
-                    <div class="content col-md-6">
+                    <div class="content col-md-6 off" style="opacity: 0;">
                         <h2 class="head-title">Fast and easy</h2>
                         <p>Cras mattis consectetur purus sit amet fermentum. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p>
                         <span class="small-cta color-lblue"><a href="">Discover more <i class="icon icon-arrow">icon</i></a></span>
@@ -81,7 +90,7 @@
         </div>
         <div class="row go-bottom">
             <div class="col-md-12">
-                <span class="btn light">the offers</span>
+                <a href="#pricing"><span class="btn light">the offers</span></a>
             </div>
         </div>
     </section>
@@ -94,7 +103,7 @@
                 </div>
                 <div class="col-md-12">
                     <div class="pricing-els row">
-                        <div class="pricing-el col-md-4 col-sm-12 active">
+                        <div class="pricing-el col-md-4 col-sm-12 active" style="opacity: 0;">
                             <div class="head-el text-centered">
                                 <h3>Starter <span class="price color-lblue">19€</span> <span class="light">monthly</span></h3>
                             </div>
@@ -113,7 +122,7 @@
                                 </a>
                             </div>
                         </div>
-                        <div class="pricing-el col-md-4 col-sm-12">
+                        <div class="pricing-el col-md-4 col-sm-12" style="opacity: 0;">
                             <div class="head-el text-centered">
                                 <h3>Standard <span class="price color-lblue">29€</span> <span class="light">monthly</span></h3>
                             </div>
@@ -132,7 +141,7 @@
                                 </a>
                             </div>
                         </div>
-                        <div class="pricing-el col-md-4 col-sm-8">
+                        <div class="pricing-el col-md-4 col-sm-8" style="opacity: 0;">
                             <div class="head-el text-centered">
                                 <h3>Standard <span class="price color-lblue">19€</span> <span class="light">monthly</span></h3>
                             </div>
@@ -156,7 +165,7 @@
             </div>
             <div class="row go-bottom">
                 <div class="col-md-12">
-                    <span class="btn light">about us</span>
+                    <a href="#about-us"><span class="btn light">about us</span></a>
                 </div>
             </div>
         </div>
@@ -196,13 +205,13 @@
         </div>
     </div>
 
-    <footer class="container">
+    <!-- <footer class="container">
         <div class="row">
             <p>copycopyright</p>
         </div>
-    </footer>
-
-    <script src="assets/js/functions.js"></script>
-    <script src="assets/js/events.js"></script>
+    </footer> -->
 </body>
+<script src="assets/js/libs/smooth-scroll.min.js"></script>
+<script src="assets/js/functions.js"></script>
+<script src="assets/js/events.js"></script>
 </html>

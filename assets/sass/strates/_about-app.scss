@@ -8,6 +8,15 @@
 
     .visuals {
         margin-left: -5%;
+
+        figure {
+            overflow: hidden;
+            border: 2px solid red;
+        }
+    }
+
+    .content {
+        transition: .2s ease-out;
     }
 
     // texts

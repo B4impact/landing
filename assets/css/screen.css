@@ -52,6 +52,11 @@ section {
   margin: 4em 0;
 }
 
+/* line 46, ../sass/basics/_reset.scss */
+.content {
+  transition: .3s ease-out;
+}
+
 /* line 1, ../sass/basics/_classes.scss */
 .return {
   display: block;
@@ -230,7 +235,27 @@ footer  p {
   display: table;
   clear: both;
 }
-/* line 18, ../sass/strates/_intro.scss */
+@keyframes floatingPreview {
+  0% {
+    margin: 0;
+  }
+  50% {
+    margin-top: -10%;
+  }
+  100% {
+    margin: 0;
+  }
+}
+/* line 28, ../sass/strates/_intro.scss */
+#intro #preview {
+  transition: .2s ease-out;
+  animation: floatingPreview 5s infinite;
+}
+/* line 32, ../sass/strates/_intro.scss */
+#intro #preview img {
+  width: 100%;
+}
+/* line 39, ../sass/strates/_intro.scss */
 #intro .go-bottom {
   position: absolute;
   width: 100%;
@@ -243,7 +268,7 @@ footer  p {
   #intro {
     min-height: auto;
   }
-  /* line 28, ../sass/strates/_intro.scss */
+  /* line 49, ../sass/strates/_intro.scss */
   #intro .go-bottom {
     position: initial;
     margin-top: 4em;
@@ -264,30 +289,39 @@ footer  p {
 #about-app .visuals {
   margin-left: -5%;
 }
-/* line 14, ../sass/strates/_about-app.scss */
+/* line 12, ../sass/strates/_about-app.scss */
+#about-app .visuals figure {
+  overflow: hidden;
+  border: 2px solid red;
+}
+/* line 18, ../sass/strates/_about-app.scss */
+#about-app .content {
+  transition: .2s ease-out;
+}
+/* line 23, ../sass/strates/_about-app.scss */
 #about-app .block-content {
   margin-bottom: 1.5em;
 }
-/* line 17, ../sass/strates/_about-app.scss */
+/* line 26, ../sass/strates/_about-app.scss */
 #about-app .block-content .small-cta {
   font-family: "Poppins", Arial, sans-serif;
   margin-top: 20px;
   padding-left: 0;
   transition: .3s ease-out;
 }
-/* line 22, ../sass/strates/_about-app.scss */
+/* line 31, ../sass/strates/_about-app.scss */
 #about-app .block-content .small-cta .icon {
   visibility: hidden;
   opacity: 0;
   margin-left: -20px;
   transition: .3s ease-out;
 }
-/* line 32, ../sass/strates/_about-app.scss */
+/* line 41, ../sass/strates/_about-app.scss */
 #about-app .block-content .content:hover .small-cta {
   padding-left: 5px;
   transition: .2s ease-out;
 }
-/* line 36, ../sass/strates/_about-app.scss */
+/* line 45, ../sass/strates/_about-app.scss */
 #about-app .block-content .content:hover .small-cta .icon {
   opacity: 1;
   transform: translateX(-20px);
@@ -296,28 +330,28 @@ footer  p {
   transition: .2s ease-out;
 }
 @media screen and (max-width: 600px) {
-  /* line 48, ../sass/strates/_about-app.scss */
+  /* line 57, ../sass/strates/_about-app.scss */
   #about-app .wrapper-content {
     padding: 1em 0;
     border: none;
   }
-  /* line 53, ../sass/strates/_about-app.scss */
+  /* line 62, ../sass/strates/_about-app.scss */
   #about-app .visuals {
     padding: 0;
     margin-left: initial;
     margin-bottom: 1.5em;
   }
-  /* line 59, ../sass/strates/_about-app.scss */
+  /* line 68, ../sass/strates/_about-app.scss */
   #about-app .block-content {
     margin-bottom: 0;
   }
-  /* line 63, ../sass/strates/_about-app.scss */
+  /* line 72, ../sass/strates/_about-app.scss */
   #about-app .content {
     display: none;
     visibility: hidden;
     margin-bottom: 1.5em;
   }
-  /* line 68, ../sass/strates/_about-app.scss */
+  /* line 77, ../sass/strates/_about-app.scss */
   #about-app .content.active {
     display: block;
     visibility: visible;
@@ -350,13 +384,15 @@ footer  p {
   border-radius: 100px;
   background: #fff;
   margin-bottom: 40px;
+  overflow: hidden;
+  border: 2px solid red;
 }
 @media screen and (max-width: 600px) {
   /* line 1, ../sass/strates/_about-us.scss */
   #about-us {
     padding-bottom: 4em;
   }
-  /* line 29, ../sass/strates/_about-us.scss */
+  /* line 31, ../sass/strates/_about-us.scss */
   #about-us .ppl {
     margin-bottom: 4em;
   }
@@ -524,7 +560,27 @@ footer  p {
   display: table;
   clear: both;
 }
-/* line 18, ../sass/strates/_intro.scss */
+@keyframes floatingPreview {
+  0% {
+    margin: 0;
+  }
+  50% {
+    margin-top: -10%;
+  }
+  100% {
+    margin: 0;
+  }
+}
+/* line 28, ../sass/strates/_intro.scss */
+#intro #preview {
+  transition: .2s ease-out;
+  animation: floatingPreview 5s infinite;
+}
+/* line 32, ../sass/strates/_intro.scss */
+#intro #preview img {
+  width: 100%;
+}
+/* line 39, ../sass/strates/_intro.scss */
 #intro .go-bottom {
   position: absolute;
   width: 100%;
@@ -537,7 +593,7 @@ footer  p {
   #intro {
     min-height: auto;
   }
-  /* line 28, ../sass/strates/_intro.scss */
+  /* line 49, ../sass/strates/_intro.scss */
   #intro .go-bottom {
     position: initial;
     margin-top: 4em;
