@@ -1,9 +1,6 @@
 header.sticky {
     position: fixed;
     padding: 0;
-    margin: auto;
-    left: 0;
-    right: 0;
     z-index: 444;
     background: #fff;
     border-bottom: 1px solid #F1F1F1;
@@ -15,7 +12,11 @@ header.sticky {
 }
 
 header {
+    position: absolute;
     padding: 2em 0;
+    margin: auto;
+    left: 0;
+    right: 0;
     transition: none;
 }
 

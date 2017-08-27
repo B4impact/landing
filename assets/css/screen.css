@@ -194,61 +194,62 @@ footer ul {
 header.sticky {
   position: fixed;
   padding: 0;
-  margin: auto;
-  left: 0;
-  right: 0;
   z-index: 444;
   background: #fff;
   border-bottom: 1px solid #F1F1F1;
   transition: none;
 }
-/* line 12, ../sass/elements/_header.scss */
+/* line 9, ../sass/elements/_header.scss */
 header.sticky .logo {
   display: none;
 }
 
-/* line 17, ../sass/elements/_header.scss */
+/* line 14, ../sass/elements/_header.scss */
 header {
+  position: absolute;
   padding: 2em 0;
+  margin: auto;
+  left: 0;
+  right: 0;
   transition: none;
 }
 
 @media screen and (max-width: 767px) {
-  /* line 23, ../sass/elements/_header.scss */
+  /* line 24, ../sass/elements/_header.scss */
   .logo {
     text-align: center;
     margin-bottom: 1em;
   }
 }
-/* line 30, ../sass/elements/_header.scss */
+/* line 31, ../sass/elements/_header.scss */
 .logo img {
   max-height: 60px;
 }
 
-/* line 36, ../sass/elements/_header.scss */
+/* line 37, ../sass/elements/_header.scss */
 nav {
   line-height: 4;
   text-align: right;
 }
-/* line 39, ../sass/elements/_header.scss */
+/* line 40, ../sass/elements/_header.scss */
 nav ul {
   font-size: 0;
 }
-/* line 42, ../sass/elements/_header.scss */
+/* line 43, ../sass/elements/_header.scss */
 nav li {
   font-size: initial;
   display: inline-block;
   padding: 0 2em;
 }
-/* line 46, ../sass/elements/_header.scss */
+/* line 47, ../sass/elements/_header.scss */
 nav li:last-child {
   padding-right: 0;
 }
-/* line 51, ../sass/elements/_header.scss */
+/* line 52, ../sass/elements/_header.scss */
 nav li.active a {
   position: relative;
 }
-/* line 54, ../sass/elements/_header.scss */
+/* line 55, ../sass/elements/_header.scss */
 nav li.active a:before {
   content: '';
   display: block;
@@ -260,7 +261,7 @@ nav li.active a:before {
   right: 0;
 }
 @media screen and (max-width: 767px) {
-  /* line 36, ../sass/elements/_header.scss */
+  /* line 37, ../sass/elements/_header.scss */
   nav {
     display: none;
   }
