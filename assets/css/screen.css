@@ -10,16 +10,17 @@
 
 /* line 10, ../sass/basics/_reset.scss */
 ul {
+  padding: 0 !important;
   list-style-type: none;
 }
 
-/* line 14, ../sass/basics/_reset.scss */
+/* line 15, ../sass/basics/_reset.scss */
 a {
   text-decoration: none;
   color: inherit;
 }
 
-/* line 19, ../sass/basics/_reset.scss */
+/* line 20, ../sass/basics/_reset.scss */
 body {
   overflow-x: hidden;
   background-image: url("../img/img-layout/background-img.jpg");
@@ -27,37 +28,37 @@ body {
   background-repeat: no-repeat;
 }
 
-/* line 26, ../sass/basics/_reset.scss */
+/* line 27, ../sass/basics/_reset.scss */
 h1, h2, h3 {
   font-family: "Poppins", Arial, sans-serif;
 }
-/* line 28, ../sass/basics/_reset.scss */
+/* line 29, ../sass/basics/_reset.scss */
 h1 span, h2 span, h3 span {
   font-family: inherit;
   font-size: inherit;
 }
 
-/* line 34, ../sass/basics/_reset.scss */
+/* line 35, ../sass/basics/_reset.scss */
 p {
   line-height: 1.5;
 }
 
 @media screen and (min-width: 767px) {
-  /* line 39, ../sass/basics/_reset.scss */
+  /* line 40, ../sass/basics/_reset.scss */
   section {
     margin: 4em 0;
   }
 }
-/* line 44, ../sass/basics/_reset.scss */
+/* line 45, ../sass/basics/_reset.scss */
 .content {
   transition: .3s ease-out;
 }
 
-/* line 48, ../sass/basics/_reset.scss */
+/* line 49, ../sass/basics/_reset.scss */
 footer {
   padding: 3em 0 5em 0;
 }
-/* line 51, ../sass/basics/_reset.scss */
+/* line 52, ../sass/basics/_reset.scss */
 footer ul {
   display: flex;
   justify-content: space-between;
@@ -113,49 +114,55 @@ footer ul {
 /* line 1, ../sass/styleguide/_buttons.scss */
 .btn {
   display: block;
-  padding: 7px 20px;
+  padding: 12px 25px;
   border: none;
   background: transparent;
   text-transform: uppercase;
   font-family: "Poppins", Arial, sans-serif;
-  font-weight: 500;
+  font-weight: 100;
   letter-spacing: .72px;
-  border-radius: 100px;
+  border-radius: 2px;
   cursor: pointer;
+  background: #667AF4;
+  -webkit-font-smoothing: antialiased;
 }
-/* line 13, ../sass/styleguide/_buttons.scss */
-.btn.btn-red {
+/* line 15, ../sass/styleguide/_buttons.scss */
+.btn.btn-blue {
+  background: #667AF4;
   color: #fff;
-  background: linear-gradient(#F34837, #FF6363);
 }
-/* line 18, ../sass/styleguide/_buttons.scss */
+/* line 20, ../sass/styleguide/_buttons.scss */
+.btn:hover {
+  opacity: .7;
+}
+/* line 24, ../sass/styleguide/_buttons.scss */
 .btn.light {
   font-weight: 300;
 }
 
-/* line 23, ../sass/styleguide/_buttons.scss */
+/* line 29, ../sass/styleguide/_buttons.scss */
 .small-cta {
   display: block;
   margin: 5px 0;
   cursor: pointer;
 }
-/* line 27, ../sass/styleguide/_buttons.scss */
+/* line 33, ../sass/styleguide/_buttons.scss */
 .small-cta a {
   font-weight: 600;
 }
-/* line 31, ../sass/styleguide/_buttons.scss */
+/* line 37, ../sass/styleguide/_buttons.scss */
 .small-cta .icon {
   vertical-align: middle;
 }
-/* line 35, ../sass/styleguide/_buttons.scss */
+/* line 41, ../sass/styleguide/_buttons.scss */
 .small-cta.light-blue {
   color: #667AF4;
 }
-/* line 38, ../sass/styleguide/_buttons.scss */
+/* line 44, ../sass/styleguide/_buttons.scss */
 .small-cta.light-blue svg path {
   fill: #667AF4;
 }
-/* line 43, ../sass/styleguide/_buttons.scss */
+/* line 49, ../sass/styleguide/_buttons.scss */
 .small-cta svg {
   line-height: 4;
   margin-left: 10px;
@@ -166,14 +173,14 @@ footer ul {
 .head-title {
   margin: 10px 0;
   font-size: 30px;
-  font-weight: 600;
+  font-weight: 200;
 }
 
 /* line 11, ../sass/styleguide/_titles.scss */
 .sb-title {
   margin-bottom: 10px;
   font-size: 21px;
-  font-weight: 700;
+  font-weight: 500;
 }
 
 /* line 1, ../sass/elements/_header.scss */
@@ -277,33 +284,54 @@ header nav li:last-child {
   color: #fff;
   padding: .5em 1em;
 }
+/* line 55, ../sass/elements/_catchline.scss */
+.catchline input[type="submit"]:hover {
+  opacity: .7;
+}
 
 /* line 1, ../sass/strates/_intro.scss */
 #intro {
   position: relative;
+  padding-top: 8em;
   min-height: 65vh;
+  text-align: center;
 }
-/* line 5, ../sass/strates/_intro.scss */
-#intro h1, #intro h1 span {
-  font-size: 1.7em;
-  font-weight: 600;
+/* line 7, ../sass/strates/_intro.scss */
+#intro h1 span {
+  font-size: 1.3em;
+  font-weight: 200;
+}
+/* line 11, ../sass/strates/_intro.scss */
+#intro h1 span span {
+  font-size: inherit;
+  font-weight: inherit;
 }
 @media screen and (max-width: 767px) {
-  /* line 5, ../sass/strates/_intro.scss */
-  #intro h1, #intro h1 span {
+  /* line 7, ../sass/strates/_intro.scss */
+  #intro h1 span {
     font-size: 1.2em;
   }
 }
-/* line 13, ../sass/strates/_intro.scss */
+/* line 20, ../sass/strates/_intro.scss */
+#intro .caption {
+  clear: both;
+  margin-bottom: 1em;
+}
+/* line 25, ../sass/strates/_intro.scss */
 #intro .content {
   clear: both;
-  margin-top: 10px;
+  margin-top: 30px;
 }
 /* line 2, ../sass/basics/_clearfix.scss */
 #intro .content:after {
   content: "";
   display: table;
   clear: both;
+}
+/* line 30, ../sass/strates/_intro.scss */
+#intro .content .btn {
+  margin: 2em auto;
+  border-radius: 2px;
 }
 @keyframes floatingPreview {
   0% {
@@ -316,33 +344,14 @@ header nav li:last-child {
     margin: 0;
   }
 }
-/* line 31, ../sass/strates/_intro.scss */
+/* line 48, ../sass/strates/_intro.scss */
 #intro #preview {
   transition: .2s ease-out;
   animation: floatingPreview 5s infinite;
 }
-/* line 35, ../sass/strates/_intro.scss */
+/* line 52, ../sass/strates/_intro.scss */
 #intro #preview img {
   width: 100%;
-}
-/* line 42, ../sass/strates/_intro.scss */
-#intro .go-bottom {
-  position: absolute;
-  width: 100%;
-  bottom: 0;
-  left: 0;
-  text-align: center;
-}
-@media screen and (max-width: 767px) {
-  /* line 1, ../sass/strates/_intro.scss */
-  #intro {
-    min-height: auto;
-  }
-  /* line 52, ../sass/strates/_intro.scss */
-  #intro .go-bottom {
-    position: initial;
-    margin-top: 4em;
-  }
 }
 
 /* line 1, ../sass/strates/_about-app.scss */
@@ -378,54 +387,43 @@ header nav li:last-child {
 }
 /* line 37, ../sass/strates/_about-app.scss */
 #about-app .block-content .small-cta {
+  visibility: hidden;
+  opacity: 0;
   font-family: "Poppins", Arial, sans-serif;
   margin-top: 20px;
   padding-left: 0;
-  transition: .3s ease-out;
+  transition: .4s ease-out;
 }
-/* line 42, ../sass/strates/_about-app.scss */
-#about-app .block-content .small-cta .icon {
-  visibility: hidden;
-  opacity: 0;
-  margin-left: -20px;
-  transition: .3s ease-out;
-}
-/* line 52, ../sass/strates/_about-app.scss */
+/* line 55, ../sass/strates/_about-app.scss */
 #about-app .block-content .content:hover .small-cta {
-  padding-left: 5px;
-  transition: .2s ease-out;
-}
-/* line 56, ../sass/strates/_about-app.scss */
-#about-app .block-content .content:hover .small-cta .icon {
-  opacity: 1;
-  transform: translateX(-20px);
   visibility: visible;
-  margin-left: 0;
+  opacity: 1;
+  padding-left: 10px;
   transition: .2s ease-out;
 }
 @media screen and (max-width: 767px) {
-  /* line 68, ../sass/strates/_about-app.scss */
+  /* line 73, ../sass/strates/_about-app.scss */
   #about-app .wrapper-content {
     padding: 1em 0;
     border: none;
   }
-  /* line 73, ../sass/strates/_about-app.scss */
+  /* line 78, ../sass/strates/_about-app.scss */
   #about-app .visuals {
     padding: 0;
     margin-left: initial;
     margin-bottom: 1.5em;
   }
-  /* line 79, ../sass/strates/_about-app.scss */
+  /* line 84, ../sass/strates/_about-app.scss */
   #about-app .block-content {
     margin-bottom: 0;
   }
-  /* line 83, ../sass/strates/_about-app.scss */
+  /* line 88, ../sass/strates/_about-app.scss */
   #about-app .content {
     display: none;
     visibility: hidden;
     margin-bottom: 1.5em;
   }
-  /* line 88, ../sass/strates/_about-app.scss */
+  /* line 93, ../sass/strates/_about-app.scss */
   #about-app .content.active {
     display: block;
     visibility: visible;
@@ -489,7 +487,7 @@ header nav li:last-child {
   top: 60%;
   left: -15px;
   background: #F6F6F6;
-  transition: 2s ease-in-out;
+  transition: 1.5s ease-in-out;
 }
 @media screen and (min-width: 768px) and (max-width: 1024px) {
   /* line 15, ../sass/strates/_pricing.scss */
@@ -566,7 +564,7 @@ header nav li:last-child {
 /* line 94, ../sass/strates/_pricing.scss */
 #pricing .pricing-el .head-el h3 {
   font-size: 23px;
-  font-weight: 600;
+  font-weight: 400;
 }
 /* line 98, ../sass/strates/_pricing.scss */
 #pricing .pricing-el .head-el h3 span {
@@ -625,29 +623,46 @@ header nav li:last-child {
 /* line 1, ../sass/strates/_intro.scss */
 #intro {
   position: relative;
+  padding-top: 8em;
   min-height: 65vh;
+  text-align: center;
 }
-/* line 5, ../sass/strates/_intro.scss */
-#intro h1, #intro h1 span {
-  font-size: 1.7em;
-  font-weight: 600;
+/* line 7, ../sass/strates/_intro.scss */
+#intro h1 span {
+  font-size: 1.3em;
+  font-weight: 200;
+}
+/* line 11, ../sass/strates/_intro.scss */
+#intro h1 span span {
+  font-size: inherit;
+  font-weight: inherit;
 }
 @media screen and (max-width: 767px) {
-  /* line 5, ../sass/strates/_intro.scss */
-  #intro h1, #intro h1 span {
+  /* line 7, ../sass/strates/_intro.scss */
+  #intro h1 span {
     font-size: 1.2em;
   }
 }
-/* line 13, ../sass/strates/_intro.scss */
+/* line 20, ../sass/strates/_intro.scss */
+#intro .caption {
+  clear: both;
+  margin-bottom: 1em;
+}
+/* line 25, ../sass/strates/_intro.scss */
 #intro .content {
   clear: both;
-  margin-top: 10px;
+  margin-top: 30px;
 }
 /* line 2, ../sass/basics/_clearfix.scss */
 #intro .content:after {
   content: "";
   display: table;
   clear: both;
+}
+/* line 30, ../sass/strates/_intro.scss */
+#intro .content .btn {
+  margin: 2em auto;
+  border-radius: 2px;
 }
 @keyframes floatingPreview {
   0% {
@@ -660,31 +675,12 @@ header nav li:last-child {
     margin: 0;
   }
 }
-/* line 31, ../sass/strates/_intro.scss */
+/* line 48, ../sass/strates/_intro.scss */
 #intro #preview {
   transition: .2s ease-out;
   animation: floatingPreview 5s infinite;
 }
-/* line 35, ../sass/strates/_intro.scss */
+/* line 52, ../sass/strates/_intro.scss */
 #intro #preview img {
   width: 100%;
-}
-/* line 42, ../sass/strates/_intro.scss */
-#intro .go-bottom {
-  position: absolute;
-  width: 100%;
-  bottom: 0;
-  left: 0;
-  text-align: center;
-}
-@media screen and (max-width: 767px) {
-  /* line 1, ../sass/strates/_intro.scss */
-  #intro {
-    min-height: auto;
-  }
-  /* line 52, ../sass/strates/_intro.scss */
-  #intro .go-bottom {
-    position: initial;
-    margin-top: 4em;
-  }
 }

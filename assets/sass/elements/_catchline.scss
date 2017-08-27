@@ -51,6 +51,10 @@
             background: $lblue;
             color: #fff;
             padding: .5em 1em;
+
+            &:hover {
+                opacity: .7;
+            }
         }
     }
 }

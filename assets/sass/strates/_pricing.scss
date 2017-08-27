@@ -21,7 +21,7 @@
         top: 60%;
         left: -15px;
         background: $llgrey;
-        transition: 2s ease-in-out;
+        transition: 1.5s ease-in-out;
 
         @media screen and (min-width: $tablet-sm) and (max-width: $tablet-lg) {
             height: 125vh;
@@ -93,7 +93,7 @@
             border-bottom: 1px solid $llgrey;
             h3 {
                 font-size: 23px;
-                font-weight: 600;
+                font-weight: 400;
 
                 span {
                     font-size: inherit;

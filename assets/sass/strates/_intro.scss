@@ -1,19 +1,36 @@
 #intro {
     position: relative;
+    padding-top: 8em;
     min-height: 65vh;
+    text-align: center;
 
-    h1, h1 span {
-        font-size: 1.7em;
-        font-weight: 600;
+    h1 span {
+        font-size: 1.3em;
+        font-weight: 200;
+
+        span {
+            font-size: inherit;
+            font-weight: inherit;
+        }
         @media screen and (max-width: $mobile-lg) {
             font-size: 1.2em;
         }
     }
 
+    .caption {
+        clear: both;
+        margin-bottom: 1em;
+    }
+
     .content {
         @include clearfix;
         clear: both;
-        margin-top: 10px;
+        margin-top: 30px;
+
+        .btn {
+            margin: 2em auto;
+            border-radius: 2px;
+        }
     }
 
     @keyframes floatingPreview {
@@ -39,19 +56,19 @@
 
     // go down
 
-    .go-bottom {
-        position: absolute;
-        width: 100%;
-        bottom: 0;
-        left: 0;
-        text-align: center;
-    }
-
-    @media screen and (max-width: $mobile-lg) {
-        min-height: auto;
-        .go-bottom {
-            position: initial;
-            margin-top: 4em;
-        }
-    }
+    // .go-bottom {
+    //     position: absolute;
+    //     width: 100%;
+    //     bottom: 0;
+    //     left: 0;
+    //     text-align: center;
+    // }
+    //
+    // @media screen and (max-width: $mobile-lg) {
+    //     min-height: auto;
+    //     .go-bottom {
+    //         position: initial;
+    //         margin-top: 4em;
+    //     }
+    // }
 }
