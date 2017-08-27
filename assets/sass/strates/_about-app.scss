@@ -71,6 +71,14 @@
         }
     }
 
+    @media screen and (min-width: $mobile-lg) and (max-width: $tablet-lg) {
+
+        .caption {
+            float: none;
+            margin: 0 auto;
+        }
+    }
+
     @media screen and (max-width: $mobile-lg) {
         .wrapper-content {
             padding: 1em 0;

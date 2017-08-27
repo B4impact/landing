@@ -1,6 +1,10 @@
 appearingTexts();
 
-introAppPreview();
+stickyHeader();
+
+activeMenu();
+
+// introAppPreview();
 
 var pricingScroll = new SmoothScroll('[href="#pricing"]', {easing: 'linear'});
 var aboutAppScroll = new SmoothScroll('[href="#about-app"]', {easing: 'linear'});

@@ -2,3 +2,15 @@
 @import "styleguide/styleguide";
 @import "elements/elements";
 @import "strates/strates";
+
+// if sticky
+header.sticky {
+    position: fixed;
+    margin: auto;
+    left: 0;
+    right: 0;
+    z-index: 444;
+    padding: 1em 0;
+    background: #fff;
+    border-bottom: 1px solid #F1F1F1;
+}

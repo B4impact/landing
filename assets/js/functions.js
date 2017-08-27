@@ -66,26 +66,50 @@ function appearingTexts() {
     });
 }
 
-function introAppPreview() {
-    // console.log('kikoo');
-    var rotateValue = 0;
-    var buildCss;
-    var preview = document.querySelector('#preview');
-    var section = document.querySelector('#intro');
+function stickyHeader() {
+    var header = document.querySelector('header');
+    var currentScroll = body.scrollTop;
 
-    window.addEventListener('mouseover', function(e) {
-        // console.log(section.getBoundingClientRect());
+    window.addEventListener('scroll', function(){
 
-        // console.log(e.clientX / 20, e.clientY / 20);
-        buildCss = 'translate(' + Math.round(e.clientX / 10) +'px,' + Math.round(e.clientY / 10) + 'px)';
+        if (currentScroll == 0 || body.scrollTop > currentScroll || body.scrollTop == 0) {
+            header.classList.remove('sticky');
+        } else {
+            header.classList.add('sticky');
+        }
 
-        // buildCss = 'translate3d(' + Math.round(e.screenX / 30)+ 'px,' + Math.round(e.screenY / 10) + 'px,' + Math.round(e.screenY / 10) +'px)';
-        // console.log('translate3d(' + Math.round(e.screenX / 30)+ 'px,' + Math.round(e.screenY / 10) + 'px,' + (e.screenY / 10) +'px)');
-        // // console.log(buildCss);
-        preview.style.transform = buildCss;
+        currentScroll = body.scrollTop;
     });
-
-    // window.addEventListener('scroll', function(){
-    //     console.log(section.getBoundingClientRect());
-    // });
 }
+
+function activeMenu() {
+    var sections = document.querySelectorAll('section');
+    sections = sections.shift();
+    var lis = document.querySelectorAll('nav li');
+
+    console.log(sections);
+}
+
+// function introAppPreview() {
+//     // console.log('kikoo');
+//     var rotateValue = 0;
+//     var buildCss;
+//     var preview = document.querySelector('#preview');
+//     var section = document.querySelector('#intro');
+//
+//     window.addEventListener('mouseover', function(e) {
+//         // console.log(section.getBoundingClientRect());
+//
+//         // console.log(e.clientX / 20, e.clientY / 20);
+//         buildCss = 'translate(' + Math.round(e.clientX / 10) +'px,' + Math.round(e.clientY / 10) + 'px)';
+//
+//         // buildCss = 'translate3d(' + Math.round(e.screenX / 30)+ 'px,' + Math.round(e.screenY / 10) + 'px,' + Math.round(e.screenY / 10) +'px)';
+//         // console.log('translate3d(' + Math.round(e.screenX / 30)+ 'px,' + Math.round(e.screenY / 10) + 'px,' + (e.screenY / 10) +'px)');
+//         // // console.log(buildCss);
+//         preview.style.transform = buildCss;
+//     });
+//
+//     // window.addEventListener('scroll', function(){
+//     //     console.log(section.getBoundingClientRect());
+//     // });
+// }
