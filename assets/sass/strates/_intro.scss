@@ -4,6 +4,10 @@
     min-height: 65vh;
     text-align: center;
 
+    h1 {
+        line-height: 1.3;
+    }
+
     h1 span {
         font-size: 1.3em;
         font-weight: 200;
@@ -15,11 +19,34 @@
         @media screen and (max-width: $mobile-lg) {
             font-size: 1.2em;
         }
+
+        &.lined {
+            position: relative;
+
+            // &:before {
+            //     position: absolute;
+            //     content: '';
+            //     display: block;
+            //     height: 25%;
+            //     background: $lblue;
+            //     left: 0;
+            //     right: 0;
+            //     bottom: 15%;
+            //     z-index: -1;
+            //     opacity: .3;
+            // }
+            //
+            // &.off {
+            //     &:before {
+            //         right: 100%;
+            //     }
+            // }
+        }
     }
 
     .caption {
         clear: both;
-        margin-bottom: 1em;
+        // margin-bottom: .7em;
     }
 
     .content {

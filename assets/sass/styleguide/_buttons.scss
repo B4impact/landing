@@ -1,5 +1,6 @@
 .btn {
     display: block;
+    position: relative;
     padding: 12px 25px;
     border: none;
     background: transparent;
@@ -11,6 +12,11 @@
     cursor: pointer;
     background: $lblue;
     -webkit-font-smoothing: antialiased;
+
+    a {
+        width: 100%;
+        padding: 12px 0px;
+    }
 
     &.btn-blue {
         background: $lblue;

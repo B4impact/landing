@@ -11,6 +11,11 @@ function appearingTexts() {
     var pricingSec = document.querySelector('#pricing');
     var textsPricing = document.querySelectorAll('#pricing [style="opacity: 0; transform: translateY(-10%);"]');
     var timerPricing = 200;
+
+    var aboutUsSec = document.querySelector('#about-us');
+    var aboutUsEls = document.querySelectorAll('#about-us [style="opacity: 0; transform:translateY(-20px);"]');
+    var timerAboutUs = 200;
+
     var limit = window.innerHeight / 4;
 
     console.log(aboutAppSec.offsetTop - limit);
@@ -36,18 +41,27 @@ function appearingTexts() {
         }
 
         if (body.scrollTop >= (pricingSec.offsetTop - 200)) {
-            for (let i = 0; i < texts.length; i++) {
+            for (let i = 0; i < textsPricing.length; i++) {
                 setTimeout(function(){
                     textsPricing[i].style.transform = 'none';
                     textsPricing[i].style.opacity = 1;
                 }, timerPricing);
                 timerPricing += 200;
-                console.log(timerPricing);
             }
 
             setTimeout(function() {
                 pricingSec.classList.remove('off');
             }, 1000);
+        }
+
+        if (body.scrollTop >= (aboutUsSec.offsetTop - 200)) {
+            for (let i = 0; i < aboutUsEls.length; i++) {
+                setTimeout(function(){
+                    aboutUsEls[i].style.transform = 'none';
+                    aboutUsEls[i].style.opacity = 1;
+                }, timerAboutUs);
+                timerAboutUs += 200;
+            }
         }
     });
 }
