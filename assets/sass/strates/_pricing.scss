@@ -6,16 +6,30 @@
         min-height: auto;
     }
 
+    &.off {
+        &:before {
+            height: 0;
+        }
+    }
+
     &:before {
         position: absolute;
         content: '';
         display: block;
         width: calc(100% + 30px);
-
-        height: 80vh;
+        height: 125vh;
         top: 60%;
         left: -15px;
         background: $llgrey;
+        transition: 2s ease-in-out;
+
+        @media screen and (min-width: $tablet-sm) and (max-width: $tablet-lg) {
+            height: 125vh;
+        }
+
+        @media screen and (max-width: $mobile-lg) {
+            height: 155vh;
+        }
     }
 
     .pricing-els {
@@ -49,7 +63,7 @@
         background: #fff;
         border-radius: $radius;
         padding: 0;
-        box-shadow: 0 0 15px 7px rgba(0,0,0,.05);
+        box-shadow: 0 14px 28px rgba(0,0,0,0.15), 0 10px 10px rgba(0,0,0,0.12);
         transform: none;
         transition: .4s ease-out;
 
@@ -60,8 +74,8 @@
         }
 
         &:hover {
-            transform: translateY(-5%);
-            transition: .3s ease-out;
+            transform: translateY(-5%) !important;
+            box-shadow: 0 24px 38px rgba(0,0,0,0.15), 0 20px 20px rgba(0,0,0,0.12);
 
             .cta-el {
                 color: #fff;
@@ -76,7 +90,7 @@
 
         .head-el {
             padding: 2em 0 1em 0;
-            border-bottom: 2px solid $llgrey;
+            border-bottom: 1px solid $llgrey;
             h3 {
                 font-size: 23px;
                 font-weight: 600;
@@ -102,6 +116,7 @@
         .cta-el {
             position: relative;
             background: $lblue;
+
             color: #fff;
             text-align: center;
             border-bottom-left-radius: $radius;

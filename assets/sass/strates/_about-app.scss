@@ -2,9 +2,16 @@
     min-height: 80vh;
     .wrapper-content {
         padding: 6em 0;
-        border: 2px solid $llgrey;
+        border: 1px solid $llgrey;
         border-radius: $radius;
     }
+
+    // &:hover {
+    //     .wrapper-content {
+    //         border: 1px solid $lblue;
+    //
+    //     }
+    // }
 
     .visuals {
         margin-left: -5%;

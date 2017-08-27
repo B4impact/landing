@@ -42,7 +42,12 @@ function appearingTexts() {
                     textsPricing[i].style.opacity = 1;
                 }, timerPricing);
                 timerPricing += 200;
+                console.log(timerPricing);
             }
+
+            setTimeout(function() {
+                pricingSec.classList.remove('off');
+            }, 1000);
         }
     });
 }
