@@ -9,4 +9,21 @@
             font-size: inherit;
         }
     }
+
+    input {
+        border: none;
+        font-size: 20px;
+        padding: .5em 0;
+        outline: none;
+
+        &[type="text"] {
+            border-bottom: 1px solid $llgrey;
+        }
+
+        &[type="submit"] {
+            background: $lblue;
+            color: #fff;
+            padding: .5em 1em;
+        }
+    }
 }

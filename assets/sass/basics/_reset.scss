@@ -4,6 +4,7 @@
     font-family: $Roboto;
     font-size: 15px;
     font-weight: 300;
+    transition: .2s ease-out;
 }
 
 ul {
@@ -34,15 +35,25 @@ p {
     line-height: 1.5;
 }
 
-img {
-    max-width: 100%;
-}
-
-section {
-    // min-height: 100vh;
-    margin: 4em 0;
+@media screen and (min-width: $mobile-lg) {
+    section {
+        margin: 4em 0;
+    }
 }
 
 .content {
     transition: .3s ease-out;
+}
+
+footer {
+    padding: 3em 0 5em 0;
+
+    ul {
+        display: flex;
+        justify-content: space-between;
+        padding-left: 0;
+        li {
+
+        }
+    }
 }

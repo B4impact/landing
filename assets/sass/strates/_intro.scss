@@ -5,6 +5,9 @@
     h1, h1 span {
         font-size: 1.7em;
         font-weight: 600;
+        @media screen and (max-width: $mobile-lg) {
+            font-size: 1.2em;
+        }
     }
 
     .content {

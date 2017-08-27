@@ -1,3 +1,5 @@
+// CARACTERS
+
 .return {
     display: block;
 }
@@ -6,9 +8,17 @@
     font-weight: bolder;
 }
 
+// TEXT POS
+
 .text-centered {
     text-align: center;
 }
+
+.text-right {
+    text-align: right;
+}
+
+// BLOCK POS
 
 .pos-right {
     float: right;
@@ -18,6 +28,8 @@
     float: none;
     margin: 0 auto;
 }
+
+// COLORS
 
 .color-white {
     color: #fff;

@@ -23,11 +23,29 @@
 .small-cta {
     display: block;
     margin: 5px 0;
+    cursor: pointer;
     a {
         font-weight: 600;
     }
 
+    .icon {
+        vertical-align: middle;
+    }
+
     &.light-blue {
         color: $lblue;
+
+        svg path {
+            fill: $lblue;
+        }
+    }
+
+    svg {
+        line-height: 4;
+        margin-left: 10px;
+        max-width: 15px;
+
+        path {
+        }
     }
 }
