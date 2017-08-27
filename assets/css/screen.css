@@ -232,18 +232,47 @@ header nav li:last-child {
   font-size: inherit;
 }
 /* line 13, ../sass/elements/_catchline.scss */
+.catchline .form-subscribe {
+  position: relative;
+  padding-top: 30px;
+}
+/* line 2, ../sass/basics/_clearfix.scss */
+.catchline .form-subscribe form:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+/* line 21, ../sass/elements/_catchline.scss */
+.catchline .form-subscribe .line {
+  position: absolute;
+  width: 0;
+  display: block;
+  height: 2px;
+  background: #667AF4;
+  bottom: 0;
+  left: 0;
+}
+/* line 31, ../sass/elements/_catchline.scss */
+.catchline .form-subscribe input[type="text"]:focus ~ .line {
+  width: 15%;
+}
+/* line 36, ../sass/elements/_catchline.scss */
 .catchline input {
   border: none;
   font-size: 20px;
   padding: .5em 0;
   outline: none;
 }
-/* line 19, ../sass/elements/_catchline.scss */
+/* line 42, ../sass/elements/_catchline.scss */
 .catchline input[type="text"] {
+  float: left;
+  padding-left: 0;
+  min-width: 70%;
   border-bottom: 1px solid #F6F6F6;
 }
-/* line 23, ../sass/elements/_catchline.scss */
+/* line 49, ../sass/elements/_catchline.scss */
 .catchline input[type="submit"] {
+  float: left;
   background: #667AF4;
   color: #fff;
   padding: .5em 1em;
