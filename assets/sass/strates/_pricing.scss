@@ -17,18 +17,26 @@
         content: '';
         display: block;
         width: calc(100% + 30px);
-        height: 125vh;
+        height: 100vh;
         top: 60%;
         left: -15px;
         background: $llgrey;
         transition: 1.2s ease-in-out;
 
-        @media screen and (min-width: $tablet-sm) and (max-width: $tablet-lg) {
+        @media screen and (min-width: $tablet-lg) {
             height: 125vh;
         }
 
+        @media screen and (min-width: $tablet-sm) and (max-width: $tablet-lg) {
+            height: 130vh;
+        }
+
         @media screen and (max-width: $mobile-lg) {
-            height: 155vh;
+            height: 175vh;
+        }
+
+        @media screen and (max-width: $mobile-sm) {
+            height: 190vh;
         }
     }
 
@@ -73,19 +81,21 @@
             }
         }
 
-        &:hover {
-            transform: translateY(-5%) !important;
-            box-shadow: 0 24px 38px rgba(0,0,0,0.15), 0 20px 20px rgba(0,0,0,0.12);
+        @media screen and (min-width: $tablet-lg) {
+            &:hover {
+                transform: translateY(-5%) !important;
+                box-shadow: 0 24px 38px rgba(0,0,0,0.15), 0 20px 20px rgba(0,0,0,0.12);
 
-            .cta-el {
-                color: #fff;
-                transition: .2s ease-out;
-                &:before {
-                    right: 0;
-                    transition: .3s ease-out;
+                .cta-el {
+                    color: #fff;
+                    transition: .2s ease-out;
+                    &:before {
+                        right: 0;
+                        transition: .3s ease-out;
+                    }
                 }
-            }
 
+            }
         }
 
         .head-el {

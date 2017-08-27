@@ -2,6 +2,10 @@
     clear: both;
     padding: 1.5em 0 5em 0;
 
+    .head-title {
+        padding-left: 0;
+    }
+
     p {
         font-family: $Poppins;
         span {
