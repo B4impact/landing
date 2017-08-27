@@ -340,7 +340,7 @@ nav li.active a:before {
 /* line 1, ../sass/strates/_intro.scss */
 #intro {
   position: relative;
-  padding-top: 8em;
+  padding-top: 16em;
   min-height: 65vh;
   text-align: center;
 }
@@ -451,43 +451,51 @@ nav li.active a:before {
   margin-left: -15px;
   transition: .4s ease-out;
 }
-/* line 57, ../sass/strates/_about-app.scss */
+/* line 47, ../sass/strates/_about-app.scss */
+#about-app .block-content .small-cta .icon path {
+  fill: #667AF4;
+}
+/* line 61, ../sass/strates/_about-app.scss */
 #about-app .block-content .content:hover .small-cta {
   visibility: visible;
   opacity: 1;
   margin-left: 0;
   transition: .2s ease-out;
 }
+/* line 67, ../sass/strates/_about-app.scss */
+#about-app .block-content .content:hover .small-cta .icon path {
+  fill: #667AF4;
+}
 @media screen and (min-width: 767px) and (max-width: 1024px) {
-  /* line 76, ../sass/strates/_about-app.scss */
+  /* line 84, ../sass/strates/_about-app.scss */
   #about-app .caption {
     float: none;
     margin: 0 auto;
   }
 }
 @media screen and (max-width: 767px) {
-  /* line 83, ../sass/strates/_about-app.scss */
+  /* line 91, ../sass/strates/_about-app.scss */
   #about-app .wrapper-content {
     padding: 1em 0;
     border: none;
   }
-  /* line 88, ../sass/strates/_about-app.scss */
+  /* line 96, ../sass/strates/_about-app.scss */
   #about-app .visuals {
     padding: 0;
     margin-left: initial;
     margin-bottom: 1.5em;
   }
-  /* line 94, ../sass/strates/_about-app.scss */
+  /* line 102, ../sass/strates/_about-app.scss */
   #about-app .block-content {
     margin-bottom: 0;
   }
-  /* line 98, ../sass/strates/_about-app.scss */
+  /* line 106, ../sass/strates/_about-app.scss */
   #about-app .content {
     display: none;
     visibility: hidden;
     margin-bottom: 1.5em;
   }
-  /* line 103, ../sass/strates/_about-app.scss */
+  /* line 111, ../sass/strates/_about-app.scss */
   #about-app .content.active {
     display: block;
     visibility: visible;
@@ -706,7 +714,7 @@ nav li.active a:before {
 /* line 1, ../sass/strates/_intro.scss */
 #intro {
   position: relative;
-  padding-top: 8em;
+  padding-top: 16em;
   min-height: 65vh;
   text-align: center;
 }

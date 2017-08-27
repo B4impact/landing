@@ -44,6 +44,10 @@
             margin-left: -15px;
             transition: .4s ease-out;
 
+            .icon path {
+                fill: $lblue;
+            }
+
             // .icon {
             //     visibility: hidden;
             //     opacity: 0;
@@ -59,6 +63,10 @@
                 opacity: 1;
                 margin-left: 0;
                 transition: .2s ease-out;
+
+                .icon path {
+                    fill: $lblue;
+                }
             }
             // .small-cta .icon {
             //     opacity: 1;
