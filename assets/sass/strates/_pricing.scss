@@ -73,7 +73,7 @@
         padding: 0;
         box-shadow: 0 14px 28px rgba(0,0,0,0.15), 0 10px 10px rgba(0,0,0,0.12);
         transform: none;
-        transition: .4s ease-out;
+        transition: .3s ease-out;
 
         &:nth-child(2) {
             .head-el {
@@ -157,6 +157,30 @@
                 transition: .3s ease-out;
                 border-bottom-left-radius: $radius;
                 border-bottom-right-radius: $radius;
+            }
+        }
+    }
+
+    .carousel-dots {
+        display: none;
+        width: 100%;
+        min-height: 50px;
+        text-align: center;
+        margin-top: 1em;
+
+        @media screen and (max-width: $mobile-lg) {
+            display: block;
+            span.dot.active {
+                background: $lblue;
+            }
+
+            span.dot {
+                display: inline-block;
+                width: 10px;
+                height: 10px;
+                margin: 0 8px;
+                background: rgba(0,0,0,.1);
+                border-radius: 100px;
             }
         }
     }

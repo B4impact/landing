@@ -7,13 +7,6 @@
         border-radius: $radius;
     }
 
-    // &:hover {
-    //     .wrapper-content {
-    //         border: 1px solid $lblue;
-    //
-    //     }
-    // }
-
     .visuals {
         margin-left: -5%;
 
@@ -47,13 +40,6 @@
             .icon path {
                 fill: $lblue;
             }
-
-            // .icon {
-            //     visibility: hidden;
-            //     opacity: 0;
-            //     margin-left: -20px;
-            //     transition: .3s ease-out;
-            // }
         }
 
         .content:hover {
@@ -68,14 +54,6 @@
                     fill: $lblue;
                 }
             }
-            // .small-cta .icon {
-            //     opacity: 1;
-            //     transform: translateX(-20px);
-            //     visibility: visible;
-            //
-            //     margin-left: 0;
-            //     transition: .2s ease-out;
-            // }
         }
     }
 
@@ -104,14 +82,8 @@
         }
 
         .content {
-            display: none;
-            visibility: hidden;
             margin-bottom: 1.5em;
 
-            &.active {
-                display: block;
-                visibility: visible;
-            }
         }
     }
 }

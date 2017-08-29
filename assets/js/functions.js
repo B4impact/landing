@@ -83,11 +83,33 @@ function stickyHeader() {
 }
 
 function activeMenu() {
-    var sections = document.querySelectorAll('section');
-    sections = sections.shift();
-    var lis = document.querySelectorAll('nav li');
+    // var sections = document.querySelectorAll('section');
+    // sections = sections.shift();
+    // var lis = document.querySelectorAll('nav li');
+    //
+    // console.log(sections);
+}
 
-    console.log(sections);
+function carouselPricing() {
+    var active = 1;
+    var els = document.querySelectorAll('.pricing-el');
+    var dots = document.querySelectorAll('.carousel-dots .dot');
+
+    var limit = dots.length -1;
+
+    window.addEventListener('click', function() {
+        els[active].classList.remove('active');
+        dots[active].classList.remove('active');
+
+        if (active == limit) {
+            active = 0;
+        } else {
+            active = active + 1;
+        }
+
+        els[active].classList.add('active');
+        dots[active].classList.add('active');
+    });
 }
 
 // function introAppPreview() {

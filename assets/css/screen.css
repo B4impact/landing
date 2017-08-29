@@ -65,6 +65,10 @@ footer ul {
   justify-content: space-between;
   padding-left: 0;
 }
+/* line 56, ../sass/basics/_reset.scss */
+footer ul li a {
+  font-family: 600;
+}
 
 /* line 3, ../sass/basics/_classes.scss */
 .return {
@@ -155,7 +159,7 @@ footer ul {
 }
 /* line 39, ../sass/styleguide/_buttons.scss */
 .small-cta a {
-  font-weight: 600;
+  font-weight: 100;
 }
 /* line 43, ../sass/styleguide/_buttons.scss */
 .small-cta .icon {
@@ -270,7 +274,7 @@ nav li.active a:before {
 /* line 1, ../sass/elements/_catchline.scss */
 .catchline {
   clear: both;
-  padding: 1.5em 0 5em 0;
+  padding: 0 0 5em 0;
 }
 /* line 5, ../sass/elements/_catchline.scss */
 .catchline .head-title {
@@ -279,15 +283,17 @@ nav li.active a:before {
 /* line 9, ../sass/elements/_catchline.scss */
 .catchline p {
   font-family: "Poppins", Arial, sans-serif;
+  line-height: 1.8;
 }
-/* line 11, ../sass/elements/_catchline.scss */
+/* line 12, ../sass/elements/_catchline.scss */
 .catchline p span {
   font-family: inherit;
-  font-size: inherit;
+  font-size: 15px;
 }
-/* line 17, ../sass/elements/_catchline.scss */
+/* line 18, ../sass/elements/_catchline.scss */
 .catchline .form-subscribe {
   position: relative;
+  padding-left: 0;
   padding-top: 30px;
 }
 /* line 2, ../sass/basics/_clearfix.scss */
@@ -296,7 +302,7 @@ nav li.active a:before {
   display: table;
   clear: both;
 }
-/* line 25, ../sass/elements/_catchline.scss */
+/* line 27, ../sass/elements/_catchline.scss */
 .catchline .form-subscribe .line {
   position: absolute;
   width: 0;
@@ -306,33 +312,40 @@ nav li.active a:before {
   bottom: 0;
   left: 0;
 }
-/* line 35, ../sass/elements/_catchline.scss */
+/* line 37, ../sass/elements/_catchline.scss */
 .catchline .form-subscribe input[type="text"]:focus ~ .line {
   width: 15%;
 }
-/* line 40, ../sass/elements/_catchline.scss */
+/* line 42, ../sass/elements/_catchline.scss */
 .catchline input {
   border: none;
   font-size: 20px;
   padding: .5em 0;
   outline: none;
 }
-/* line 46, ../sass/elements/_catchline.scss */
+@media screen and (max-width: 767px) {
+  /* line 42, ../sass/elements/_catchline.scss */
+  .catchline input {
+    font-size: 16px;
+  }
+}
+/* line 52, ../sass/elements/_catchline.scss */
 .catchline input[type="text"] {
   float: left;
   padding-left: 0;
   min-width: 70%;
-  border-bottom: 1px solid #F6F6F6;
+  border-bottom: 1px solid #F1F1F1;
 }
-/* line 53, ../sass/elements/_catchline.scss */
+/* line 59, ../sass/elements/_catchline.scss */
 .catchline input[type="submit"] {
   float: left;
   background: #667AF4;
   color: #fff;
   width: 30%;
   padding: .5em 1em;
+  border-radius: 2px;
 }
-/* line 60, ../sass/elements/_catchline.scss */
+/* line 67, ../sass/elements/_catchline.scss */
 .catchline input[type="submit"]:hover {
   opacity: .7;
 }
@@ -418,30 +431,30 @@ nav li.active a:before {
 #about-app .wrapper-content {
   padding: 6em 0;
   border: 1px solid #F6F6F6;
-  border-radius: 8px;
+  border-radius: 2px;
 }
-/* line 17, ../sass/strates/_about-app.scss */
+/* line 10, ../sass/strates/_about-app.scss */
 #about-app .visuals {
   margin-left: -5%;
 }
-/* line 20, ../sass/strates/_about-app.scss */
+/* line 13, ../sass/strates/_about-app.scss */
 #about-app .visuals figure {
   overflow: hidden;
   border: 5px solid #fff;
 }
-/* line 24, ../sass/strates/_about-app.scss */
+/* line 17, ../sass/strates/_about-app.scss */
 #about-app .visuals figure img {
   max-width: 100%;
 }
-/* line 30, ../sass/strates/_about-app.scss */
+/* line 23, ../sass/strates/_about-app.scss */
 #about-app .content {
   transition: .2s ease-out;
 }
-/* line 35, ../sass/strates/_about-app.scss */
+/* line 28, ../sass/strates/_about-app.scss */
 #about-app .block-content {
   margin-bottom: 1.5em;
 }
-/* line 38, ../sass/strates/_about-app.scss */
+/* line 31, ../sass/strates/_about-app.scss */
 #about-app .block-content .small-cta {
   visibility: hidden;
   opacity: 0;
@@ -451,54 +464,47 @@ nav li.active a:before {
   margin-left: -15px;
   transition: .4s ease-out;
 }
-/* line 47, ../sass/strates/_about-app.scss */
+/* line 40, ../sass/strates/_about-app.scss */
 #about-app .block-content .small-cta .icon path {
   fill: #667AF4;
 }
-/* line 61, ../sass/strates/_about-app.scss */
+/* line 47, ../sass/strates/_about-app.scss */
 #about-app .block-content .content:hover .small-cta {
   visibility: visible;
   opacity: 1;
   margin-left: 0;
   transition: .2s ease-out;
 }
-/* line 67, ../sass/strates/_about-app.scss */
+/* line 53, ../sass/strates/_about-app.scss */
 #about-app .block-content .content:hover .small-cta .icon path {
   fill: #667AF4;
 }
 @media screen and (min-width: 767px) and (max-width: 1024px) {
-  /* line 84, ../sass/strates/_about-app.scss */
+  /* line 62, ../sass/strates/_about-app.scss */
   #about-app .caption {
     float: none;
     margin: 0 auto;
   }
 }
 @media screen and (max-width: 767px) {
-  /* line 91, ../sass/strates/_about-app.scss */
+  /* line 69, ../sass/strates/_about-app.scss */
   #about-app .wrapper-content {
     padding: 1em 0;
     border: none;
   }
-  /* line 96, ../sass/strates/_about-app.scss */
+  /* line 74, ../sass/strates/_about-app.scss */
   #about-app .visuals {
     padding: 0;
     margin-left: initial;
     margin-bottom: 1.5em;
   }
-  /* line 102, ../sass/strates/_about-app.scss */
+  /* line 80, ../sass/strates/_about-app.scss */
   #about-app .block-content {
     margin-bottom: 0;
   }
-  /* line 106, ../sass/strates/_about-app.scss */
+  /* line 84, ../sass/strates/_about-app.scss */
   #about-app .content {
-    display: none;
-    visibility: hidden;
     margin-bottom: 1.5em;
-  }
-  /* line 111, ../sass/strates/_about-app.scss */
-  #about-app .content.active {
-    display: block;
-    visibility: visible;
   }
 }
 
@@ -507,7 +513,7 @@ nav li.active a:before {
   position: relative;
   padding-bottom: 7em;
 }
-/* line 17, ../sass/strates/_about-us.scss */
+/* line 5, ../sass/strates/_about-us.scss */
 #about-us figure {
   display: block;
   width: 200px;
@@ -518,12 +524,12 @@ nav li.active a:before {
   overflow: hidden;
   border: 5px solid #fff;
 }
-/* line 27, ../sass/strates/_about-us.scss */
+/* line 15, ../sass/strates/_about-us.scss */
 #about-us figure img {
   height: 250px;
   margin-left: -25%;
 }
-/* line 32, ../sass/strates/_about-us.scss */
+/* line 20, ../sass/strates/_about-us.scss */
 #about-us figure img:last-child {
   margin-left: -15%;
   height: 200px;
@@ -533,7 +539,7 @@ nav li.active a:before {
   #about-us {
     padding-bottom: 4em;
   }
-  /* line 42, ../sass/strates/_about-us.scss */
+  /* line 30, ../sass/strates/_about-us.scss */
   #about-us .ppl {
     margin-bottom: 4em;
   }
@@ -620,11 +626,11 @@ nav li.active a:before {
 #pricing .pricing-el {
   width: 30%;
   background: #fff;
-  border-radius: 8px;
+  border-radius: 2px;
   padding: 0;
   box-shadow: 0 14px 28px rgba(0, 0, 0, 0.15), 0 10px 10px rgba(0, 0, 0, 0.12);
   transform: none;
-  transition: .4s ease-out;
+  transition: .3s ease-out;
 }
 /* line 79, ../sass/strates/_pricing.scss */
 #pricing .pricing-el:nth-child(2) .head-el {
@@ -679,8 +685,8 @@ nav li.active a:before {
   background: #667AF4;
   color: #fff;
   text-align: center;
-  border-bottom-left-radius: 8px;
-  border-bottom-right-radius: 8px;
+  border-bottom-left-radius: 2px;
+  border-bottom-right-radius: 2px;
   cursor: pointer;
 }
 /* line 135, ../sass/strates/_pricing.scss */
@@ -707,8 +713,35 @@ nav li.active a:before {
   height: 100%;
   z-index: 0;
   transition: .3s ease-out;
-  border-bottom-left-radius: 8px;
-  border-bottom-right-radius: 8px;
+  border-bottom-left-radius: 2px;
+  border-bottom-right-radius: 2px;
+}
+/* line 164, ../sass/strates/_pricing.scss */
+#pricing .carousel-dots {
+  display: none;
+  width: 100%;
+  min-height: 50px;
+  text-align: center;
+  margin-top: 1em;
+}
+@media screen and (max-width: 767px) {
+  /* line 164, ../sass/strates/_pricing.scss */
+  #pricing .carousel-dots {
+    display: block;
+  }
+  /* line 173, ../sass/strates/_pricing.scss */
+  #pricing .carousel-dots span.dot.active {
+    background: #667AF4;
+  }
+  /* line 177, ../sass/strates/_pricing.scss */
+  #pricing .carousel-dots span.dot {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    margin: 0 8px;
+    background: rgba(0, 0, 0, 0.1);
+    border-radius: 100px;
+  }
 }
 
 /* line 1, ../sass/strates/_intro.scss */

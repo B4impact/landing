@@ -4,6 +4,8 @@ stickyHeader();
 
 activeMenu();
 
+carouselPricing();
+
 // introAppPreview();
 
 var pricingScroll = new SmoothScroll('[href="#pricing"]', {easing: 'linear'});
