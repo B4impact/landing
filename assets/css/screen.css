@@ -472,12 +472,19 @@ nav li.active a:before {
   right: 0;
   width: 50%;
 }
-/* line 117, ../sass/strates/_intro.scss */
-#intro #preview figure img {
+/* line 113, ../sass/strates/_intro.scss */
+#intro #preview figure [data-device="desktop"] {
   width: 1000px;
 }
+/* line 117, ../sass/strates/_intro.scss */
+#intro #preview figure [data-device="mobile"] {
+  position: absolute;
+  width: 300px;
+  bottom: 2%;
+  left: -5%;
+}
 @media screen and (max-width: 767px) {
-  /* line 116, ../sass/strates/_intro.scss */
+  /* line 112, ../sass/strates/_intro.scss */
   #intro #preview figure {
     position: initial;
   }
@@ -677,13 +684,12 @@ nav li.active a:before {
   #pricing .pricing-els {
     display: block;
   }
-  /* line 70, ../sass/strates/_pricing.scss */
+  /* line 50, ../sass/strates/_pricing.scss */
   #pricing .pricing-els .pricing-el {
     width: 100%;
-    box-shadow: none;
   }
 }
-/* line 77, ../sass/strates/_pricing.scss */
+/* line 56, ../sass/strates/_pricing.scss */
 #pricing .pricing-el {
   width: 30%;
   background: #fff;
@@ -693,54 +699,54 @@ nav li.active a:before {
   transform: none;
   transition: .3s ease-out;
 }
-/* line 87, ../sass/strates/_pricing.scss */
+/* line 66, ../sass/strates/_pricing.scss */
 #pricing .pricing-el:nth-child(2) .head-el {
   padding: 3em 0 2em 0;
 }
 @media screen and (min-width: 1024px) {
-  /* line 93, ../sass/strates/_pricing.scss */
+  /* line 72, ../sass/strates/_pricing.scss */
   #pricing .pricing-el:hover {
     transform: translateY(-5%) !important;
     box-shadow: 0 24px 38px rgba(0, 0, 0, 0.15), 0 20px 20px rgba(0, 0, 0, 0.12);
   }
-  /* line 97, ../sass/strates/_pricing.scss */
+  /* line 76, ../sass/strates/_pricing.scss */
   #pricing .pricing-el:hover .cta-el {
     color: #fff;
     transition: .2s ease-out;
   }
-  /* line 100, ../sass/strates/_pricing.scss */
+  /* line 79, ../sass/strates/_pricing.scss */
   #pricing .pricing-el:hover .cta-el:before {
     right: 0;
     transition: .3s ease-out;
   }
 }
-/* line 109, ../sass/strates/_pricing.scss */
+/* line 88, ../sass/strates/_pricing.scss */
 #pricing .pricing-el .head-el {
   padding: 2em 0 1em 0;
   border-bottom: 1px solid #F6F6F6;
 }
-/* line 112, ../sass/strates/_pricing.scss */
+/* line 91, ../sass/strates/_pricing.scss */
 #pricing .pricing-el .head-el h3 {
   font-size: 23px;
   font-weight: 400;
 }
-/* line 116, ../sass/strates/_pricing.scss */
+/* line 95, ../sass/strates/_pricing.scss */
 #pricing .pricing-el .head-el h3 span {
   font-size: inherit;
 }
-/* line 119, ../sass/strates/_pricing.scss */
+/* line 98, ../sass/strates/_pricing.scss */
 #pricing .pricing-el .head-el h3 span.price {
   font-size: 1.4em;
   font-weight: 600;
   margin: 0 3px;
 }
-/* line 128, ../sass/strates/_pricing.scss */
+/* line 107, ../sass/strates/_pricing.scss */
 #pricing .pricing-el .content-el {
   padding: 1.5em 2em;
   text-align: center;
   line-height: 2;
 }
-/* line 134, ../sass/strates/_pricing.scss */
+/* line 113, ../sass/strates/_pricing.scss */
 #pricing .pricing-el .cta-el {
   position: relative;
   background: #667AF4;
@@ -750,7 +756,7 @@ nav li.active a:before {
   border-bottom-right-radius: 2px;
   cursor: pointer;
 }
-/* line 143, ../sass/strates/_pricing.scss */
+/* line 122, ../sass/strates/_pricing.scss */
 #pricing .pricing-el .cta-el a {
   position: relative;
   display: block;
@@ -762,7 +768,7 @@ nav li.active a:before {
   letter-spacing: .5px;
   transition: .3s ease-out;
 }
-/* line 155, ../sass/strates/_pricing.scss */
+/* line 134, ../sass/strates/_pricing.scss */
 #pricing .pricing-el .cta-el:before {
   position: absolute;
   display: block;
@@ -777,7 +783,7 @@ nav li.active a:before {
   border-bottom-left-radius: 2px;
   border-bottom-right-radius: 2px;
 }
-/* line 172, ../sass/strates/_pricing.scss */
+/* line 151, ../sass/strates/_pricing.scss */
 #pricing .carousel-dots {
   display: none;
   width: 100%;
@@ -785,16 +791,16 @@ nav li.active a:before {
   text-align: center;
   margin-top: 2em;
 }
-@media screen and (max-width: 767px) {
-  /* line 172, ../sass/strates/_pricing.scss */
+@media screen and (max-width: 1024px) {
+  /* line 151, ../sass/strates/_pricing.scss */
   #pricing .carousel-dots {
     display: block;
   }
-  /* line 181, ../sass/strates/_pricing.scss */
+  /* line 160, ../sass/strates/_pricing.scss */
   #pricing .carousel-dots span.dot.active {
     background: #667AF4;
   }
-  /* line 185, ../sass/strates/_pricing.scss */
+  /* line 164, ../sass/strates/_pricing.scss */
   #pricing .carousel-dots span.dot {
     display: inline-block;
     width: 10px;
@@ -906,12 +912,19 @@ nav li.active a:before {
   right: 0;
   width: 50%;
 }
-/* line 117, ../sass/strates/_intro.scss */
-#intro #preview figure img {
+/* line 113, ../sass/strates/_intro.scss */
+#intro #preview figure [data-device="desktop"] {
   width: 1000px;
 }
+/* line 117, ../sass/strates/_intro.scss */
+#intro #preview figure [data-device="mobile"] {
+  position: absolute;
+  width: 300px;
+  bottom: 2%;
+  left: -5%;
+}
 @media screen and (max-width: 767px) {
-  /* line 116, ../sass/strates/_intro.scss */
+  /* line 112, ../sass/strates/_intro.scss */
   #intro #preview figure {
     position: initial;
   }

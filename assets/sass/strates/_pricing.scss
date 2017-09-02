@@ -45,31 +45,10 @@
         justify-content: space-between;
         align-items: flex-end;
 
-        // @media screen and (max-width: $mobile-lg) {
-        //     flex-direction: column;
-        //
-        //     .pricing-el {
-        //         display: none;
-        //         width: 100%;
-        //         margin-bottom: 2em;
-        //
-        //         &.active {
-        //             display: block;
-        //         }
-        //     }
-        //
-        //     &:nth-child(2) {
-        //         .head-el {
-        //             padding: 2em 0 1em 0;
-        //         }
-        //     }
-        // }
-
         @media screen and (max-width: $tablet-lg) {
             display: block;
             .pricing-el {
                 width: 100%;
-                box-shadow: none;
             }
         }
     }
@@ -176,7 +155,7 @@
         text-align: center;
         margin-top: 2em;
 
-        @media screen and (max-width: $mobile-lg) {
+        @media screen and (max-width: $tablet-lg) {
             display: block;
             span.dot.active {
                 background: $lblue;

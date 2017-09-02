@@ -104,19 +104,24 @@
     }
 
     #preview {
-        // max-width: 45%;
-        // float: right;
-        // margin-right: -15px;
-
         position: absolute;
         bottom: 0;
         right: 0;
         width: 50%;
 
         figure {
-            img {
+            [data-device="desktop"] {
                 width: 1000px;
             }
+
+            [data-device="mobile"] {
+                position: absolute;
+                width: 300px;
+                bottom: 2%;
+                left: -5%;
+            }
+
+
 
             @media screen and (max-width: $mobile-lg) {
                 position: initial;
