@@ -69,6 +69,22 @@ footer ul {
 footer ul li a {
   font-family: 600;
 }
+@media screen and (max-width: 1024px) {
+  /* line 62, ../sass/basics/_reset.scss */
+  footer ul {
+    flex-direction: column;
+  }
+  /* line 65, ../sass/basics/_reset.scss */
+  footer ul li {
+    padding: .4em 0;
+  }
+  /* line 70, ../sass/basics/_reset.scss */
+  footer .text-right {
+    text-align: left;
+    margin-top: 1em;
+    padding-left: 0;
+  }
+}
 
 /* line 3, ../sass/basics/_classes.scss */
 .return {
@@ -209,6 +225,11 @@ header.sticky .logo {
 }
 
 /* line 14, ../sass/elements/_header.scss */
+svg {
+  width: 65px;
+}
+
+/* line 18, ../sass/elements/_header.scss */
 header {
   position: absolute;
   padding: 2em 0;
@@ -219,41 +240,41 @@ header {
 }
 
 @media screen and (max-width: 767px) {
-  /* line 24, ../sass/elements/_header.scss */
+  /* line 28, ../sass/elements/_header.scss */
   .logo {
     text-align: center;
     margin-bottom: 1em;
   }
 }
-/* line 31, ../sass/elements/_header.scss */
+/* line 35, ../sass/elements/_header.scss */
 .logo img {
   max-height: 60px;
 }
 
-/* line 37, ../sass/elements/_header.scss */
+/* line 41, ../sass/elements/_header.scss */
 nav {
   line-height: 4;
   text-align: right;
 }
-/* line 40, ../sass/elements/_header.scss */
+/* line 44, ../sass/elements/_header.scss */
 nav ul {
   font-size: 0;
 }
-/* line 43, ../sass/elements/_header.scss */
+/* line 47, ../sass/elements/_header.scss */
 nav li {
   font-size: initial;
   display: inline-block;
   padding: 0 2em;
 }
-/* line 47, ../sass/elements/_header.scss */
+/* line 51, ../sass/elements/_header.scss */
 nav li:last-child {
   padding-right: 0;
 }
-/* line 52, ../sass/elements/_header.scss */
+/* line 56, ../sass/elements/_header.scss */
 nav li.active a {
   position: relative;
 }
-/* line 55, ../sass/elements/_header.scss */
+/* line 59, ../sass/elements/_header.scss */
 nav li.active a:before {
   content: '';
   display: block;
@@ -265,7 +286,7 @@ nav li.active a:before {
   right: 0;
 }
 @media screen and (max-width: 767px) {
-  /* line 37, ../sass/elements/_header.scss */
+  /* line 41, ../sass/elements/_header.scss */
   nav {
     display: none;
   }
@@ -353,42 +374,74 @@ nav li.active a:before {
 /* line 1, ../sass/strates/_intro.scss */
 #intro {
   position: relative;
-  padding-top: 16em;
-  min-height: 65vh;
-  text-align: center;
+  padding-top: 6em;
+  min-height: 100vh;
+  max-height: 100vh;
+  margin: 0;
 }
-/* line 7, ../sass/strates/_intro.scss */
+/* line 8, ../sass/strates/_intro.scss */
+#intro .container {
+  padding-top: 8em;
+  max-width: 50%;
+  margin-left: 7%;
+  float: left !important;
+}
+@media screen and (max-width: 1024px) {
+  /* line 1, ../sass/strates/_intro.scss */
+  #intro {
+    padding-top: 10em;
+    min-height: 60vh;
+    text-align: center;
+  }
+  /* line 17, ../sass/strates/_intro.scss */
+  #intro .container {
+    max-width: 100%;
+    float: none !important;
+    margin: 0 auto;
+    padding-top: 0;
+  }
+  /* line 28, ../sass/strates/_intro.scss */
+  #intro .content p {
+    width: 70%;
+    margin: 0 auto;
+  }
+  /* line 33, ../sass/strates/_intro.scss */
+  #intro .btn {
+    margin: 2em auto !important;
+  }
+}
+/* line 38, ../sass/strates/_intro.scss */
 #intro h1 {
   line-height: 1.3;
 }
-/* line 11, ../sass/strates/_intro.scss */
+/* line 42, ../sass/strates/_intro.scss */
 #intro h1 span {
   font-size: 1.3em;
   font-weight: 200;
 }
-/* line 15, ../sass/strates/_intro.scss */
+/* line 46, ../sass/strates/_intro.scss */
 #intro h1 span span {
   font-size: inherit;
   font-weight: inherit;
 }
 @media screen and (max-width: 767px) {
-  /* line 11, ../sass/strates/_intro.scss */
+  /* line 42, ../sass/strates/_intro.scss */
   #intro h1 span {
     font-size: 1.2em;
   }
 }
-/* line 23, ../sass/strates/_intro.scss */
+/* line 54, ../sass/strates/_intro.scss */
 #intro h1 span.lined {
   position: relative;
 }
-/* line 47, ../sass/strates/_intro.scss */
+/* line 78, ../sass/strates/_intro.scss */
 #intro .caption {
   clear: both;
 }
-/* line 52, ../sass/strates/_intro.scss */
+/* line 83, ../sass/strates/_intro.scss */
 #intro .content {
   clear: both;
-  margin-top: 30px;
+  margin-top: 10px;
 }
 /* line 2, ../sass/basics/_clearfix.scss */
 #intro .content:after {
@@ -396,9 +449,9 @@ nav li.active a:before {
   display: table;
   clear: both;
 }
-/* line 57, ../sass/strates/_intro.scss */
+/* line 88, ../sass/strates/_intro.scss */
 #intro .content .btn {
-  margin: 2em auto;
+  margin: 2em 0 0 0;
   border-radius: 2px;
 }
 @keyframes floatingPreview {
@@ -412,14 +465,22 @@ nav li.active a:before {
     margin: 0;
   }
 }
-/* line 75, ../sass/strates/_intro.scss */
+/* line 106, ../sass/strates/_intro.scss */
 #intro #preview {
-  transition: .2s ease-out;
-  animation: floatingPreview 5s infinite;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 50%;
 }
-/* line 79, ../sass/strates/_intro.scss */
-#intro #preview img {
-  width: 100%;
+/* line 117, ../sass/strates/_intro.scss */
+#intro #preview figure img {
+  width: 1000px;
+}
+@media screen and (max-width: 767px) {
+  /* line 116, ../sass/strates/_intro.scss */
+  #intro #preview figure {
+    position: initial;
+  }
 }
 
 /* line 1, ../sass/strates/_about-app.scss */
@@ -485,25 +546,34 @@ nav li.active a:before {
     float: none;
     margin: 0 auto;
   }
+  /* line 67, ../sass/strates/_about-app.scss */
+  #about-app .block-content {
+    clear: both;
+  }
+  /* line 70, ../sass/strates/_about-app.scss */
+  #about-app .block-content .content {
+    clear: both;
+  }
 }
 @media screen and (max-width: 767px) {
-  /* line 69, ../sass/strates/_about-app.scss */
+  /* line 77, ../sass/strates/_about-app.scss */
   #about-app .wrapper-content {
     padding: 1em 0;
     border: none;
   }
-  /* line 74, ../sass/strates/_about-app.scss */
+  /* line 82, ../sass/strates/_about-app.scss */
   #about-app .visuals {
     padding: 0;
     margin-left: initial;
     margin-bottom: 1.5em;
   }
-  /* line 80, ../sass/strates/_about-app.scss */
+  /* line 88, ../sass/strates/_about-app.scss */
   #about-app .block-content {
     margin-bottom: 0;
   }
-  /* line 84, ../sass/strates/_about-app.scss */
+  /* line 92, ../sass/strates/_about-app.scss */
   #about-app .content {
+    clear: both;
     margin-bottom: 1.5em;
   }
 }
@@ -575,13 +645,13 @@ nav li.active a:before {
 @media screen and (min-width: 1024px) {
   /* line 15, ../sass/strates/_pricing.scss */
   #pricing:before {
-    height: 125vh;
+    height: 130vh;
   }
 }
 @media screen and (min-width: 768px) and (max-width: 1024px) {
   /* line 15, ../sass/strates/_pricing.scss */
   #pricing:before {
-    height: 130vh;
+    height: 140vh;
   }
 }
 @media screen and (max-width: 767px) {
@@ -593,7 +663,7 @@ nav li.active a:before {
 @media screen and (max-width: 480px) {
   /* line 15, ../sass/strates/_pricing.scss */
   #pricing:before {
-    height: 190vh;
+    height: 185vh;
   }
 }
 /* line 43, ../sass/strates/_pricing.scss */
@@ -602,27 +672,18 @@ nav li.active a:before {
   justify-content: space-between;
   align-items: flex-end;
 }
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 1024px) {
   /* line 43, ../sass/strates/_pricing.scss */
   #pricing .pricing-els {
-    flex-direction: column;
-  }
-  /* line 51, ../sass/strates/_pricing.scss */
-  #pricing .pricing-els .pricing-el {
-    display: none;
-    width: 100%;
-    margin-bottom: 2em;
-  }
-  /* line 56, ../sass/strates/_pricing.scss */
-  #pricing .pricing-els .pricing-el.active {
     display: block;
   }
-  /* line 62, ../sass/strates/_pricing.scss */
-  #pricing .pricing-els:nth-child(2) .head-el {
-    padding: 2em 0 1em 0;
+  /* line 70, ../sass/strates/_pricing.scss */
+  #pricing .pricing-els .pricing-el {
+    width: 100%;
+    box-shadow: none;
   }
 }
-/* line 69, ../sass/strates/_pricing.scss */
+/* line 77, ../sass/strates/_pricing.scss */
 #pricing .pricing-el {
   width: 30%;
   background: #fff;
@@ -632,54 +693,54 @@ nav li.active a:before {
   transform: none;
   transition: .3s ease-out;
 }
-/* line 79, ../sass/strates/_pricing.scss */
+/* line 87, ../sass/strates/_pricing.scss */
 #pricing .pricing-el:nth-child(2) .head-el {
   padding: 3em 0 2em 0;
 }
 @media screen and (min-width: 1024px) {
-  /* line 85, ../sass/strates/_pricing.scss */
+  /* line 93, ../sass/strates/_pricing.scss */
   #pricing .pricing-el:hover {
     transform: translateY(-5%) !important;
     box-shadow: 0 24px 38px rgba(0, 0, 0, 0.15), 0 20px 20px rgba(0, 0, 0, 0.12);
   }
-  /* line 89, ../sass/strates/_pricing.scss */
+  /* line 97, ../sass/strates/_pricing.scss */
   #pricing .pricing-el:hover .cta-el {
     color: #fff;
     transition: .2s ease-out;
   }
-  /* line 92, ../sass/strates/_pricing.scss */
+  /* line 100, ../sass/strates/_pricing.scss */
   #pricing .pricing-el:hover .cta-el:before {
     right: 0;
     transition: .3s ease-out;
   }
 }
-/* line 101, ../sass/strates/_pricing.scss */
+/* line 109, ../sass/strates/_pricing.scss */
 #pricing .pricing-el .head-el {
   padding: 2em 0 1em 0;
   border-bottom: 1px solid #F6F6F6;
 }
-/* line 104, ../sass/strates/_pricing.scss */
+/* line 112, ../sass/strates/_pricing.scss */
 #pricing .pricing-el .head-el h3 {
   font-size: 23px;
   font-weight: 400;
 }
-/* line 108, ../sass/strates/_pricing.scss */
+/* line 116, ../sass/strates/_pricing.scss */
 #pricing .pricing-el .head-el h3 span {
   font-size: inherit;
 }
-/* line 111, ../sass/strates/_pricing.scss */
+/* line 119, ../sass/strates/_pricing.scss */
 #pricing .pricing-el .head-el h3 span.price {
   font-size: 1.4em;
   font-weight: 600;
   margin: 0 3px;
 }
-/* line 120, ../sass/strates/_pricing.scss */
+/* line 128, ../sass/strates/_pricing.scss */
 #pricing .pricing-el .content-el {
   padding: 1.5em 2em;
   text-align: center;
   line-height: 2;
 }
-/* line 126, ../sass/strates/_pricing.scss */
+/* line 134, ../sass/strates/_pricing.scss */
 #pricing .pricing-el .cta-el {
   position: relative;
   background: #667AF4;
@@ -689,7 +750,7 @@ nav li.active a:before {
   border-bottom-right-radius: 2px;
   cursor: pointer;
 }
-/* line 135, ../sass/strates/_pricing.scss */
+/* line 143, ../sass/strates/_pricing.scss */
 #pricing .pricing-el .cta-el a {
   position: relative;
   display: block;
@@ -701,7 +762,7 @@ nav li.active a:before {
   letter-spacing: .5px;
   transition: .3s ease-out;
 }
-/* line 147, ../sass/strates/_pricing.scss */
+/* line 155, ../sass/strates/_pricing.scss */
 #pricing .pricing-el .cta-el:before {
   position: absolute;
   display: block;
@@ -716,24 +777,24 @@ nav li.active a:before {
   border-bottom-left-radius: 2px;
   border-bottom-right-radius: 2px;
 }
-/* line 164, ../sass/strates/_pricing.scss */
+/* line 172, ../sass/strates/_pricing.scss */
 #pricing .carousel-dots {
   display: none;
   width: 100%;
   min-height: 50px;
   text-align: center;
-  margin-top: 1em;
+  margin-top: 2em;
 }
 @media screen and (max-width: 767px) {
-  /* line 164, ../sass/strates/_pricing.scss */
+  /* line 172, ../sass/strates/_pricing.scss */
   #pricing .carousel-dots {
     display: block;
   }
-  /* line 173, ../sass/strates/_pricing.scss */
+  /* line 181, ../sass/strates/_pricing.scss */
   #pricing .carousel-dots span.dot.active {
     background: #667AF4;
   }
-  /* line 177, ../sass/strates/_pricing.scss */
+  /* line 185, ../sass/strates/_pricing.scss */
   #pricing .carousel-dots span.dot {
     display: inline-block;
     width: 10px;
@@ -747,42 +808,74 @@ nav li.active a:before {
 /* line 1, ../sass/strates/_intro.scss */
 #intro {
   position: relative;
-  padding-top: 16em;
-  min-height: 65vh;
-  text-align: center;
+  padding-top: 6em;
+  min-height: 100vh;
+  max-height: 100vh;
+  margin: 0;
 }
-/* line 7, ../sass/strates/_intro.scss */
+/* line 8, ../sass/strates/_intro.scss */
+#intro .container {
+  padding-top: 8em;
+  max-width: 50%;
+  margin-left: 7%;
+  float: left !important;
+}
+@media screen and (max-width: 1024px) {
+  /* line 1, ../sass/strates/_intro.scss */
+  #intro {
+    padding-top: 10em;
+    min-height: 60vh;
+    text-align: center;
+  }
+  /* line 17, ../sass/strates/_intro.scss */
+  #intro .container {
+    max-width: 100%;
+    float: none !important;
+    margin: 0 auto;
+    padding-top: 0;
+  }
+  /* line 28, ../sass/strates/_intro.scss */
+  #intro .content p {
+    width: 70%;
+    margin: 0 auto;
+  }
+  /* line 33, ../sass/strates/_intro.scss */
+  #intro .btn {
+    margin: 2em auto !important;
+  }
+}
+/* line 38, ../sass/strates/_intro.scss */
 #intro h1 {
   line-height: 1.3;
 }
-/* line 11, ../sass/strates/_intro.scss */
+/* line 42, ../sass/strates/_intro.scss */
 #intro h1 span {
   font-size: 1.3em;
   font-weight: 200;
 }
-/* line 15, ../sass/strates/_intro.scss */
+/* line 46, ../sass/strates/_intro.scss */
 #intro h1 span span {
   font-size: inherit;
   font-weight: inherit;
 }
 @media screen and (max-width: 767px) {
-  /* line 11, ../sass/strates/_intro.scss */
+  /* line 42, ../sass/strates/_intro.scss */
   #intro h1 span {
     font-size: 1.2em;
   }
 }
-/* line 23, ../sass/strates/_intro.scss */
+/* line 54, ../sass/strates/_intro.scss */
 #intro h1 span.lined {
   position: relative;
 }
-/* line 47, ../sass/strates/_intro.scss */
+/* line 78, ../sass/strates/_intro.scss */
 #intro .caption {
   clear: both;
 }
-/* line 52, ../sass/strates/_intro.scss */
+/* line 83, ../sass/strates/_intro.scss */
 #intro .content {
   clear: both;
-  margin-top: 30px;
+  margin-top: 10px;
 }
 /* line 2, ../sass/basics/_clearfix.scss */
 #intro .content:after {
@@ -790,9 +883,9 @@ nav li.active a:before {
   display: table;
   clear: both;
 }
-/* line 57, ../sass/strates/_intro.scss */
+/* line 88, ../sass/strates/_intro.scss */
 #intro .content .btn {
-  margin: 2em auto;
+  margin: 2em 0 0 0;
   border-radius: 2px;
 }
 @keyframes floatingPreview {
@@ -806,14 +899,22 @@ nav li.active a:before {
     margin: 0;
   }
 }
-/* line 75, ../sass/strates/_intro.scss */
+/* line 106, ../sass/strates/_intro.scss */
 #intro #preview {
-  transition: .2s ease-out;
-  animation: floatingPreview 5s infinite;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 50%;
 }
-/* line 79, ../sass/strates/_intro.scss */
-#intro #preview img {
-  width: 100%;
+/* line 117, ../sass/strates/_intro.scss */
+#intro #preview figure img {
+  width: 1000px;
+}
+@media screen and (max-width: 767px) {
+  /* line 116, ../sass/strates/_intro.scss */
+  #intro #preview figure {
+    position: initial;
+  }
 }
 
 /* line 7, ../sass/screen.scss */

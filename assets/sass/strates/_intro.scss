@@ -1,8 +1,39 @@
 #intro {
     position: relative;
-    padding-top: 16em;
-    min-height: 65vh;
-    text-align: center;
+    padding-top: 6em;
+    min-height: 100vh;
+    max-height: 100vh;
+    margin: 0;
+
+    .container {
+        padding-top: 8em;
+        max-width: 50%;
+        margin-left: 7%;
+        float: left !important;
+    }
+
+    @media screen and (max-width: $tablet-lg) {
+
+        .container {
+            max-width: 100%;
+            float: none !important;
+            margin: 0 auto;
+            padding-top: 0;
+        }
+
+        padding-top: 10em;
+        min-height: 60vh;
+        text-align: center;
+
+        .content p {
+            width: 70%;
+            margin: 0 auto;
+        }
+
+        .btn {
+            margin: 2em auto !important;
+        }
+    }
 
     h1 {
         line-height: 1.3;
@@ -52,10 +83,10 @@
     .content {
         @include clearfix;
         clear: both;
-        margin-top: 30px;
+        margin-top: 10px;
 
         .btn {
-            margin: 2em auto;
+            margin: 2em 0 0 0;
             border-radius: 2px;
         }
     }
@@ -73,29 +104,23 @@
     }
 
     #preview {
-        transition: .2s ease-out;
-        animation: floatingPreview 5s infinite;
+        // max-width: 45%;
+        // float: right;
+        // margin-right: -15px;
 
-        img {
-            width: 100%;
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        width: 50%;
+
+        figure {
+            img {
+                width: 1000px;
+            }
+
+            @media screen and (max-width: $mobile-lg) {
+                position: initial;
+            }
         }
     }
-
-    // go down
-
-    // .go-bottom {
-    //     position: absolute;
-    //     width: 100%;
-    //     bottom: 0;
-    //     left: 0;
-    //     text-align: center;
-    // }
-    //
-    // @media screen and (max-width: $mobile-lg) {
-    //     min-height: auto;
-    //     .go-bottom {
-    //         position: initial;
-    //         margin-top: 4em;
-    //     }
-    // }
 }

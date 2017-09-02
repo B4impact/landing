@@ -63,6 +63,14 @@
             float: none;
             margin: 0 auto;
         }
+
+        .block-content {
+            clear: both;
+
+            .content {
+                clear: both;
+            }
+        }
     }
 
     @media screen and (max-width: $mobile-lg) {
@@ -82,6 +90,7 @@
         }
 
         .content {
+            clear: both;
             margin-bottom: 1.5em;
 
         }

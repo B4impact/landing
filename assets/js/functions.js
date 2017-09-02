@@ -1,5 +1,21 @@
 var body = document.querySelector('body');
 
+function isMobile() {
+    if (window.innerWidth < 767) {
+        return true;
+    } else {
+        return false;
+    }
+}
+
+function isTablet() {
+    if (window.innerWidth < 1024) {
+        return true;
+    } else {
+        return false;
+    }
+}
+
 function appearingTexts() {
 
     var introTexts = document.querySelectorAll('#intro [style="opacity: 0; transform:translateY(-20px);"]');
@@ -18,7 +34,11 @@ function appearingTexts() {
 
     var limit = window.innerHeight / 4;
 
-    console.log(aboutAppSec.offsetTop - limit);
+    // console.log(aboutAppSec.offsetTop - limit);
+
+    if (!isMobile()) {
+
+    }
 
     for (let i = 0; i < introTexts.length; i++) {
         setTimeout(function(){
@@ -82,35 +102,35 @@ function stickyHeader() {
     });
 }
 
-function activeMenu() {
-    // var sections = document.querySelectorAll('section');
-    // sections = sections.shift();
-    // var lis = document.querySelectorAll('nav li');
-    //
-    // console.log(sections);
-}
+// function activeMenu() {
+//     var sections = document.querySelectorAll('section');
+//     sections = sections.shift();
+//     var lis = document.querySelectorAll('nav li');
+//
+//     console.log(sections);
+// }
 
-function carouselPricing() {
-    var active = 1;
-    var els = document.querySelectorAll('.pricing-el');
-    var dots = document.querySelectorAll('.carousel-dots .dot');
-
-    var limit = dots.length -1;
-
-    window.addEventListener('click', function() {
-        els[active].classList.remove('active');
-        dots[active].classList.remove('active');
-
-        if (active == limit) {
-            active = 0;
-        } else {
-            active = active + 1;
-        }
-
-        els[active].classList.add('active');
-        dots[active].classList.add('active');
-    });
-}
+// function carouselPricing() {
+//     var active = 1;
+//     var els = document.querySelectorAll('.pricing-el');
+//     var dots = document.querySelectorAll('.carousel-dots .dot');
+//
+//     var limit = dots.length -1;
+//
+//     window.addEventListener('click', function() {
+//         els[active].classList.remove('active');
+//         dots[active].classList.remove('active');
+//
+//         if (active == limit) {
+//             active = 0;
+//         } else {
+//             active = active + 1;
+//         }
+//
+//         els[active].classList.add('active');
+//         dots[active].classList.add('active');
+//     });
+// }
 
 // function introAppPreview() {
 //     // console.log('kikoo');

@@ -57,4 +57,20 @@ footer {
             font-family: 600;
         }
     }
+
+    @media screen and (max-width: $tablet-lg) {
+        ul {
+            flex-direction: column;
+
+            li {
+                padding: .4em 0;
+            }
+        }
+
+        .text-right {
+            text-align: left;
+            margin-top: 1em;
+            padding-left: 0;
+        }
+    }
 }
