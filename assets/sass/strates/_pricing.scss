@@ -48,7 +48,8 @@
         @media screen and (max-width: $tablet-lg) {
             display: block;
             .pricing-el {
-                width: 100%;
+                width: 90%;
+                margin: 0 auto;
             }
         }
     }
