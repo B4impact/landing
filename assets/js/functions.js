@@ -34,11 +34,10 @@ function appearingTexts() {
 
     var limit = window.innerHeight / 4;
 
-    // console.log(aboutAppSec.offsetTop - limit);
 
-    if (!isMobile()) {
-
-    }
+    // if (!isMobile()) {
+    //
+    // }
 
     for (let i = 0; i < introTexts.length; i++) {
         setTimeout(function(){
