@@ -12,6 +12,21 @@
         float: left !important;
     }
 
+    .wrapper-actions {
+        label {
+            display: block;
+            background: $lblue;
+            color: #fff;
+            text-align: center;
+            padding: 15px 10px;
+            border-radius: $radius;
+            margin-bottom: 15px;
+            text-transform: uppercase;
+            letter-spacing: .5px;
+            cursor: pointer;
+        }
+    }
+
     @media screen and (max-width: $tablet-lg) {
 
         .container {

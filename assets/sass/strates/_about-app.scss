@@ -21,8 +21,17 @@
 
             img {
                 width: 110px;
+                // filter: grayscale(100%);
+                // transition: .2s ease-out;
             }
         }
+
+        // &:hover {
+        //     img {
+        //         filter: none;
+        //         transition: .2s ease-out;
+        //     }
+        // }
     }
 
     // texts
@@ -66,17 +75,23 @@
         }
 
         .block-content {
-            clear: both;
+            // clear: both;
 
-            .content {
-                clear: both;
-            }
+            // .content {
+            //     clear: both;
+            // }
         }
     }
 
     @media screen and (max-width: $mobile-lg) {
         .wrapper-content {
             padding: 3em 0;
+        }
+
+        figure {
+            position: initial !important;
+            width: 200px;
+            margin: 0 auto;
         }
 
         .block-content {
@@ -89,6 +104,7 @@
         .content {
             clear: both;
             margin-bottom: 2.5em;
+            padding-left: 15px;
 
         }
     }
