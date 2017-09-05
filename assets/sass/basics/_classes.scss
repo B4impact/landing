@@ -41,4 +41,8 @@
 
 .head-strate.spacer {
     margin: 2em 0 4em 0;
+
+    @media screen and (max-width: $mobile-lg) {
+        margin: 2em 0;
+    }
 }

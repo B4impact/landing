@@ -131,6 +131,12 @@ footer ul li a {
 .head-strate.spacer {
   margin: 2em 0 4em 0;
 }
+@media screen and (max-width: 767px) {
+  /* line 42, ../sass/basics/_classes.scss */
+  .head-strate.spacer {
+    margin: 2em 0;
+  }
+}
 
 /* line 1, ../sass/styleguide/_buttons.scss */
 .btn {
@@ -202,8 +208,14 @@ footer ul li a {
   font-size: 30px;
   font-weight: 200;
 }
+@media screen and (max-width: 767px) {
+  /* line 5, ../sass/styleguide/_titles.scss */
+  .head-title {
+    font-size: 27px;
+  }
+}
 
-/* line 11, ../sass/styleguide/_titles.scss */
+/* line 15, ../sass/styleguide/_titles.scss */
 .sb-title {
   margin-bottom: 10px;
   font-size: 21px;
@@ -224,12 +236,12 @@ header.sticky .logo {
   display: none;
 }
 
-/* line 14, ../sass/elements/_header.scss */
-svg {
+/* line 16, ../sass/elements/_header.scss */
+.logo svg {
   width: 65px;
 }
 
-/* line 18, ../sass/elements/_header.scss */
+/* line 21, ../sass/elements/_header.scss */
 header {
   position: absolute;
   z-index: 888;
@@ -241,41 +253,36 @@ header {
 }
 
 @media screen and (max-width: 767px) {
-  /* line 29, ../sass/elements/_header.scss */
+  /* line 32, ../sass/elements/_header.scss */
   .logo {
     text-align: center;
-    margin-bottom: 1em;
+    margin: 1em 0 2em 0;
   }
 }
-/* line 36, ../sass/elements/_header.scss */
-.logo img {
-  max-height: 60px;
-}
-
-/* line 42, ../sass/elements/_header.scss */
+/* line 43, ../sass/elements/_header.scss */
 nav {
   line-height: 4;
   text-align: right;
 }
-/* line 45, ../sass/elements/_header.scss */
+/* line 46, ../sass/elements/_header.scss */
 nav ul {
   font-size: 0;
 }
-/* line 48, ../sass/elements/_header.scss */
+/* line 49, ../sass/elements/_header.scss */
 nav li {
   font-size: initial;
   display: inline-block;
   padding: 0 2em;
 }
-/* line 52, ../sass/elements/_header.scss */
+/* line 53, ../sass/elements/_header.scss */
 nav li:last-child {
   padding-right: 0;
 }
-/* line 57, ../sass/elements/_header.scss */
+/* line 58, ../sass/elements/_header.scss */
 nav li.active a {
   position: relative;
 }
-/* line 60, ../sass/elements/_header.scss */
+/* line 61, ../sass/elements/_header.scss */
 nav li.active a:before {
   content: '';
   display: block;
@@ -287,7 +294,7 @@ nav li.active a:before {
   right: 0;
 }
 @media screen and (max-width: 767px) {
-  /* line 42, ../sass/elements/_header.scss */
+  /* line 43, ../sass/elements/_header.scss */
   nav {
     display: none;
   }
@@ -499,31 +506,18 @@ nav li.active a:before {
 /* line 4, ../sass/strates/_about-app.scss */
 #about-app .wrapper-content {
   padding: 6em 0;
-  border: 1px solid #F6F6F6;
+  border: 1px solid #F1F1F1;
   border-radius: 2px;
 }
 /* line 10, ../sass/strates/_about-app.scss */
-#about-app .visuals {
-  margin-left: -5%;
-}
-/* line 13, ../sass/strates/_about-app.scss */
-#about-app .visuals figure {
-  overflow: hidden;
-  border: 5px solid #fff;
-}
-/* line 17, ../sass/strates/_about-app.scss */
-#about-app .visuals figure img {
-  max-width: 100%;
-}
-/* line 23, ../sass/strates/_about-app.scss */
 #about-app .content {
   transition: .2s ease-out;
 }
-/* line 28, ../sass/strates/_about-app.scss */
+/* line 15, ../sass/strates/_about-app.scss */
 #about-app .block-content {
   margin-bottom: 1.5em;
 }
-/* line 31, ../sass/strates/_about-app.scss */
+/* line 18, ../sass/strates/_about-app.scss */
 #about-app .block-content .small-cta {
   visibility: hidden;
   opacity: 0;
@@ -533,56 +527,52 @@ nav li.active a:before {
   margin-left: -15px;
   transition: .4s ease-out;
 }
-/* line 40, ../sass/strates/_about-app.scss */
+/* line 27, ../sass/strates/_about-app.scss */
 #about-app .block-content .small-cta .icon path {
   fill: #667AF4;
 }
-/* line 47, ../sass/strates/_about-app.scss */
+/* line 34, ../sass/strates/_about-app.scss */
 #about-app .block-content .content:hover .small-cta {
   visibility: visible;
   opacity: 1;
   margin-left: 0;
   transition: .2s ease-out;
 }
-/* line 53, ../sass/strates/_about-app.scss */
+/* line 40, ../sass/strates/_about-app.scss */
 #about-app .block-content .content:hover .small-cta .icon path {
   fill: #667AF4;
 }
 @media screen and (min-width: 767px) and (max-width: 1024px) {
-  /* line 62, ../sass/strates/_about-app.scss */
+  /* line 49, ../sass/strates/_about-app.scss */
   #about-app .caption {
     float: none;
     margin: 0 auto;
   }
-  /* line 67, ../sass/strates/_about-app.scss */
+  /* line 54, ../sass/strates/_about-app.scss */
   #about-app .block-content {
     clear: both;
   }
-  /* line 70, ../sass/strates/_about-app.scss */
+  /* line 57, ../sass/strates/_about-app.scss */
   #about-app .block-content .content {
     clear: both;
   }
 }
 @media screen and (max-width: 767px) {
-  /* line 77, ../sass/strates/_about-app.scss */
+  /* line 64, ../sass/strates/_about-app.scss */
   #about-app .wrapper-content {
-    padding: 1em 0;
-    border: none;
+    padding: 3em 0;
   }
-  /* line 82, ../sass/strates/_about-app.scss */
-  #about-app .visuals {
-    padding: 0;
-    margin-left: initial;
-    margin-bottom: 1.5em;
-  }
-  /* line 88, ../sass/strates/_about-app.scss */
+  /* line 68, ../sass/strates/_about-app.scss */
   #about-app .block-content {
+    float: none;
+    margin: 0 auto;
     margin-bottom: 0;
+    text-align: center;
   }
-  /* line 92, ../sass/strates/_about-app.scss */
+  /* line 75, ../sass/strates/_about-app.scss */
   #about-app .content {
     clear: both;
-    margin-bottom: 1.5em;
+    margin-bottom: 2.5em;
   }
 }
 
@@ -631,14 +621,15 @@ nav li.active a:before {
 @media screen and (max-width: 767px) {
   /* line 1, ../sass/strates/_pricing.scss */
   #pricing {
+    padding-top: 3.5em;
     min-height: auto;
   }
 }
-/* line 10, ../sass/strates/_pricing.scss */
+/* line 11, ../sass/strates/_pricing.scss */
 #pricing.off:before {
   height: 0;
 }
-/* line 15, ../sass/strates/_pricing.scss */
+/* line 16, ../sass/strates/_pricing.scss */
 #pricing:before {
   position: absolute;
   content: '';
@@ -651,47 +642,47 @@ nav li.active a:before {
   transition: 1.2s ease-in-out;
 }
 @media screen and (min-width: 1024px) {
-  /* line 15, ../sass/strates/_pricing.scss */
+  /* line 16, ../sass/strates/_pricing.scss */
   #pricing:before {
     height: 130vh;
   }
 }
 @media screen and (min-width: 768px) and (max-width: 1024px) {
-  /* line 15, ../sass/strates/_pricing.scss */
+  /* line 16, ../sass/strates/_pricing.scss */
   #pricing:before {
     height: 140vh;
   }
 }
 @media screen and (max-width: 767px) {
-  /* line 15, ../sass/strates/_pricing.scss */
+  /* line 16, ../sass/strates/_pricing.scss */
   #pricing:before {
     height: 175vh;
   }
 }
 @media screen and (max-width: 480px) {
-  /* line 15, ../sass/strates/_pricing.scss */
+  /* line 16, ../sass/strates/_pricing.scss */
   #pricing:before {
     height: 185vh;
   }
 }
-/* line 43, ../sass/strates/_pricing.scss */
+/* line 44, ../sass/strates/_pricing.scss */
 #pricing .pricing-els {
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
 }
 @media screen and (max-width: 1024px) {
-  /* line 43, ../sass/strates/_pricing.scss */
+  /* line 44, ../sass/strates/_pricing.scss */
   #pricing .pricing-els {
     display: block;
   }
-  /* line 50, ../sass/strates/_pricing.scss */
+  /* line 51, ../sass/strates/_pricing.scss */
   #pricing .pricing-els .pricing-el {
     width: 90%;
     margin: 0 auto;
   }
 }
-/* line 57, ../sass/strates/_pricing.scss */
+/* line 58, ../sass/strates/_pricing.scss */
 #pricing .pricing-el {
   width: 30%;
   background: #fff;
@@ -701,54 +692,54 @@ nav li.active a:before {
   transform: none;
   transition: .3s ease-out;
 }
-/* line 67, ../sass/strates/_pricing.scss */
+/* line 68, ../sass/strates/_pricing.scss */
 #pricing .pricing-el:nth-child(2) .head-el {
   padding: 3em 0 2em 0;
 }
 @media screen and (min-width: 1024px) {
-  /* line 73, ../sass/strates/_pricing.scss */
+  /* line 74, ../sass/strates/_pricing.scss */
   #pricing .pricing-el:hover {
     transform: translateY(-5%) !important;
     box-shadow: 0 24px 38px rgba(0, 0, 0, 0.15), 0 20px 20px rgba(0, 0, 0, 0.12);
   }
-  /* line 77, ../sass/strates/_pricing.scss */
+  /* line 78, ../sass/strates/_pricing.scss */
   #pricing .pricing-el:hover .cta-el {
     color: #fff;
     transition: .2s ease-out;
   }
-  /* line 80, ../sass/strates/_pricing.scss */
+  /* line 81, ../sass/strates/_pricing.scss */
   #pricing .pricing-el:hover .cta-el:before {
     right: 0;
     transition: .3s ease-out;
   }
 }
-/* line 89, ../sass/strates/_pricing.scss */
+/* line 90, ../sass/strates/_pricing.scss */
 #pricing .pricing-el .head-el {
   padding: 2em 0 1em 0;
   border-bottom: 1px solid #F6F6F6;
 }
-/* line 92, ../sass/strates/_pricing.scss */
+/* line 93, ../sass/strates/_pricing.scss */
 #pricing .pricing-el .head-el h3 {
   font-size: 23px;
   font-weight: 400;
 }
-/* line 96, ../sass/strates/_pricing.scss */
+/* line 97, ../sass/strates/_pricing.scss */
 #pricing .pricing-el .head-el h3 span {
   font-size: inherit;
 }
-/* line 99, ../sass/strates/_pricing.scss */
+/* line 100, ../sass/strates/_pricing.scss */
 #pricing .pricing-el .head-el h3 span.price {
   font-size: 1.4em;
   font-weight: 600;
   margin: 0 3px;
 }
-/* line 108, ../sass/strates/_pricing.scss */
+/* line 109, ../sass/strates/_pricing.scss */
 #pricing .pricing-el .content-el {
   padding: 1.5em 2em;
   text-align: center;
   line-height: 2;
 }
-/* line 114, ../sass/strates/_pricing.scss */
+/* line 115, ../sass/strates/_pricing.scss */
 #pricing .pricing-el .cta-el {
   position: relative;
   background: #667AF4;
@@ -758,7 +749,7 @@ nav li.active a:before {
   border-bottom-right-radius: 2px;
   cursor: pointer;
 }
-/* line 123, ../sass/strates/_pricing.scss */
+/* line 124, ../sass/strates/_pricing.scss */
 #pricing .pricing-el .cta-el a {
   position: relative;
   display: block;
@@ -770,7 +761,7 @@ nav li.active a:before {
   letter-spacing: .5px;
   transition: .3s ease-out;
 }
-/* line 135, ../sass/strates/_pricing.scss */
+/* line 136, ../sass/strates/_pricing.scss */
 #pricing .pricing-el .cta-el:before {
   position: absolute;
   display: block;
@@ -785,7 +776,7 @@ nav li.active a:before {
   border-bottom-left-radius: 2px;
   border-bottom-right-radius: 2px;
 }
-/* line 152, ../sass/strates/_pricing.scss */
+/* line 153, ../sass/strates/_pricing.scss */
 #pricing .carousel-dots {
   display: none;
   width: 100%;
@@ -794,15 +785,15 @@ nav li.active a:before {
   margin-top: 2em;
 }
 @media screen and (max-width: 1024px) {
-  /* line 152, ../sass/strates/_pricing.scss */
+  /* line 153, ../sass/strates/_pricing.scss */
   #pricing .carousel-dots {
     display: block;
   }
-  /* line 161, ../sass/strates/_pricing.scss */
+  /* line 162, ../sass/strates/_pricing.scss */
   #pricing .carousel-dots span.dot.active {
     background: #667AF4;
   }
-  /* line 165, ../sass/strates/_pricing.scss */
+  /* line 166, ../sass/strates/_pricing.scss */
   #pricing .carousel-dots span.dot {
     display: inline-block;
     width: 10px;

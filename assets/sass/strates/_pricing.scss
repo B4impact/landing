@@ -3,6 +3,7 @@
     min-height: 80vh;
 
     @media screen and (max-width: $mobile-lg) {
+        padding-top: 3.5em;
         min-height: auto;
     }
 

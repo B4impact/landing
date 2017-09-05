@@ -3,21 +3,8 @@
     min-height: 80vh;
     .wrapper-content {
         padding: 6em 0;
-        border: 1px solid $llgrey;
+        border: 1px solid $lgrey;
         border-radius: $radius;
-    }
-
-    .visuals {
-        margin-left: -5%;
-
-        figure {
-            overflow: hidden;
-            border: 5px solid #fff;
-
-            img {
-                max-width: 100%;
-            }
-        }
     }
 
     .content {
@@ -75,23 +62,19 @@
 
     @media screen and (max-width: $mobile-lg) {
         .wrapper-content {
-            padding: 1em 0;
-            border: none;
-        }
-
-        .visuals {
-            padding: 0;
-            margin-left: initial;
-            margin-bottom: 1.5em;
+            padding: 3em 0;
         }
 
         .block-content {
+            float: none;
+            margin: 0 auto;
             margin-bottom: 0;
+            text-align: center;
         }
 
         .content {
             clear: both;
-            margin-bottom: 1.5em;
+            margin-bottom: 2.5em;
 
         }
     }

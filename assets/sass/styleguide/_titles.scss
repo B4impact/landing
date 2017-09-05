@@ -6,6 +6,10 @@
     margin: 10px 0;
     font-size: 30px;
     font-weight: 200;
+
+    @media screen and (max-width: $mobile-lg) {
+        font-size: 27px;
+    }
 }
 
 .sb-title {
