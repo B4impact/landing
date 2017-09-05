@@ -8,12 +8,26 @@
     }
 
     .content {
+        position: relative;
+        padding-left: 90px;
         transition: .2s ease-out;
+
+        figure {
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: -1;
+            opacity: .9;
+
+            img {
+                width: 110px;
+            }
+        }
     }
 
     // texts
     .block-content {
-        margin-bottom: 1.5em;
+        margin-bottom: 3.5em;
 
         .small-cta {
             visibility: hidden;
