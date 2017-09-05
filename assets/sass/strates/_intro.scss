@@ -7,7 +7,7 @@
 
     .container {
         padding-top: 8em;
-        max-width: 50%;
+        max-width: 60%;
         margin-left: 7%;
         float: left !important;
     }
@@ -22,7 +22,7 @@
             border-radius: $radius;
             margin-bottom: 15px;
             text-transform: uppercase;
-            letter-spacing: .5px;
+            letter-spacing: .9px;
             cursor: pointer;
         }
     }
@@ -39,6 +39,11 @@
         padding-top: 10em;
         min-height: 60vh;
         text-align: center;
+
+        .wrapper-actions {
+            float: none;
+            margin: 0 auto;
+        }
 
         .content p {
             width: 70%;

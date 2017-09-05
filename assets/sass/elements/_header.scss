@@ -14,7 +14,7 @@ header.sticky {
 // logo
 .logo {
     svg {
-        width: 65px;
+        width: 75px;
     }
 }
 
@@ -29,13 +29,13 @@ header {
 }
 
 @media screen and (max-width: $mobile-lg) {
-    .logo {
-        text-align: center;
-        margin: 1em 0 2em 0;
 
-        // svg {
-        //     width: 90px;
-        // }
+    .logo {
+        margin: 1em 0 4em 0;
+        text-align: center;
+        svg {
+            width: 95px;
+        }
     }
 }
 

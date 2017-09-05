@@ -21,6 +21,7 @@ if (isTablet()) {
     new Siema({
       selector: '#pricing .pricing-els',
       easing: 'ease-out',
+      loop: true,
       perPage: 1,
       startIndex: 1,
       draggable: true,
