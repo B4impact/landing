@@ -618,7 +618,7 @@ nav li.active a:before {
 }
 /* line 21, ../sass/strates/_about-app.scss */
 #about-app .main-caption .content {
-  padding: 80px 35px 0 35px;
+  padding: 0 35px 0 35px;
 }
 /* line 27, ../sass/strates/_about-app.scss */
 #about-app .content {
@@ -656,51 +656,79 @@ nav li.active a:before {
 #about-app .block-content .small-cta .icon path {
   fill: #667AF4;
 }
-/* line 74, ../sass/strates/_about-app.scss */
+/* line 73, ../sass/strates/_about-app.scss */
 #about-app .block-content .content:hover .small-cta {
   visibility: visible;
   opacity: 1;
   margin-left: 0;
   transition: .2s ease-out;
 }
-/* line 80, ../sass/strates/_about-app.scss */
+/* line 79, ../sass/strates/_about-app.scss */
 #about-app .block-content .content:hover .small-cta .icon path {
   fill: #667AF4;
 }
-@media screen and (min-width: 767px) and (max-width: 1024px) {
-  /* line 90, ../sass/strates/_about-app.scss */
-  #about-app .main-caption {
-    clear: both;
-    margin-bottom: 3em;
+@media screen and (min-width: 1024px) {
+  /* line 89, ../sass/strates/_about-app.scss */
+  #about-app .main-caption .content {
+    padding-top: 80px;
   }
-  /* line 95, ../sass/strates/_about-app.scss */
+}
+@media screen and (min-width: 767px) and (max-width: 1024px) {
+  /* line 98, ../sass/strates/_about-app.scss */
+  #about-app .main-caption {
+    float: none;
+    clear: both;
+    margin: 0 auto 3em auto;
+    text-align: center;
+  }
+  /* line 105, ../sass/strates/_about-app.scss */
+  #about-app .content {
+    padding: 0;
+  }
+  /* line 109, ../sass/strates/_about-app.scss */
+  #about-app figure {
+    position: initial !important;
+    margin: 0 auto;
+    text-align: center;
+  }
+  /* line 115, ../sass/strates/_about-app.scss */
   #about-app .caption {
     float: none;
     margin: 0 auto;
   }
 }
 @media screen and (max-width: 767px) {
-  /* line 103, ../sass/strates/_about-app.scss */
+  /* line 123, ../sass/strates/_about-app.scss */
   #about-app .wrapper-content {
     padding: 3em 0;
   }
-  /* line 107, ../sass/strates/_about-app.scss */
+  /* line 127, ../sass/strates/_about-app.scss */
+  #about-app .main-caption {
+    text-align: center;
+    margin: 0 auto;
+  }
+  /* line 132, ../sass/strates/_about-app.scss */
+  #about-app .col-xs-11 {
+    float: none;
+    margin: 0 auto;
+  }
+  /* line 137, ../sass/strates/_about-app.scss */
   #about-app figure {
     position: initial !important;
     width: 200px;
     margin: 0 auto;
   }
-  /* line 113, ../sass/strates/_about-app.scss */
+  /* line 143, ../sass/strates/_about-app.scss */
   #about-app .block-content {
     float: none;
     margin: 0 auto;
     margin-bottom: 0;
     text-align: center;
   }
-  /* line 120, ../sass/strates/_about-app.scss */
+  /* line 150, ../sass/strates/_about-app.scss */
   #about-app .content {
     clear: both;
-    margin-bottom: 2.5em;
+    margin-bottom: 3.5em;
     padding-left: 15px;
   }
 }

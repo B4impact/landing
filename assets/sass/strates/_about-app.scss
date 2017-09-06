@@ -19,7 +19,7 @@
         }
 
         .content {
-            padding: 80px 35px 0 35px;
+            padding: 0 35px 0 35px;
         }
     }
 
@@ -70,7 +70,6 @@
         }
 
         .content:hover {
-
             .small-cta {
                 visibility: visible;
                 opacity: 1;
@@ -84,12 +83,33 @@
         }
     }
 
+    // from large tablet
+    @media screen and (min-width: $tablet-lg) {
+        .main-caption {
+            .content {
+                padding-top: 80px;
+            }
+        }
+    }
+
     // from large mobile to large tablet
     @media screen and (min-width: $mobile-lg) and (max-width: $tablet-lg) {
 
         .main-caption {
+            float: none;
             clear: both;
-            margin-bottom: 3em;
+            margin: 0 auto 3em auto;
+            text-align: center;
+        }
+
+        .content {
+            padding: 0;
+        }
+
+        figure {
+            position: initial !important;
+            margin: 0 auto;
+            text-align: center;
         }
 
         .caption {
@@ -102,6 +122,16 @@
     @media screen and (max-width: $mobile-lg) {
         .wrapper-content {
             padding: 3em 0;
+        }
+
+        .main-caption {
+            text-align: center;
+            margin: 0 auto;
+        }
+
+        .col-xs-11 {
+            float: none;
+            margin: 0 auto;
         }
 
         figure {
@@ -119,9 +149,8 @@
 
         .content {
             clear: both;
-            margin-bottom: 2.5em;
+            margin-bottom: 3.5em;
             padding-left: 15px;
-
         }
     }
 }
