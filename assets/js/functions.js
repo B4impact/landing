@@ -21,7 +21,7 @@ function appearingTexts() {
     var introTexts = document.querySelectorAll('#intro [style="opacity: 0; transform:translateY(-20px);"]');
     var timerIntro = 200;
     var aboutAppSec = document.querySelector('#about-app');
-    var texts = document.querySelectorAll('#about-app .block-content .content');
+    var texts = document.querySelectorAll('#about-app [style="opacity: 0; transform:translateY(-20px);"]');
     var timer = 200;
 
     var pricingSec = document.querySelector('#pricing');
