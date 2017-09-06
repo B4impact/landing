@@ -59,6 +59,7 @@ footer {
     }
 
     @media screen and (max-width: $tablet-lg) {
+        padding-bottom: 2em;
         ul {
             flex-direction: column;
 

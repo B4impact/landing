@@ -51,5 +51,15 @@
                 opacity: .7;
             }
         }
+
+        @media screen and (max-width: $mobile-sm) {
+            &[type="text"] {
+                min-width: 60%;
+            }
+
+            &[type="submit"] {
+                width: 40%;
+            }
+        }
     }
 }
