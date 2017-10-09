@@ -34,11 +34,6 @@ function appearingTexts() {
 
     var limit = window.innerHeight / 4;
 
-
-    // if (!isMobile()) {
-    //
-    // }
-
     for (let i = 0; i < introTexts.length; i++) {
         setTimeout(function(){
             introTexts[i].style.opacity = 1;
@@ -85,9 +80,9 @@ function appearingTexts() {
     });
 }
 
-function stickyHeader() {
-    var header = document.querySelector('header');
-    var currentScroll = body.scrollTop;
+var stickyHeader = function() {
+    this.header = document.querySelector('header');
+    this.currentScroll = body.scrollTop;
 
     window.addEventListener('scroll', function(){
 
@@ -100,14 +95,6 @@ function stickyHeader() {
         currentScroll = body.scrollTop;
     });
 }
-
-// function activeMenu() {
-//     var sections = document.querySelectorAll('section');
-//     sections = sections.shift();
-//     var lis = document.querySelectorAll('nav li');
-//
-//     console.log(sections);
-// }
 
 // function carouselPricing() {
 //     var active = 1;
