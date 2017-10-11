@@ -77,25 +77,6 @@
 
         &.lined {
             position: relative;
-
-            // &:before {
-            //     position: absolute;
-            //     content: '';
-            //     display: block;
-            //     height: 25%;
-            //     background: $lblue;
-            //     left: 0;
-            //     right: 0;
-            //     bottom: 15%;
-            //     z-index: -1;
-            //     opacity: .3;
-            // }
-            //
-            // &.off {
-            //     &:before {
-            //         right: 100%;
-            //     }
-            // }
         }
     }
 
@@ -129,19 +110,30 @@
 
     #preview {
         position: absolute;
+        margin: auto;
         bottom: 0;
-        right: 0;
+        top: 30%;
         width: 50%;
+        height: 100%;
+        right: 0;
+        // background: red;
 
         figure {
-            [data-device="desktop"] {
-                width: 1000px;
-            }
+            position: absolute;
+            height: 100%;
+            width: 90%;
+            right: 0;
+            overflow: hidden;
 
             [data-device="mobile"] {
                 position: absolute;
-                width: 300px;
-                bottom: 2%;
+                display: none;
+                // width: 300px;
+                height: 80%;
+                width: auto;
+                margin: auto;
+                bottom: 0;
+                top: 0;
                 left: -5%;
             }
 
