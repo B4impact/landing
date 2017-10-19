@@ -28,7 +28,7 @@ header {
     transition: none;
 }
 
-@media screen and (max-width: $mobile-lg) {
+@media screen and (max-width: $tablet-lg) {
 
     .logo {
         margin: 1em 0 4em 0;
@@ -72,7 +72,7 @@ nav {
         }
     }
 
-    @media screen and (max-width: $mobile-lg) {
+    @media screen and (max-width: $tablet-lg) {
         display: none;
     }
 }

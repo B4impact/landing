@@ -1,6 +1,13 @@
 #about-us {
     position: relative;
+    padding-top: 3em;
     padding-bottom: 7em;
+
+    .head-strate {
+      visibility: hidden;
+      max-height: 0;
+      overflow: hidden;
+    }
 
     figure {
         display: block;

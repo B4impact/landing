@@ -39,17 +39,8 @@
 
             img {
                 width: 110px;
-                // filter: grayscale(100%);
-                // transition: .2s ease-out;
             }
         }
-
-        // &:hover {
-        //     img {
-        //         filter: none;
-        //         transition: .2s ease-out;
-        //     }
-        // }
     }
 
     // texts
@@ -89,6 +80,7 @@
         .main-caption {
             .content {
                 padding-top: 80px;
+                text-align: center;
             }
         }
     }
@@ -104,11 +96,12 @@
 
         .content {
             padding: 0;
+            text-align: center;
         }
 
         figure {
             position: initial !important;
-            margin: 0 auto;
+            margin: 0 auto 1em auto;
             text-align: center;
         }
 

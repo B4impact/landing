@@ -5,6 +5,7 @@
     font-size: 15px;
     font-weight: 300;
     transition: .2s ease-out;
+    color: #000;
 }
 
 ul {
@@ -57,19 +58,25 @@ footer {
         display: flex;
         justify-content: space-between;
         padding-left: 0;
+
+        width: 20%;
+        max-width: 200px;
         li a {
             font-family: 600;
         }
     }
 
     @media screen and (max-width: $tablet-lg) {
-        padding-bottom: 2em;
-        ul {
-            flex-direction: column;
+        padding-bottom: 4em;
 
-            li {
-                padding: .4em 0;
-            }
+        .pos-right {
+          clear: both;
+          float: none;
+        }
+
+        ul {
+          width: 100%;
+          max-width: 140px;
         }
 
         .text-right {
