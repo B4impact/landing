@@ -1,12 +1,20 @@
 #about-app {
     padding-top: 7em;
-    min-height: 80vh;
+    min-height: 70vh;
+
+    @media screen and (max-width: $tablet-lg) {
+      margin-bottom: 6em;
+    }
 
     // wrapper of the full section
     .wrapper-content {
-        padding: 6em 0;
+        padding: 6em 0 3em 0;
         border: 1px solid $lgrey;
         border-radius: $radius;
+
+        @media screen and (max-width: $tablet-lg) {
+          padding: 5em 0;
+        }
     }
 
     // main caption
@@ -27,13 +35,16 @@
     // each content
     .content {
         position: relative;
-        padding-left: 90px;
         transition: .2s ease-out;
+        text-align: center;
+        padding-top: 8em;
 
         figure {
             position: absolute;
+            margin: auto;
             top: 0;
             left: 0;
+            right: 0;
             z-index: -1;
             opacity: .6;
 
@@ -41,11 +52,25 @@
                 width: 110px;
             }
         }
+
+        p {
+          padding: 0 .5em;
+        }
+
+        @media screen and (max-width: $tablet-lg) {
+          padding-top: 0;
+
+          p {
+            max-width: 300px;
+            margin: 0 auto;
+          }
+        }
     }
 
     // texts
     .block-content {
         margin-bottom: 3.5em;
+        padding: 0 1em;
 
         .small-cta {
             visibility: hidden;
@@ -71,16 +96,6 @@
                 .icon path {
                     fill: $lblue;
                 }
-            }
-        }
-    }
-
-    // from large tablet
-    @media screen and (min-width: $tablet-lg) {
-        .main-caption {
-            .content {
-                padding-top: 80px;
-                text-align: center;
             }
         }
     }
@@ -113,10 +128,6 @@
 
     // from 0 to large mobile
     @media screen and (max-width: $mobile-lg) {
-        .wrapper-content {
-            padding: 1em 0 3em 0;
-        }
-
         .main-caption {
             margin: 0 auto;
         }

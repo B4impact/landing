@@ -30,6 +30,10 @@ header {
 
 @media screen and (max-width: $tablet-lg) {
 
+  .header {
+    text-align: center;
+  }
+
     .logo {
         margin: 1em 0 4em 0;
         text-align: center;

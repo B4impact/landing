@@ -4,12 +4,9 @@
 
 .head-title {
     margin: 10px 0;
-    font-size: 30px;
+    font-size: 24px;
+    line-height: 1.3;
     font-weight: 200;
-
-    @media screen and (max-width: $tablet-lg) {
-      font-size: 27px;
-    }
 }
 
 .sb-title {

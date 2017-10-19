@@ -59,12 +59,26 @@ footer {
         justify-content: space-between;
         padding-left: 0;
 
-        width: 20%;
-        max-width: 200px;
+        width: 100%;
+        max-width: 100px;
+
         li a {
             font-family: 600;
         }
     }
+
+     li {
+       svg {
+         opacity: 1;
+       }
+
+       &:hover {
+         svg {
+           opacity: .3;
+         }
+       }
+     }
+
 
     @media screen and (max-width: $tablet-lg) {
         padding-bottom: 4em;
@@ -72,11 +86,6 @@ footer {
         .pos-right {
           clear: both;
           float: none;
-        }
-
-        ul {
-          width: 100%;
-          max-width: 140px;
         }
 
         .text-right {

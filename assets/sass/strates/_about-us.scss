@@ -1,7 +1,9 @@
 #about-us {
     position: relative;
-    padding-top: 3em;
-    padding-bottom: 7em;
+    width: 100%;
+    margin: 0 auto 3em auto;
+    padding: 3em 0;
+    background: $llgrey;
 
     .head-strate {
       visibility: hidden;
@@ -15,19 +17,26 @@
         height: 200px;
         border-radius: 100px;
         background: #fff;
-        margin-bottom: 40px;
+        margin-bottom: 20px;
         overflow: hidden;
-        border: 5px solid #fff;
 
         img {
-            // width: 250px;
-            height: 250px;
-            margin-left: -25%;
+            height: 230px;
+            margin-left: -8%;
+            transition: .5s ease-out;
 
             &:last-child {
-                margin-left: -15%;
-                height: 200px;
+                margin-left: -10%;
+                height: 210px;
             }
+        }
+
+        &:hover {
+          img {
+            opacity: .8;
+            transform: scale(1.1);
+            transition: .5s ease-out;
+          }
         }
     }
 
