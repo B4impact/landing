@@ -140,7 +140,7 @@ footer li:hover svg {
 
 /* line 38, ../sass/basics/_classes.scss */
 .color-lblue {
-  color: #45c2e0;
+  color: #3c8ad1;
 }
 
 /* line 42, ../sass/basics/_classes.scss */
@@ -167,7 +167,7 @@ footer li:hover svg {
   letter-spacing: .72px;
   border-radius: 2px;
   cursor: pointer;
-  background: #45c2e0;
+  background: #3c8ad1;
   -webkit-font-smoothing: antialiased;
 }
 /* line 16, ../sass/styleguide/_buttons.scss */
@@ -177,7 +177,7 @@ footer li:hover svg {
 }
 /* line 21, ../sass/styleguide/_buttons.scss */
 .btn.btn-blue {
-  background: #45c2e0;
+  background: #3c8ad1;
   color: #fff;
 }
 /* line 26, ../sass/styleguide/_buttons.scss */
@@ -205,11 +205,11 @@ footer li:hover svg {
 }
 /* line 47, ../sass/styleguide/_buttons.scss */
 .small-cta.light-blue {
-  color: #45c2e0;
+  color: #3c8ad1;
 }
 /* line 50, ../sass/styleguide/_buttons.scss */
 .small-cta.light-blue svg path {
-  fill: #45c2e0;
+  fill: #3c8ad1;
 }
 /* line 55, ../sass/styleguide/_buttons.scss */
 .small-cta svg {
@@ -251,7 +251,7 @@ footer li:hover svg {
   width: 0;
   display: block;
   height: 2px;
-  background: #45c2e0;
+  background: #3c8ad1;
   bottom: 0;
   left: 0;
 }
@@ -283,24 +283,25 @@ footer li:hover svg {
 /* line 42, ../sass/styleguide/_forms.scss */
 .form-subscribe input[type="submit"] {
   float: left;
-  background: #45c2e0;
+  background: #3c8ad1;
   color: #fff;
   width: 30%;
+  letter-spacing: 1px;
   border-radius: 2px;
   text-transform: uppercase;
 }
-/* line 51, ../sass/styleguide/_forms.scss */
+/* line 52, ../sass/styleguide/_forms.scss */
 .form-subscribe input[type="submit"]:hover {
   opacity: .7;
 }
 @media screen and (max-width: 480px) {
-  /* line 57, ../sass/styleguide/_forms.scss */
+  /* line 58, ../sass/styleguide/_forms.scss */
   .form-subscribe input[type="text"] {
     display: block;
     width: 100%;
     margin-bottom: 1em;
   }
-  /* line 63, ../sass/styleguide/_forms.scss */
+  /* line 64, ../sass/styleguide/_forms.scss */
   .form-subscribe input[type="submit"] {
     display: block;
     width: 100%;
@@ -381,7 +382,7 @@ nav li.active a:before {
   content: '';
   display: block;
   position: absolute;
-  background: #45c2e0;
+  background: #3c8ad1;
   height: 2px;
   bottom: -10px;
   left: 0;
@@ -431,7 +432,7 @@ nav li.active a:before {
   width: 0;
   display: block;
   height: 2px;
-  background: #45c2e0;
+  background: #3c8ad1;
   bottom: 0;
   left: 0;
 }
@@ -462,7 +463,7 @@ nav li.active a:before {
 /* line 59, ../sass/elements/_catchline.scss */
 .catchline input[type="submit"] {
   float: left;
-  background: #45c2e0;
+  background: #3c8ad1;
   color: #fff;
   width: 30%;
   padding: .5em 1em;
@@ -733,7 +734,7 @@ nav li.active a:before {
 }
 /* line 84, ../sass/strates/_about-app.scss */
 #about-app .block-content .small-cta .icon path {
-  fill: #45c2e0;
+  fill: #3c8ad1;
 }
 /* line 90, ../sass/strates/_about-app.scss */
 #about-app .block-content .content:hover .small-cta {
@@ -744,7 +745,7 @@ nav li.active a:before {
 }
 /* line 96, ../sass/strates/_about-app.scss */
 #about-app .block-content .content:hover .small-cta .icon path {
-  fill: #45c2e0;
+  fill: #3c8ad1;
 }
 @media screen and (min-width: 767px) and (max-width: 1024px) {
   /* line 106, ../sass/strates/_about-app.scss */
@@ -983,7 +984,7 @@ nav li.active a:before {
 /* line 116, ../sass/strates/_pricing.scss */
 #pricing .pricing-el .cta-el {
   position: relative;
-  background: #45c2e0;
+  background: #3c8ad1;
   color: #fff;
   text-align: center;
   border-bottom-left-radius: 2px;
@@ -1007,7 +1008,7 @@ nav li.active a:before {
   position: absolute;
   display: block;
   content: '';
-  background: #45c2e0;
+  background: #3c8ad1;
   left: 0;
   right: 100%;
   top: 0;
@@ -1032,7 +1033,7 @@ nav li.active a:before {
   }
   /* line 163, ../sass/strates/_pricing.scss */
   #pricing .carousel-dots span.dot.active {
-    background: #45c2e0;
+    background: #3c8ad1;
   }
   /* line 167, ../sass/strates/_pricing.scss */
   #pricing .carousel-dots span.dot {
