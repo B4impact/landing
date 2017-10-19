@@ -34,18 +34,18 @@ function appearingTexts() {
 
     var limit = window.innerHeight / 4;
 
-    for (let i = 0; i < introTexts.length; i++) {
-        setTimeout(function(){
-            introTexts[i].style.opacity = 1;
-            introTexts[i].style.transform = 'none';
-        }, timerIntro);
-        timerIntro += 200;
-    }
+    // for (let i = 0; i < introTexts.length; i++) {
+    //     setTimeout(function(){
+    //         introTexts[i].style.opacity = 1;
+    //         introTexts[i].style.transform = 'none';
+    //     }, timerIntro);
+    //     timerIntro += 200;
+    // }
 
     window.addEventListener('scroll', function(){
 
         if (body.scrollTop >= (aboutAppSec.offsetTop - limit)) {
-            for (let i = 0; i < texts.length; i++) {
+            for (var i = 0; i < texts.length; i++) {
                 setTimeout(function(){
                     texts[i].style.opacity = 1;
                     texts[i].style.transform = 'none';
@@ -55,7 +55,7 @@ function appearingTexts() {
         }
 
         if (body.scrollTop >= (pricingSec.offsetTop - 200)) {
-            for (let i = 0; i < textsPricing.length; i++) {
+            for (var i = 0; i < textsPricing.length; i++) {
                 setTimeout(function(){
                     textsPricing[i].style.transform = 'none';
                     textsPricing[i].style.opacity = 1;
@@ -69,7 +69,7 @@ function appearingTexts() {
         }
 
         if (body.scrollTop >= (aboutUsSec.offsetTop - 200)) {
-            for (let i = 0; i < aboutUsEls.length; i++) {
+            for (var i = 0; i < aboutUsEls.length; i++) {
                 setTimeout(function(){
                     aboutUsEls[i].style.transform = 'none';
                     aboutUsEls[i].style.opacity = 1;
@@ -80,9 +80,9 @@ function appearingTexts() {
     });
 }
 
-var stickyHeader = function() {
-    this.header = document.querySelector('header');
-    this.currentScroll = body.scrollTop;
+function stickyHeader() {
+    var header = document.querySelector('header');
+    var currentScroll = body.scrollTop;
 
     window.addEventListener('scroll', function(){
 
@@ -116,28 +116,4 @@ var stickyHeader = function() {
 //         els[active].classList.add('active');
 //         dots[active].classList.add('active');
 //     });
-// }
-
-// function introAppPreview() {
-//     // console.log('kikoo');
-//     var rotateValue = 0;
-//     var buildCss;
-//     var preview = document.querySelector('#preview');
-//     var section = document.querySelector('#intro');
-//
-//     window.addEventListener('mouseover', function(e) {
-//         // console.log(section.getBoundingClientRect());
-//
-//         // console.log(e.clientX / 20, e.clientY / 20);
-//         buildCss = 'translate(' + Math.round(e.clientX / 10) +'px,' + Math.round(e.clientY / 10) + 'px)';
-//
-//         // buildCss = 'translate3d(' + Math.round(e.screenX / 30)+ 'px,' + Math.round(e.screenY / 10) + 'px,' + Math.round(e.screenY / 10) +'px)';
-//         // console.log('translate3d(' + Math.round(e.screenX / 30)+ 'px,' + Math.round(e.screenY / 10) + 'px,' + (e.screenY / 10) +'px)');
-//         // // console.log(buildCss);
-//         preview.style.transform = buildCss;
-//     });
-//
-//     // window.addEventListener('scroll', function(){
-//     //     console.log(section.getBoundingClientRect());
-//     // });
 // }

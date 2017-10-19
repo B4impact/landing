@@ -292,11 +292,14 @@ footer ul li a {
 @media screen and (max-width: 480px) {
   /* line 56, ../sass/styleguide/_forms.scss */
   .form-subscribe input[type="text"] {
-    min-width: 60%;
+    display: block;
+    width: 100%;
+    margin-bottom: 1em;
   }
-  /* line 60, ../sass/styleguide/_forms.scss */
+  /* line 62, ../sass/styleguide/_forms.scss */
   .form-subscribe input[type="submit"] {
-    width: 40%;
+    display: block;
+    width: 100%;
   }
 }
 
@@ -466,17 +469,22 @@ nav li.active a:before {
   position: relative;
   padding-top: 6em;
   min-height: 100vh;
-  max-height: 100vh;
   margin: 0;
 }
-/* line 8, ../sass/strates/_intro.scss */
+@media screen and (max-width: 767px) {
+  /* line 1, ../sass/strates/_intro.scss */
+  #intro {
+    max-height: auto;
+  }
+}
+/* line 12, ../sass/strates/_intro.scss */
 #intro .container {
   padding-top: 8em;
   max-width: 60%;
   margin-left: 7%;
   float: left !important;
 }
-/* line 16, ../sass/strates/_intro.scss */
+/* line 20, ../sass/strates/_intro.scss */
 #intro .wrapper-actions label {
   display: block;
   border-radius: 2px;
@@ -498,57 +506,65 @@ nav li.active a:before {
     min-height: 60vh;
     text-align: center;
   }
-  /* line 32, ../sass/strates/_intro.scss */
+  /* line 36, ../sass/strates/_intro.scss */
   #intro .container {
     max-width: 100%;
     float: none !important;
     margin: 0 auto;
     padding-top: 0;
   }
-  /* line 43, ../sass/strates/_intro.scss */
+  /* line 47, ../sass/strates/_intro.scss */
   #intro .wrapper-actions {
     float: none;
     margin: 0 auto;
   }
-  /* line 48, ../sass/strates/_intro.scss */
+  /* line 52, ../sass/strates/_intro.scss */
   #intro .content p {
     width: 70%;
     margin: 0 auto;
   }
-  /* line 53, ../sass/strates/_intro.scss */
+}
+@media screen and (max-width: 1024px) and (max-width: 767px) {
+  /* line 52, ../sass/strates/_intro.scss */
+  #intro .content p {
+    width: 85%;
+  }
+}
+@media screen and (max-width: 1024px) {
+  /* line 61, ../sass/strates/_intro.scss */
   #intro .btn {
     margin: 2em auto !important;
   }
 }
-/* line 58, ../sass/strates/_intro.scss */
+/* line 66, ../sass/strates/_intro.scss */
 #intro h1 {
   line-height: 1.3;
 }
-/* line 62, ../sass/strates/_intro.scss */
+/* line 70, ../sass/strates/_intro.scss */
 #intro h1 span {
   font-size: 1.3em;
   font-weight: 200;
 }
-/* line 66, ../sass/strates/_intro.scss */
+/* line 74, ../sass/strates/_intro.scss */
 #intro h1 span span {
   font-size: inherit;
   font-weight: inherit;
 }
 @media screen and (max-width: 767px) {
-  /* line 62, ../sass/strates/_intro.scss */
+  /* line 70, ../sass/strates/_intro.scss */
   #intro h1 span {
     font-size: 1.2em;
   }
 }
-/* line 74, ../sass/strates/_intro.scss */
+/* line 82, ../sass/strates/_intro.scss */
 #intro h1 span.lined {
   position: relative;
 }
-/* line 79, ../sass/strates/_intro.scss */
+/* line 87, ../sass/strates/_intro.scss */
 #intro .caption {
   clear: both;
 }
-/* line 84, ../sass/strates/_intro.scss */
+/* line 92, ../sass/strates/_intro.scss */
 #intro .content {
   clear: both;
   margin-top: 10px;
@@ -559,7 +575,7 @@ nav li.active a:before {
   display: table;
   clear: both;
 }
-/* line 89, ../sass/strates/_intro.scss */
+/* line 97, ../sass/strates/_intro.scss */
 #intro .content .btn {
   margin: 2em 0 0 0;
   border-radius: 2px;
@@ -575,7 +591,7 @@ nav li.active a:before {
     margin: 0;
   }
 }
-/* line 107, ../sass/strates/_intro.scss */
+/* line 115, ../sass/strates/_intro.scss */
 #intro #preview {
   position: absolute;
   margin: auto;
@@ -585,15 +601,15 @@ nav li.active a:before {
   height: 100%;
   right: 0;
 }
-/* line 117, ../sass/strates/_intro.scss */
+/* line 124, ../sass/strates/_intro.scss */
 #intro #preview figure {
   position: absolute;
   height: 100%;
-  width: 90%;
+  width: 100%;
   right: 0;
   overflow: hidden;
 }
-/* line 124, ../sass/strates/_intro.scss */
+/* line 131, ../sass/strates/_intro.scss */
 #intro #preview figure [data-device="mobile"] {
   position: absolute;
   display: none;
@@ -605,8 +621,14 @@ nav li.active a:before {
   left: -5%;
 }
 @media screen and (max-width: 767px) {
-  /* line 117, ../sass/strates/_intro.scss */
+  /* line 124, ../sass/strates/_intro.scss */
   #intro #preview figure {
+    position: initial;
+  }
+}
+@media screen and (max-width: 767px) {
+  /* line 115, ../sass/strates/_intro.scss */
+  #intro #preview {
     position: initial;
   }
 }
@@ -982,17 +1004,22 @@ nav li.active a:before {
   position: relative;
   padding-top: 6em;
   min-height: 100vh;
-  max-height: 100vh;
   margin: 0;
 }
-/* line 8, ../sass/strates/_intro.scss */
+@media screen and (max-width: 767px) {
+  /* line 1, ../sass/strates/_intro.scss */
+  #intro {
+    max-height: auto;
+  }
+}
+/* line 12, ../sass/strates/_intro.scss */
 #intro .container {
   padding-top: 8em;
   max-width: 60%;
   margin-left: 7%;
   float: left !important;
 }
-/* line 16, ../sass/strates/_intro.scss */
+/* line 20, ../sass/strates/_intro.scss */
 #intro .wrapper-actions label {
   display: block;
   border-radius: 2px;
@@ -1014,57 +1041,65 @@ nav li.active a:before {
     min-height: 60vh;
     text-align: center;
   }
-  /* line 32, ../sass/strates/_intro.scss */
+  /* line 36, ../sass/strates/_intro.scss */
   #intro .container {
     max-width: 100%;
     float: none !important;
     margin: 0 auto;
     padding-top: 0;
   }
-  /* line 43, ../sass/strates/_intro.scss */
+  /* line 47, ../sass/strates/_intro.scss */
   #intro .wrapper-actions {
     float: none;
     margin: 0 auto;
   }
-  /* line 48, ../sass/strates/_intro.scss */
+  /* line 52, ../sass/strates/_intro.scss */
   #intro .content p {
     width: 70%;
     margin: 0 auto;
   }
-  /* line 53, ../sass/strates/_intro.scss */
+}
+@media screen and (max-width: 1024px) and (max-width: 767px) {
+  /* line 52, ../sass/strates/_intro.scss */
+  #intro .content p {
+    width: 85%;
+  }
+}
+@media screen and (max-width: 1024px) {
+  /* line 61, ../sass/strates/_intro.scss */
   #intro .btn {
     margin: 2em auto !important;
   }
 }
-/* line 58, ../sass/strates/_intro.scss */
+/* line 66, ../sass/strates/_intro.scss */
 #intro h1 {
   line-height: 1.3;
 }
-/* line 62, ../sass/strates/_intro.scss */
+/* line 70, ../sass/strates/_intro.scss */
 #intro h1 span {
   font-size: 1.3em;
   font-weight: 200;
 }
-/* line 66, ../sass/strates/_intro.scss */
+/* line 74, ../sass/strates/_intro.scss */
 #intro h1 span span {
   font-size: inherit;
   font-weight: inherit;
 }
 @media screen and (max-width: 767px) {
-  /* line 62, ../sass/strates/_intro.scss */
+  /* line 70, ../sass/strates/_intro.scss */
   #intro h1 span {
     font-size: 1.2em;
   }
 }
-/* line 74, ../sass/strates/_intro.scss */
+/* line 82, ../sass/strates/_intro.scss */
 #intro h1 span.lined {
   position: relative;
 }
-/* line 79, ../sass/strates/_intro.scss */
+/* line 87, ../sass/strates/_intro.scss */
 #intro .caption {
   clear: both;
 }
-/* line 84, ../sass/strates/_intro.scss */
+/* line 92, ../sass/strates/_intro.scss */
 #intro .content {
   clear: both;
   margin-top: 10px;
@@ -1075,7 +1110,7 @@ nav li.active a:before {
   display: table;
   clear: both;
 }
-/* line 89, ../sass/strates/_intro.scss */
+/* line 97, ../sass/strates/_intro.scss */
 #intro .content .btn {
   margin: 2em 0 0 0;
   border-radius: 2px;
@@ -1091,7 +1126,7 @@ nav li.active a:before {
     margin: 0;
   }
 }
-/* line 107, ../sass/strates/_intro.scss */
+/* line 115, ../sass/strates/_intro.scss */
 #intro #preview {
   position: absolute;
   margin: auto;
@@ -1101,15 +1136,15 @@ nav li.active a:before {
   height: 100%;
   right: 0;
 }
-/* line 117, ../sass/strates/_intro.scss */
+/* line 124, ../sass/strates/_intro.scss */
 #intro #preview figure {
   position: absolute;
   height: 100%;
-  width: 90%;
+  width: 100%;
   right: 0;
   overflow: hidden;
 }
-/* line 124, ../sass/strates/_intro.scss */
+/* line 131, ../sass/strates/_intro.scss */
 #intro #preview figure [data-device="mobile"] {
   position: absolute;
   display: none;
@@ -1121,8 +1156,14 @@ nav li.active a:before {
   left: -5%;
 }
 @media screen and (max-width: 767px) {
-  /* line 117, ../sass/strates/_intro.scss */
+  /* line 124, ../sass/strates/_intro.scss */
   #intro #preview figure {
+    position: initial;
+  }
+}
+@media screen and (max-width: 767px) {
+  /* line 115, ../sass/strates/_intro.scss */
+  #intro #preview {
     position: initial;
   }
 }

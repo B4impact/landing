@@ -54,11 +54,14 @@
 
         @media screen and (max-width: $mobile-sm) {
             &[type="text"] {
-                min-width: 60%;
+                display: block;
+                width: 100%;
+                margin-bottom: 1em;
             }
 
             &[type="submit"] {
-                width: 40%;
+                display: block;
+                width: 100%;
             }
         }
     }

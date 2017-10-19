@@ -2,8 +2,12 @@
     position: relative;
     padding-top: 6em;
     min-height: 100vh;
-    max-height: 100vh;
+    // max-height: 100vh;
     margin: 0;
+
+    @media screen and (max-width: $mobile-lg) {
+        max-height: auto;
+    }
 
     .container {
         padding-top: 8em;
@@ -48,6 +52,10 @@
         .content p {
             width: 70%;
             margin: 0 auto;
+
+            @media screen and (max-width: $mobile-lg) {
+                width: 85%;
+            }
         }
 
         .btn {
@@ -112,19 +120,17 @@
         width: 50%;
         height: 100%;
         right: 0;
-        // background: red;
 
         figure {
             position: absolute;
             height: 100%;
-            width: 90%;
+            width: 100%;
             right: 0;
             overflow: hidden;
 
             [data-device="mobile"] {
                 position: absolute;
                 display: none;
-                // width: 300px;
                 height: 80%;
                 width: auto;
                 margin: auto;
@@ -139,5 +145,10 @@
                 position: initial;
             }
         }
+
+        @media screen and (max-width: $mobile-lg) {
+            position: initial;
+        }
+
     }
 }
