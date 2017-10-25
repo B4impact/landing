@@ -24,9 +24,20 @@ a {
 
 body {
     overflow-x: hidden;
-    background-image: url('../img/img-layout/background-img.jpg');
     background-size: contain;
     background-repeat: no-repeat;
+
+    @media screen and (min-width: $tablet-lg) {
+      background-image: url('../img/img-layout/background-img.jpg');
+    }
+
+    @media screen and (min-width: $mobile-lg) and (max-width: $tablet-lg) {
+      background-image: url('../img/img-layout/background-img-md.jpg');
+    }
+
+    @media screen and (max-width: $mobile-lg) {
+      background-image: url('../img/img-layout/background-img-sm.jpg');
+    }
 }
 
 h1, h2, h3 {

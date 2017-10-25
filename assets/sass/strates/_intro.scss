@@ -1,7 +1,13 @@
+body {
+  position: relative;
+  width: 100%;
+  overfow-x: hidden;
+}
+
 #intro {
     position: relative;
     padding-top: 6em;
-    min-height: 100vh;
+    min-height: 70vh;
     margin: 0;
 
     @media screen and (max-width: $mobile-lg) {
@@ -10,9 +16,6 @@
 
     .container {
         padding-top: 8em;
-        max-width: 60%;
-        margin-left: 6.5%;
-        float: left !important;
     }
 
     .wrapper-actions {
@@ -99,18 +102,6 @@
         }
     }
 
-    @keyframes floatingPreview {
-        0% {
-            margin: 0;
-        }
-        50% {
-            margin-top: -10%;
-        }
-        100% {
-            margin: 0;
-        }
-    }
-
     #preview {
         position: absolute;
         margin: auto;
@@ -124,7 +115,7 @@
             position: absolute;
             height: 100%;
             width: 100%;
-            right: 0;
+            right: -5%;
             overflow: hidden;
 
             [data-device="mobile"] {
@@ -137,16 +128,30 @@
                 top: 0;
                 left: -5%;
             }
-
-
-
-            @media screen and (max-width: $mobile-lg) {
-                position: initial;
-            }
         }
 
-        @media screen and (max-width: $mobile-lg) {
+        @media screen and (max-width: $tablet-lg) {
             position: initial;
+            width: 100%;
+            margin-top: 4em;
+
+            figure {
+              position: initial;
+              max-height: 55vh;
+
+              @media screen and (max-width: $mobile-lg) {
+                max-height: 35vh;
+              }
+
+              @media screen and (max-width: $mobile-sm) {
+                max-height: 28vh;
+              }
+            }
+
+            img {
+              width: 100%;
+              max-width: auto;
+            }
         }
 
     }

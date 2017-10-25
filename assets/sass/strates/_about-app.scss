@@ -3,6 +3,7 @@
     min-height: 70vh;
 
     @media screen and (max-width: $tablet-lg) {
+      padding-top: 4em;
       margin-bottom: 6em;
     }
 
@@ -13,7 +14,7 @@
         border-radius: $radius;
 
         @media screen and (max-width: $tablet-lg) {
-          padding: 5em 0;
+          padding: 4em 0;
         }
     }
 
@@ -54,7 +55,7 @@
         }
 
         p {
-          padding: 0 .5em;
+          padding: 0 1.5em;
         }
 
         @media screen and (max-width: $tablet-lg) {

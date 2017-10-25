@@ -45,7 +45,7 @@ function appearingTexts() {
     window.addEventListener('scroll', function(){
 
         if (body.scrollTop >= (aboutAppSec.offsetTop - limit)) {
-            for (var i = 0; i < texts.length; i++) {
+            for (let i = 0; i < texts.length; i++) {
                 setTimeout(function(){
                     texts[i].style.opacity = 1;
                     texts[i].style.transform = 'none';
@@ -55,7 +55,7 @@ function appearingTexts() {
         }
 
         if (body.scrollTop >= (pricingSec.offsetTop - 200)) {
-            for (var i = 0; i < textsPricing.length; i++) {
+            for (let i = 0; i < textsPricing.length; i++) {
                 setTimeout(function(){
                     textsPricing[i].style.transform = 'none';
                     textsPricing[i].style.opacity = 1;
@@ -69,7 +69,7 @@ function appearingTexts() {
         }
 
         if (body.scrollTop >= (aboutUsSec.offsetTop - 200)) {
-            for (var i = 0; i < aboutUsEls.length; i++) {
+            for (let i = 0; i < aboutUsEls.length; i++) {
                 setTimeout(function(){
                     aboutUsEls[i].style.transform = 'none';
                     aboutUsEls[i].style.opacity = 1;

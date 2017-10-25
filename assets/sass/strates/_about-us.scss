@@ -1,6 +1,5 @@
 #about-us {
     position: relative;
-    width: 100%;
     margin: 0 auto 3em auto;
     padding: 3em 0;
     background: $llgrey;
@@ -30,14 +29,14 @@
                 height: 210px;
             }
         }
+    }
 
-        &:hover {
-          img {
-            opacity: .8;
-            transform: scale(1.1);
-            transition: .5s ease-out;
-          }
-        }
+    .ppl:hover {
+      img {
+        opacity: .8;
+        transform: scale(1.1);
+        transition: .5s ease-out;
+      }
     }
 
     @media screen and (max-width: $mobile-lg) {
