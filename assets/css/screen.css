@@ -238,7 +238,7 @@ footer li:hover svg {
   max-width: 15px;
 }
 
-/* line 5, ../sass/styleguide/_titles.scss */
+/* line 1, ../sass/styleguide/_titles.scss */
 .head-title {
   margin: 10px 0;
   font-size: 24px;
@@ -246,7 +246,7 @@ footer li:hover svg {
   font-weight: 200;
 }
 
-/* line 12, ../sass/styleguide/_titles.scss */
+/* line 8, ../sass/styleguide/_titles.scss */
 .sb-title {
   margin-bottom: 10px;
   font-size: 21px;
@@ -419,85 +419,6 @@ nav li.active a:before {
   }
 }
 
-/* line 1, ../sass/elements/_catchline.scss */
-.catchline {
-  clear: both;
-  padding: 0 0 5em 0;
-}
-/* line 5, ../sass/elements/_catchline.scss */
-.catchline .head-title {
-  padding-left: 0;
-}
-/* line 9, ../sass/elements/_catchline.scss */
-.catchline p {
-  font-family: "Poppins", Arial, sans-serif;
-  line-height: 1.8;
-}
-/* line 12, ../sass/elements/_catchline.scss */
-.catchline p span {
-  font-family: inherit;
-  font-size: 15px;
-}
-/* line 18, ../sass/elements/_catchline.scss */
-.catchline .form-subscribe {
-  position: relative;
-  padding-left: 0;
-  padding-top: 30px;
-}
-/* line 2, ../sass/basics/_clearfix.scss */
-.catchline .form-subscribe form:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-/* line 27, ../sass/elements/_catchline.scss */
-.catchline .form-subscribe .line {
-  position: absolute;
-  width: 0;
-  display: block;
-  height: 2px;
-  background: #3c8ad1;
-  bottom: 0;
-  left: 0;
-}
-/* line 37, ../sass/elements/_catchline.scss */
-.catchline .form-subscribe input[type="text"]:focus ~ .line {
-  width: 15%;
-}
-/* line 42, ../sass/elements/_catchline.scss */
-.catchline input {
-  border: none;
-  font-size: 20px;
-  padding: .5em 0;
-  outline: none;
-}
-@media screen and (max-width: 767px) {
-  /* line 42, ../sass/elements/_catchline.scss */
-  .catchline input {
-    font-size: 16px;
-  }
-}
-/* line 52, ../sass/elements/_catchline.scss */
-.catchline input[type="text"] {
-  float: left;
-  padding-left: 0;
-  min-width: 70%;
-  border-bottom: 1px solid #F1F1F1;
-}
-/* line 59, ../sass/elements/_catchline.scss */
-.catchline input[type="submit"] {
-  float: left;
-  background: #3c8ad1;
-  color: #fff;
-  width: 30%;
-  padding: .5em 1em;
-  border-radius: 2px;
-}
-/* line 67, ../sass/elements/_catchline.scss */
-.catchline input[type="submit"]:hover {
-  opacity: .7;
-}
-
 /* line 1, ../sass/strates/_intro.scss */
 body {
   position: relative;
@@ -658,7 +579,7 @@ body {
   #intro #preview figure {
     position: initial;
   }
-  /* line 151, ../sass/strates/_intro.scss */
+  /* line 142, ../sass/strates/_intro.scss */
   #intro #preview img {
     width: 100%;
     max-width: auto;
@@ -677,39 +598,39 @@ body {
     margin-bottom: 6em;
   }
 }
-/* line 11, ../sass/strates/_about-app.scss */
+/* line 10, ../sass/strates/_about-app.scss */
 #about-app .wrapper-content {
   padding: 6em 0 3em 0;
 }
 @media screen and (max-width: 1024px) {
-  /* line 11, ../sass/strates/_about-app.scss */
+  /* line 10, ../sass/strates/_about-app.scss */
   #about-app .wrapper-content {
     padding: 4em 0;
   }
 }
-/* line 22, ../sass/strates/_about-app.scss */
+/* line 18, ../sass/strates/_about-app.scss */
 #about-app .main-caption {
   padding-top: 70px;
   text-align: center;
 }
-/* line 25, ../sass/strates/_about-app.scss */
+/* line 21, ../sass/strates/_about-app.scss */
 #about-app .main-caption figure {
   margin: auto;
   right: 0;
   text-align: center;
 }
-/* line 31, ../sass/strates/_about-app.scss */
+/* line 27, ../sass/strates/_about-app.scss */
 #about-app .main-caption .content {
   padding: 0 35px 0 35px;
 }
-/* line 37, ../sass/strates/_about-app.scss */
+/* line 33, ../sass/strates/_about-app.scss */
 #about-app .content {
   position: relative;
   transition: .2s ease-out;
   text-align: center;
   padding-top: 8em;
 }
-/* line 43, ../sass/strates/_about-app.scss */
+/* line 39, ../sass/strates/_about-app.scss */
 #about-app .content figure {
   position: absolute;
   margin: auto;
@@ -719,31 +640,31 @@ body {
   z-index: -1;
   opacity: .6;
 }
-/* line 52, ../sass/strates/_about-app.scss */
+/* line 48, ../sass/strates/_about-app.scss */
 #about-app .content figure img {
   width: 110px;
 }
-/* line 57, ../sass/strates/_about-app.scss */
+/* line 53, ../sass/strates/_about-app.scss */
 #about-app .content p {
   padding: 0 1.5em;
 }
 @media screen and (max-width: 1024px) {
-  /* line 37, ../sass/strates/_about-app.scss */
+  /* line 33, ../sass/strates/_about-app.scss */
   #about-app .content {
     padding-top: 0;
   }
-  /* line 64, ../sass/strates/_about-app.scss */
+  /* line 60, ../sass/strates/_about-app.scss */
   #about-app .content p {
     max-width: 300px;
     margin: 0 auto;
   }
 }
-/* line 72, ../sass/strates/_about-app.scss */
+/* line 68, ../sass/strates/_about-app.scss */
 #about-app .block-content {
   margin-bottom: 3.5em;
   padding: 0 1em;
 }
-/* line 76, ../sass/strates/_about-app.scss */
+/* line 72, ../sass/strates/_about-app.scss */
 #about-app .block-content .small-cta {
   visibility: hidden;
   opacity: 0;
@@ -753,69 +674,69 @@ body {
   margin-left: -15px;
   transition: .4s ease-out;
 }
-/* line 85, ../sass/strates/_about-app.scss */
+/* line 81, ../sass/strates/_about-app.scss */
 #about-app .block-content .small-cta .icon path {
   fill: #3c8ad1;
 }
-/* line 91, ../sass/strates/_about-app.scss */
+/* line 87, ../sass/strates/_about-app.scss */
 #about-app .block-content .content:hover .small-cta {
   visibility: visible;
   opacity: 1;
   margin-left: 0;
   transition: .2s ease-out;
 }
-/* line 97, ../sass/strates/_about-app.scss */
+/* line 93, ../sass/strates/_about-app.scss */
 #about-app .block-content .content:hover .small-cta .icon path {
   fill: #3c8ad1;
 }
 @media screen and (min-width: 767px) and (max-width: 1024px) {
-  /* line 107, ../sass/strates/_about-app.scss */
+  /* line 102, ../sass/strates/_about-app.scss */
   #about-app .main-caption {
     float: none;
     clear: both;
     margin: 0 auto 3em auto;
   }
-  /* line 113, ../sass/strates/_about-app.scss */
+  /* line 108, ../sass/strates/_about-app.scss */
   #about-app .content {
     padding: 0;
     text-align: center;
   }
-  /* line 118, ../sass/strates/_about-app.scss */
+  /* line 113, ../sass/strates/_about-app.scss */
   #about-app figure {
     position: initial !important;
     margin: 0 auto 1em auto;
     text-align: center;
   }
-  /* line 124, ../sass/strates/_about-app.scss */
+  /* line 119, ../sass/strates/_about-app.scss */
   #about-app .caption {
     float: none;
     margin: 0 auto;
   }
 }
 @media screen and (max-width: 767px) {
-  /* line 132, ../sass/strates/_about-app.scss */
+  /* line 127, ../sass/strates/_about-app.scss */
   #about-app .main-caption {
     margin: 0 auto;
   }
-  /* line 136, ../sass/strates/_about-app.scss */
+  /* line 131, ../sass/strates/_about-app.scss */
   #about-app .col-xs-11 {
     float: none;
     margin: 0 auto;
   }
-  /* line 141, ../sass/strates/_about-app.scss */
+  /* line 136, ../sass/strates/_about-app.scss */
   #about-app figure {
     position: initial !important;
     width: 200px;
     margin: 0 auto;
   }
-  /* line 147, ../sass/strates/_about-app.scss */
+  /* line 142, ../sass/strates/_about-app.scss */
   #about-app .block-content {
     float: none;
     margin: 0 auto;
     margin-bottom: 0;
     text-align: center;
   }
-  /* line 154, ../sass/strates/_about-app.scss */
+  /* line 149, ../sass/strates/_about-app.scss */
   #about-app .content {
     clear: both;
     margin-bottom: 3.5em;
@@ -875,198 +796,6 @@ body {
   }
 }
 
-/* line 1, ../sass/strates/_pricing.scss */
-#pricing {
-  position: relative;
-  min-height: 80vh;
-}
-@media screen and (max-width: 767px) {
-  /* line 1, ../sass/strates/_pricing.scss */
-  #pricing {
-    padding-top: 3.5em;
-    min-height: auto;
-  }
-}
-/* line 11, ../sass/strates/_pricing.scss */
-#pricing.off:before {
-  height: 0;
-}
-/* line 16, ../sass/strates/_pricing.scss */
-#pricing:before {
-  position: absolute;
-  content: '';
-  display: block;
-  width: calc(100% + 30px);
-  height: 100vh;
-  top: 60%;
-  left: -15px;
-  background: #F6F6F6;
-  transition: 1.2s ease-in-out;
-}
-@media screen and (min-width: 1024px) {
-  /* line 16, ../sass/strates/_pricing.scss */
-  #pricing:before {
-    height: 130vh;
-  }
-}
-@media screen and (min-width: 768px) and (max-width: 1024px) {
-  /* line 16, ../sass/strates/_pricing.scss */
-  #pricing:before {
-    height: 140vh;
-  }
-}
-@media screen and (max-width: 767px) {
-  /* line 16, ../sass/strates/_pricing.scss */
-  #pricing:before {
-    height: 175vh;
-  }
-}
-@media screen and (max-width: 480px) {
-  /* line 16, ../sass/strates/_pricing.scss */
-  #pricing:before {
-    height: 185vh;
-  }
-}
-/* line 44, ../sass/strates/_pricing.scss */
-#pricing .pricing-els {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-end;
-}
-@media screen and (max-width: 1024px) {
-  /* line 44, ../sass/strates/_pricing.scss */
-  #pricing .pricing-els {
-    display: block;
-  }
-  /* line 51, ../sass/strates/_pricing.scss */
-  #pricing .pricing-els .pricing-el {
-    width: 90%;
-    margin: 0 auto;
-  }
-}
-/* line 58, ../sass/strates/_pricing.scss */
-#pricing .pricing-el {
-  width: 30%;
-  background: #fff;
-  border-radius: 2px;
-  padding: 0;
-  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.15), 0 10px 10px rgba(0, 0, 0, 0.12);
-  transform: none;
-  transition: .4s ease-out;
-}
-/* line 68, ../sass/strates/_pricing.scss */
-#pricing .pricing-el:nth-child(2) .head-el {
-  padding: 3em 0 2em 0;
-}
-@media screen and (min-width: 1024px) {
-  /* line 74, ../sass/strates/_pricing.scss */
-  #pricing .pricing-el:hover {
-    transform: translateY(-3%) !important;
-    box-shadow: 0 24px 38px rgba(0, 0, 0, 0.15), 0 20px 20px rgba(0, 0, 0, 0.12);
-  }
-  /* line 78, ../sass/strates/_pricing.scss */
-  #pricing .pricing-el:hover .cta-el {
-    color: #fff;
-    transition: .2s ease-out;
-  }
-  /* line 81, ../sass/strates/_pricing.scss */
-  #pricing .pricing-el:hover .cta-el:before {
-    right: 0;
-    transition: .3s ease-out;
-  }
-}
-/* line 90, ../sass/strates/_pricing.scss */
-#pricing .pricing-el .head-el {
-  padding: 2em 0 1em 0;
-  border-bottom: 1px solid #F6F6F6;
-}
-/* line 93, ../sass/strates/_pricing.scss */
-#pricing .pricing-el .head-el h3 {
-  padding: 0 10px;
-  font-size: 22px;
-  font-weight: 400;
-}
-/* line 98, ../sass/strates/_pricing.scss */
-#pricing .pricing-el .head-el h3 span {
-  font-size: inherit;
-}
-/* line 101, ../sass/strates/_pricing.scss */
-#pricing .pricing-el .head-el h3 span.price {
-  font-size: 1.4em;
-  font-weight: 600;
-  margin: 0 3px;
-}
-/* line 110, ../sass/strates/_pricing.scss */
-#pricing .pricing-el .content-el {
-  padding: 1.5em 2em;
-  text-align: center;
-  line-height: 2;
-}
-/* line 116, ../sass/strates/_pricing.scss */
-#pricing .pricing-el .cta-el {
-  position: relative;
-  background: #3c8ad1;
-  color: #fff;
-  text-align: center;
-  border-bottom-left-radius: 2px;
-  border-bottom-right-radius: 2px;
-  cursor: pointer;
-}
-/* line 125, ../sass/strates/_pricing.scss */
-#pricing .pricing-el .cta-el a {
-  position: relative;
-  display: block;
-  z-index: 2;
-  padding: 1em 0;
-  font-size: 1.2em;
-  text-transform: uppercase;
-  font-weight: 200;
-  letter-spacing: .5px;
-  transition: .3s ease-out;
-}
-/* line 137, ../sass/strates/_pricing.scss */
-#pricing .pricing-el .cta-el:before {
-  position: absolute;
-  display: block;
-  content: '';
-  background: #3c8ad1;
-  left: 0;
-  right: 100%;
-  top: 0;
-  height: 100%;
-  z-index: 0;
-  transition: .3s ease-out;
-  border-bottom-left-radius: 2px;
-  border-bottom-right-radius: 2px;
-}
-/* line 154, ../sass/strates/_pricing.scss */
-#pricing .carousel-dots {
-  display: none;
-  width: 100%;
-  min-height: 50px;
-  text-align: center;
-  margin-top: 2em;
-}
-@media screen and (max-width: 1024px) {
-  /* line 154, ../sass/strates/_pricing.scss */
-  #pricing .carousel-dots {
-    display: block;
-  }
-  /* line 163, ../sass/strates/_pricing.scss */
-  #pricing .carousel-dots span.dot.active {
-    background: #3c8ad1;
-  }
-  /* line 167, ../sass/strates/_pricing.scss */
-  #pricing .carousel-dots span.dot {
-    display: inline-block;
-    width: 10px;
-    height: 10px;
-    margin: 0 8px;
-    background: rgba(0, 0, 0, 0.1);
-    border-radius: 100px;
-  }
-}
-
 /* line 1, ../sass/strates/_intro.scss */
 body {
   position: relative;
@@ -1227,7 +956,7 @@ body {
   #intro #preview figure {
     position: initial;
   }
-  /* line 151, ../sass/strates/_intro.scss */
+  /* line 142, ../sass/strates/_intro.scss */
   #intro #preview img {
     width: 100%;
     max-width: auto;

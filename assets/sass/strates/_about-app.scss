@@ -7,18 +7,14 @@
       margin-bottom: 6em;
     }
 
-    // wrapper of the full section
     .wrapper-content {
         padding: 6em 0 3em 0;
-        // border: 1px solid $lgrey;
-        // border-radius: $radius;
 
         @media screen and (max-width: $tablet-lg) {
           padding: 4em 0;
         }
     }
 
-    // main caption
     .main-caption {
         padding-top: 70px;
         text-align: center;
@@ -101,7 +97,6 @@
         }
     }
 
-    // from large mobile to large tablet
     @media screen and (min-width: $mobile-lg) and (max-width: $tablet-lg) {
 
         .main-caption {
