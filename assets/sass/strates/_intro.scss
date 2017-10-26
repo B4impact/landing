@@ -137,15 +137,15 @@ body {
 
             figure {
               position: initial;
-              max-height: 55vh;
+              // max-height: 55vh;
 
-              @media screen and (max-width: $mobile-lg) {
-                max-height: 35vh;
-              }
-
-              @media screen and (max-width: $mobile-sm) {
-                max-height: 28vh;
-              }
+              // @media screen and (max-width: $mobile-lg) {
+              //   max-height: 35vh;
+              // }
+              //
+              // @media screen and (max-width: $mobile-sm) {
+              //   max-height: 28vh;
+              // }
             }
 
             img {

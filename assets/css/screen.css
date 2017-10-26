@@ -85,19 +85,18 @@ footer {
 footer ul {
   display: flex;
   justify-content: space-between;
-  padding-left: 0;
   width: 100%;
   max-width: 100px;
 }
-/* line 76, ../sass/basics/_reset.scss */
+/* line 75, ../sass/basics/_reset.scss */
 footer ul li a {
   font-family: 600;
 }
-/* line 82, ../sass/basics/_reset.scss */
+/* line 81, ../sass/basics/_reset.scss */
 footer li svg {
   opacity: 1;
 }
-/* line 87, ../sass/basics/_reset.scss */
+/* line 86, ../sass/basics/_reset.scss */
 footer li:hover svg {
   opacity: .3;
 }
@@ -106,12 +105,16 @@ footer li:hover svg {
   footer {
     padding-bottom: 4em;
   }
-  /* line 97, ../sass/basics/_reset.scss */
+  /* line 96, ../sass/basics/_reset.scss */
+  footer .row {
+    padding: 0 15px;
+  }
+  /* line 100, ../sass/basics/_reset.scss */
   footer .pos-right {
     clear: both;
     float: none;
   }
-  /* line 102, ../sass/basics/_reset.scss */
+  /* line 105, ../sass/basics/_reset.scss */
   footer .text-right {
     text-align: left;
     margin-top: 1em;
@@ -654,22 +657,7 @@ body {
   /* line 138, ../sass/strates/_intro.scss */
   #intro #preview figure {
     position: initial;
-    max-height: 55vh;
   }
-}
-@media screen and (max-width: 1024px) and (max-width: 767px) {
-  /* line 138, ../sass/strates/_intro.scss */
-  #intro #preview figure {
-    max-height: 35vh;
-  }
-}
-@media screen and (max-width: 1024px) and (max-width: 480px) {
-  /* line 138, ../sass/strates/_intro.scss */
-  #intro #preview figure {
-    max-height: 28vh;
-  }
-}
-@media screen and (max-width: 1024px) {
   /* line 151, ../sass/strates/_intro.scss */
   #intro #preview img {
     width: 100%;
@@ -692,8 +680,6 @@ body {
 /* line 11, ../sass/strates/_about-app.scss */
 #about-app .wrapper-content {
   padding: 6em 0 3em 0;
-  border: 1px solid #F1F1F1;
-  border-radius: 2px;
 }
 @media screen and (max-width: 1024px) {
   /* line 11, ../sass/strates/_about-app.scss */
@@ -853,8 +839,8 @@ body {
 /* line 13, ../sass/strates/_about-us.scss */
 #about-us figure {
   display: block;
-  width: 200px;
-  height: 200px;
+  width: 150px;
+  height: 150px;
   border-radius: 100px;
   background: #fff;
   margin-bottom: 20px;
@@ -862,14 +848,14 @@ body {
 }
 /* line 22, ../sass/strates/_about-us.scss */
 #about-us figure img {
-  height: 230px;
+  height: 170px;
   margin-left: -8%;
   transition: .5s ease-out;
 }
 /* line 27, ../sass/strates/_about-us.scss */
 #about-us figure img:last-child {
-  margin-left: -10%;
-  height: 210px;
+  margin-left: -17%;
+  height: 170px;
 }
 /* line 35, ../sass/strates/_about-us.scss */
 #about-us .ppl:hover img {
@@ -880,9 +866,10 @@ body {
 @media screen and (max-width: 767px) {
   /* line 1, ../sass/strates/_about-us.scss */
   #about-us {
-    padding-bottom: 4em;
+    padding-bottom: 0;
+    padding-top: 3.5em;
   }
-  /* line 45, ../sass/strates/_about-us.scss */
+  /* line 46, ../sass/strates/_about-us.scss */
   #about-us .ppl {
     margin-bottom: 4em;
   }
@@ -1239,22 +1226,7 @@ body {
   /* line 138, ../sass/strates/_intro.scss */
   #intro #preview figure {
     position: initial;
-    max-height: 55vh;
   }
-}
-@media screen and (max-width: 1024px) and (max-width: 767px) {
-  /* line 138, ../sass/strates/_intro.scss */
-  #intro #preview figure {
-    max-height: 35vh;
-  }
-}
-@media screen and (max-width: 1024px) and (max-width: 480px) {
-  /* line 138, ../sass/strates/_intro.scss */
-  #intro #preview figure {
-    max-height: 28vh;
-  }
-}
-@media screen and (max-width: 1024px) {
   /* line 151, ../sass/strates/_intro.scss */
   #intro #preview img {
     width: 100%;

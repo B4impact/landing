@@ -68,7 +68,6 @@ footer {
     ul {
         display: flex;
         justify-content: space-between;
-        padding-left: 0;
 
         width: 100%;
         max-width: 100px;
@@ -92,7 +91,11 @@ footer {
 
 
     @media screen and (max-width: $tablet-lg) {
-        padding-bottom: 4em;
+      padding-bottom: 4em;
+
+      .row {
+        padding: 0 15px;
+      }
 
         .pos-right {
           clear: both;
